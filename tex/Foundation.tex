@@ -54,101 +54,107 @@ as the Primitive of Physical Description}
     carried out therein.
   \end{abstract}
 
-  \clearpage
-  \tableofcontents
+  \paragraph{Keywords.}
+    Non-injective projection; Emergence; Projective structure; Admissibility; Born–Infeld constraint; Information loss;
+    Projection entropy; Quantum emergence; Phase coherence; SU(2) structure; Gauge emergence; Fiber structure;
+    Projective temporal ordering; Irreversibility;
 
-  \clearpage
+    \clearpage
+    \tableofcontents
+
+    \clearpage
+
   \section{Introduction}
-    \label{sec:intro}
+  \label{sec:intro}
 
-    The Cosmochrony programme~\cite{Cosmochrony} aims to derive the structure of
-    physical description from a minimal relational foundation, without postulating
-    a background spacetime, a Hilbert space, or an external substrate.
-    The only primitive is the local structure of admissible transitions between
-    observable states.
+  The Cosmochrony programme~\cite{Cosmochrony} aims to derive the structure of
+  physical description from a minimal relational foundation, without postulating
+  a background spacetime, a Hilbert space, or an external substrate.
+  The only primitive is the local structure of admissible transitions between
+  observable states.
 
-    The central question driving the framework is:
+  The central question driving the framework is:
 
-    \begin{quote}
-      Given an observable state $O_{n-1}$, what states are accessible from it?
-    \end{quote}
+  \begin{quote}
+    Given an observable state $O_{n-1}$, what states are accessible from it?
+  \end{quote}
 
-    The answer to this question — encoded in the admissibility structure — is
-    sufficient to derive irreversibility, temporal order, wave-like propagation,
-    phase coherence, and the discrete character of quantum transitions.
-    No substrate, no background, and no quantum postulate is required as input.
+  The answer to this question — encoded in the admissibility structure — is
+  sufficient to derive irreversibility, temporal order, wave-like propagation,
+  phase coherence, and the discrete character of quantum transitions.
+  No substrate, no background, and no quantum postulate is required as input.
 
-    \subsection*{Relation to companion papers}
+  \subsection*{Relation to companion papers}
 
-      This paper provides the axiomatic foundation for a chain of companion results.
-      The companion paper~\cite{Bell} establishes that Bell-type factorisation
-      fails generically under non-injective projection (A2), without invoking
-      nonlocal dynamics.
-      The companion paper~\cite{ENI} proves that non-injectivity is a structural
-      necessity of any genuinely emergent description.
-      The companion paper~\cite{Q1} derives phase coherence, the singlet correlator,
-      the Tsirelson bound, and the Born rule as structural consequences of
-      admissibility — using Axioms A1--A4 as stated here, combined with the concrete
-      spectral results of the O-series.
-      The white paper~\cite{Cosmochrony} develops the full phenomenological programme;
-      the present axiomatic reformulation is a foundational companion to it, not yet
-      integrated into its main text.
+    This paper provides the axiomatic foundation for a chain of companion results.
+    The companion paper~\cite{Bell} establishes that Bell-type factorisation
+    fails generically under non-injective projection (A2), without invoking
+    nonlocal dynamics.
+    The companion paper~\cite{ENI} proves that non-injectivity is a structural
+    necessity of any genuinely emergent description.
+    The companion paper~\cite{Q1} derives phase coherence, the singlet correlator,
+    the Tsirelson bound, and the Born rule as structural consequences of
+    admissibility — using Axioms A1--A4 as stated here, combined with the concrete
+    spectral results of the O-series.
+    The white paper~\cite{Cosmochrony} develops the full phenomenological programme;
+    the present axiomatic reformulation is a foundational companion to it, not yet
+    integrated into its main text.
 
-    \subsection*{Organisation}
+  \subsection*{Organisation}
 
-      Section~\ref{sec:axioms} states the four axioms.
-      Section~\ref{sec:primitive} clarifies the role of $\Pi$ and the index $n$.
-      Section~\ref{sec:ni-consequences} derives the structural consequences of
-      non-injectivity: irreversibility, novelty, and temporal order.
-      Section~\ref{sec:admissibility} derives the proto-state, phase, and coherence
-      from the admissibility principle.
-      Section~\ref{sec:locking} derives projection locking and the discrete character
-      of quantum transitions.
-      Section~\ref{sec:entanglement} treats entanglement and Bell non-applicability.
-      Section~\ref{sec:summary} summarises what is derived from what, and identifies
-      the open directions.
+    Section~\ref{sec:axioms} states the four axioms.
+    Section~\ref{sec:primitive} clarifies the role of $\Pi$ and the index $n$.
+    Section~\ref{sec:ni-consequences} derives the structural consequences of
+    non-injectivity: irreversibility, novelty, and temporal order.
+    Section~\ref{sec:admissibility} derives the proto-state, phase, and coherence
+    from the admissibility principle.
+    Section~\ref{sec:locking} derives projection locking and the discrete character
+    of quantum transitions.
+    Section~\ref{sec:entanglement} treats entanglement and Bell non-applicability.
+    Section~\ref{sec:summary} summarises what is derived from what, and identifies
+    the open directions.
 
   \section{The Four Axioms}
-    \label{sec:axioms}
+  \label{sec:axioms}
 
-    We state the four axioms from which the framework proceeds.
-    They are not independent postulates chosen for convenience — each captures
-    a structural feature that is either necessary for genuine emergence~\cite{ENI}
-    or forced by the requirement of bounded effective descriptions~\cite{BornInfeld}.
+  We state the four axioms from which the framework proceeds.
+  They are not independent postulates chosen for convenience — each captures
+  a structural feature that is either necessary for genuine emergence~\cite{ENI}
+  or forced by the requirement of bounded effective descriptions~\cite{BornInfeld}.
 
-    \begin{definition}[Admissible transition]
-      \label{def:admissible-transition}
-      A transition from observable state $O_{n-1}$ to observable state $O_n$ is
-      \emph{admissible} if it satisfies Axioms A1--A4 below.
-    \end{definition}
+  \begin{definition}[Admissible transition]
+    \label{def:admissible-transition}
+    A transition from observable state $O_{n-1}$ to observable state $O_n$ is
+    \emph{admissible} if it satisfies Axioms A1--A4 below.
+  \end{definition}
 
-    \begin{description}
-      \item[\textbf{A1 — Local projective admissibility.}]
-      For any observable state $O_{n-1}$, there exists a non-empty set $F_n$ of
-      admissible successor directions: configurations of $O_{n-1}$ compatible with
-      a transition to a stable next state.
-      The set $F_n$ is defined by internal structural constraints
-      (Born--Infeld bound, spectral envelope, symmetry requirements)
-      and does not presuppose an ambient configuration space.
+  \begin{description}
+    \item[\textbf{A1 — Local projective admissibility.}]
+    For any observable state $O_{n-1}$, there exists a non-empty set $F_n$ of
+    admissible successor directions: configurations of $O_{n-1}$ compatible with
+    a transition to a stable next state.
+    The set $F_n$ is defined by internal structural constraints
+    (Born--Infeld bound, spectral envelope, symmetry requirements)
+    and does not presuppose an ambient configuration space.
 
-      \item[\textbf{A2 — Structural non-injectivity.}]
-      Distinct admissible directions from $O_{n-1}$ may lead to the same resolved
-      successor state $O_n$.
-      The map $\Pi_n$ encoding this is generically non-injective.
+    \item[\textbf{A2 — Structural non-injectivity.}]
+    Distinct admissible directions from $O_{n-1}$ may lead to the same resolved
+    successor state $O_n$.
+    The map $\Pi_n$ encoding this is generically non-injective.
 
-      \item[\textbf{A3 — Admissibility as non-premature selection.}]
-      An admissible transition preserves the full multiplicity of open directions
-      until projection locking occurs.
-      It does not select among them prematurely — that is, before the
-      Born--Infeld saturation threshold is reached~\cite{BornInfeld}.
+    \item[\textbf{A3 — Admissibility as non-premature selection.}]
+    An admissible transition preserves the full multiplicity of open directions
+    until projection locking occurs.
+    It does not select among them prematurely — that is, before the
+    Born--Infeld saturation threshold is reached~\cite{BornInfeld}.
 
-      \item[\textbf{A4 — Projection locking.}]
-      Resolution occurs only when continuous Born--Infeld saturation meets the
-      discrete shell support of the observable space.
-      The transition from admissible to admitted is structurally discrete.
-    \end{description}
+    \item[\textbf{A4 — Projection locking.}]
+    Resolution occurs only when continuous Born--Infeld saturation meets the
+    discrete shell support of the observable space.
+    The transition from admissible to admitted is structurally discrete.
+  \end{description}
 
-    \begin{remark}[Independence of the axioms]
+  \begin{remark}[Independence of the axioms]
   A1 asserts existence of admissible directions.
   A2 asserts their generic non-injectivity.
   A3 constrains which transitions are admissible.
@@ -156,78 +162,77 @@ as the Primitive of Physical Description}
   The four axioms are logically independent: none follows from the others.
   Their joint necessity is argued in Section~\ref{sec:primitive} and in the
   companion papers~\cite{ENI,BornInfeld}.
-    \end{remark}
+  \end{remark}
 
-    \begin{remark}[Status of Born--Infeld in A3 and A4]
+  \begin{remark}[Status of Born--Infeld in A3 and A4]
   The Born--Infeld saturation threshold appearing in A3 and A4 is not an
   additional postulate: it is the unique bounded completion of the effective
   action compatible with bounded projective flux, established in~\cite{BornInfeld}.
   A3 and A4 therefore do not introduce new structure beyond A1--A2 and the
   Born--Infeld companion.
-    \end{remark}
+  \end{remark}
 
   \section{The Primitive and the Role of $\Pi$}
-    \label{sec:primitive}
+  \label{sec:primitive}
 
-    \subsection{The primitive}
+  \subsection{The primitive}
 
-      The only primitive of this framework is the pair $(O_{n-1}, F_n)$: an observable
-      state and the set of admissible directions it admits.
-      There is no external substrate, no hidden carrier, no background geometry.
-      The fibre $F_n$ is not defined in an abstract ambient space — it is induced by
-      $O_{n-1}$ itself through the admissibility constraints of A1--A3.
+    The only primitive of this framework is the pair $(O_{n-1}, F_n)$: an observable
+    state and the set of admissible directions it admits.
+    There is no external substrate, no hidden carrier, no background geometry.
+    The fibre $F_n$ is not defined in an abstract ambient space — it is induced by
+    $O_{n-1}$ itself through the admissibility constraints of A1--A3.
 
-    \subsection{The projection $\Pi_n$ as descriptive abstraction}
+  \subsection{The projection $\Pi_n$ as descriptive abstraction}
 
-      The notation $\Pi_n$ is a compact encoding of the local admissibility structure.
-      It encodes three things simultaneously:
-      \begin{enumerate}[(i)]
+    The notation $\Pi_n$ is a compact encoding of the local admissibility structure.
+    It encodes three things simultaneously:
+    \begin{enumerate}[(i)]
 \item the admissible directions from $O_{n-1}$ — the fibre $F_n$ (A1, A2);
 \item the Born--Infeld saturation bound — the limit on accessible amplitudes (A3);
 \item projection locking — the constraint that resolution falls on an available
 shell (A4).
-      \end{enumerate}
+    \end{enumerate}
 
-      $\Pi_n$ is not a physical entity and not a dynamical map.
-      It is a structural relation encoding the admissible identification between
-      distinguishable configurations (elements of $F_n$) and indistinguishable
-      observable outcomes (elements of $O_n$).
-      Saying ``$\Pi_n$ is non-injective'' means that multiple directions from
-      $O_{n-1}$ can lead to the same $O_n$ — a fact about the admissible transition
-      structure, not a property of an external map.
-      Non-injectivity does not originate from an underlying substrate, but from
-      the structure of admissible configurations and their interaction-dependent
-      realisation map.
+    $\Pi_n$ is not a physical entity and not a dynamical map.
+    It is a structural relation encoding the admissible identification between
+    distinguishable configurations (elements of $F_n$) and indistinguishable
+    observable outcomes (elements of $O_n$).
+    Saying ``$\Pi_n$ is non-injective'' means that multiple directions from
+    $O_{n-1}$ can lead to the same $O_n$ — a fact about the admissible transition
+    structure, not a property of an external map.
+    Non-injectivity does not originate from an underlying substrate, but from
+    the structure of admissible configurations and their interaction-dependent
+    realisation map.
 
-    \subsection{The index $n$}
+  \subsection{The index $n$}
 
-      The index $n$ does not represent a pre-existing time parameter.
-      It counts transitions: the number of times a state has been succeeded by
-      another under the admissibility constraints.
-      Its temporal meaning is derived in Section~\ref{sec:ni-consequences} —
-      it is not assumed.
+    The index $n$ does not represent a pre-existing time parameter.
+    It counts transitions: the number of times a state has been succeeded by
+    another under the admissibility constraints.
+    Its temporal meaning is derived in Section~\ref{sec:ni-consequences} —
+    it is not assumed.
 
+  \subsection{Where non-injectivity lives}
+    \label{subsec:ni-locus}
 
-    \subsection{Where non-injectivity lives}
-      \label{subsec:ni-locus}
+    A natural question arises: where does the non-injectivity of $\Pi_n$ come from,
+    given that no underlying substrate is postulated?
+    The answer is precise.
 
-      A natural question arises: where does the non-injectivity of $\Pi_n$ come from,
-      given that no underlying substrate is postulated?
-      The answer is precise.
+    Non-injectivity is a property of the interaction-dependent realisation map:
+    the map from the space $F_n$ of structurally compatible configurations to the space
+    $O_n$ of observable outcomes.
+    When two distinct admissible configurations $f, f' \in F_n$ give rise to
+    the same observable outcome $o \in O_n$, it is not because they are
+    ``the same at a deeper level'' — it is because the interaction that
+    realises the transition cannot distinguish them within $O_n$.
+    The limit on distinguishability is set by the Born--Infeld capacity
+    constraint (A3): the observable space $O_n$ has finite projective capacity,
+    and configurations that differ only below this threshold are identified.
 
-      Non-injectivity is a property of the interaction-dependent realisation map:
-      the map from the space $F_n$ of structurally compatible configurations to the space
-      $O_n$ of observable outcomes.
-      When two distinct admissible configurations $f, f' \in F_n$ give rise to
-      the same observable outcome $o \in O_n$, it is not because they are
-      ``the same at a deeper level'' — it is because the interaction that
-      realises the transition cannot distinguish them within $O_n$.
-      The limit on distinguishability is set by the Born--Infeld capacity
-      constraint (A3): the observable space $O_n$ has finite projective capacity,
-      and configurations that differ only below this threshold are identified.
-
-      Three properties of this realisation map are essential:
-      \begin{enumerate}[(i)]
+    Three properties of this realisation map are essential:
+    \begin{enumerate}[(i)]
 \item \emph{Interaction-dependence}: $\Pi_n$ encodes the interaction;
 different interactions define different realisation maps and different
 fibres $F_n$.
@@ -238,38 +243,38 @@ reference to an ambient substrate.
 force $F_n$ to carry a specific algebraic structure — SU(2) in the
 spin-$\tfrac{1}{2}$ sector (O23) — which is derived from the constraints,
 not assumed.
-      \end{enumerate}
+    \end{enumerate}
 
-      The non-injectivity is therefore neither a property of a hidden substrate
-      nor an arbitrary assumption: it is a structural consequence of finite
-      projective capacity applied to an internally defined space of admissible
-      configurations.
+    The non-injectivity is therefore neither a property of a hidden substrate
+    nor an arbitrary assumption: it is a structural consequence of finite
+    projective capacity applied to an internally defined space of admissible
+    configurations.
 
-      \begin{remark}[Connection to the O-series: $F_n$ and $V_\rho$]
-        \label{rem:fn-vrho}
-        In the concrete spectral realisation of the O-series, the admissible fibre
-        $F_n$ is realised as a spectral sector $V_\rho$ of the Heisenberg Cayley
-        graph $\mathrm{Cay}(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z}), S_q)$.
-        The sectors $V_\rho$ are not pre-existing configuration spaces: they are
-        the structures induced by the admissibility constraints — the Born--Infeld
-        bound, the spectral envelope, and the symmetry requirements of A1.
-        In this sense, $V_\rho$ is the concrete realisation of $F_n$, not an
-        ambient space in which $F_n$ is embedded:
-        \begin{equation}
-          F_n \;\simeq\; \text{(sector of } V_\rho \text{ selected by } \Pi_n\text{)}.
-        \end{equation}
-        The admissible modes do not live \emph{in} a pre-given space;
-        they \emph{define} $V_\rho$ as the space of directions compatible with
-        the admissibility constraints.
-        The O-series constructs $V_\rho$ from scratch from the graph structure and
-        the BI bound — no external configuration space is required.
-      \end{remark}
+    \begin{remark}[Connection to the O-series: $F_n$ and $V_\rho$]
+      \label{rem:fn-vrho}
+      In the concrete spectral realisation of the O-series, the admissible fibre
+      $F_n$ is realised as a spectral sector $V_\rho$ of the Heisenberg Cayley
+      graph $\mathrm{Cay}(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z}), S_q)$.
+      The sectors $V_\rho$ are not pre-existing configuration spaces: they are
+      the structures induced by the admissibility constraints — the Born--Infeld
+      bound, the spectral envelope, and the symmetry requirements of A1.
+      In this sense, $V_\rho$ is the concrete realisation of $F_n$, not an
+      ambient space in which $F_n$ is embedded:
+      \begin{equation}
+        F_n \;\simeq\; \text{(sector of } V_\rho \text{ selected by } \Pi_n\text{)}.
+      \end{equation}
+      The admissible modes do not live \emph{in} a pre-given space;
+      they \emph{define} $V_\rho$ as the space of directions compatible with
+      the admissibility constraints.
+      The O-series constructs $V_\rho$ from scratch from the graph structure and
+      the BI bound — no external configuration space is required.
+    \end{remark}
 
-      \begin{remark}[The two levels of $\Pi_n$: kernel and image (O24)]
-        \label{rem:pi-two-levels}
-        The non-injective projection $\Pi_n$ operates at two structurally distinct
-        levels, established in O24~\cite{O24}:
-        \begin{enumerate}[(i)]
+    \begin{remark}[The two levels of $\Pi_n$: kernel and image (O24)]
+      \label{rem:pi-two-levels}
+      The non-injective projection $\Pi_n$ operates at two structurally distinct
+      levels, established in O24~\cite{O24}:
+      \begin{enumerate}[(i)]
   \item \emph{Kernel level} ($\ker \Pi_n$): governs microscopic multiplicity
   and fluctuation amplitude.
   Multiple configurations in $\Omega_n^{(c)}$ may project to the same
@@ -283,84 +288,84 @@ not assumed.
   Its real rank is rigidly fixed to 3 by the quaternionic maximality of
   $\mathrm{Im}\,\mathbb{H}$ (O23, Theorem~3.2) and is independent of the
   cardinality of $\ker \Pi_n$.
-        \end{enumerate}
-        The Verticality Lemma of O24 (Lemma~3.1) establishes that every
-        Born--Infeld-admissible symmetry acts vertically: it maps each fibre
-        $\Pi_n^{-1}(o)$ to itself and does not increase the rank of the image.
-        The structural consequence is:
-        \begin{quote}
-          \emph{Non-injectivity affects degeneracy, not structure.}
-        \end{quote}
-        Enlarging $\ker \Pi_n$ — admitting more configurations in each fibre —
-        increases the amplitude of quantum fluctuations but does not alter the
-        observable rank, the cascade exponent $\delta_{\mathrm{pair}}$, or any
-        other structural invariant of the admissible sector.
-        The two levels of $\Pi_n$ are therefore decoupled: kernel structure is
-        physically relevant for fluctuations; image structure is physically
-        relevant for observables.
-      \end{remark}
+      \end{enumerate}
+      The Verticality Lemma of O24 (Lemma~3.1) establishes that every
+      Born--Infeld-admissible symmetry acts vertically: it maps each fibre
+      $\Pi_n^{-1}(o)$ to itself and does not increase the rank of the image.
+      The structural consequence is:
+      \begin{quote}
+        \emph{Non-injectivity affects degeneracy, not structure.}
+      \end{quote}
+      Enlarging $\ker \Pi_n$ — admitting more configurations in each fibre —
+      increases the amplitude of quantum fluctuations but does not alter the
+      observable rank, the cascade exponent $\delta_{\mathrm{pair}}$, or any
+      other structural invariant of the admissible sector.
+      The two levels of $\Pi_n$ are therefore decoupled: kernel structure is
+      physically relevant for fluctuations; image structure is physically
+      relevant for observables.
+    \end{remark}
 
 
-      \label{subsec:five-levels}
+    \label{subsec:five-levels}
 
-      The abstract structure of Section~\ref{sec:primitive} has a concrete realisation
-      in the O-series that answers precisely where $\Omega_n$ lives and how it is
-      constructed.
-      The realisation proceeds through five levels, each induced by the previous one.
+    The abstract structure of Section~\ref{sec:primitive} has a concrete realisation
+    in the O-series that answers precisely where $\Omega_n$ lives and how it is
+    constructed.
+    The realisation proceeds through five levels, each induced by the previous one.
 
-      \paragraph{Level 1 — The relational group $G_q$.}
-        The combinatorial substrate of the BFS exploration is the discrete Heisenberg
-        group
+    \paragraph{Level 1 — The relational group $G_q$.}
+      The combinatorial substrate of the BFS exploration is the discrete Heisenberg
+      group
       \begin{equation}
         G_q \;=\; \mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z}),
         \qquad |G_q| = q^3,
-        \end{equation}
-        equipped with the standard symmetric generating set $S_q = \{X^{\pm 1}, Y^{\pm 1}\}$.
-        $G_q$ is not a physical space: it is a relational structure, encoding how
-        configurations relate to one another via the generators.
-        The BFS explores $G_q$ in shells $S_n = B_n \setminus B_{n-1}$, where
-        $B_n = \{g \in G_q : d(e,g) \leq n\}$.
-        The shell structure $\{S_n\}$ is the concrete realisation of the
-        transition-counting index $n$ of Section~\ref{sec:primitive}.
+      \end{equation}
+      equipped with the standard symmetric generating set $S_q = \{X^{\pm 1}, Y^{\pm 1}\}$.
+      $G_q$ is not a physical space: it is a relational structure, encoding how
+      configurations relate to one another via the generators.
+      The BFS explores $G_q$ in shells $S_n = B_n \setminus B_{n-1}$, where
+      $B_n = \{g \in G_q : d(e,g) \leq n\}$.
+      The shell structure $\{S_n\}$ is the concrete realisation of the
+      transition-counting index $n$ of Section~\ref{sec:primitive}.
 
-      \paragraph{Level 2 — The Weil representation $\rho_c$ and its ambient space.}
-        For each non-zero character $c \in (\mathbb{Z}/q\mathbb{Z})^\times$, the
-        discrete Heisenberg group $G_q$ admits an irreducible $q$-dimensional Weil
-        representation~\cite{O12}:
+    \paragraph{Level 2 — The Weil representation $\rho_c$ and its ambient space.}
+      For each non-zero character $c \in (\mathbb{Z}/q\mathbb{Z})^\times$, the
+      discrete Heisenberg group $G_q$ admits an irreducible $q$-dimensional Weil
+      representation~\cite{O12}:
       \begin{equation}
         \rho_c : G_q \;\longrightarrow\; \mathrm{GL}(\mathbb{C}^q),
         \qquad
         (\rho_c(a,b,\gamma)\,f)(x) \;=\;
         e^{2\pi i c(\gamma + bx)/q}\, f(x-a),
-        \end{equation}
-        acting on $L^2(\mathbb{Z}/q\mathbb{Z}) \cong \mathbb{C}^q$.
-        The ambient space $\mathbb{C}^q$ is not a physical configuration space
-        presupposed by the theory: it is the natural carrier of the irreducible
-        representation of $G_q$ of central character $c$.
-        It is induced by $G_q$ and $c$, not by any external assumption.
+      \end{equation}
+      acting on $L^2(\mathbb{Z}/q\mathbb{Z}) \cong \mathbb{C}^q$.
+      The ambient space $\mathbb{C}^q$ is not a physical configuration space
+      presupposed by the theory: it is the natural carrier of the irreducible
+      representation of $G_q$ of central character $c$.
+      It is induced by $G_q$ and $c$, not by any external assumption.
 
-      \paragraph{Level 3 — The orbit span $\Omega_n$ as emerging subspace.}
-        Given the initial vector $v_0 \in \mathbb{C}^q$ and the Weil action $\rho_c$,
-        the orbit span at BFS depth $n$ is:
+    \paragraph{Level 3 — The orbit span $\Omega_n$ as emerging subspace.}
+      Given the initial vector $v_0 \in \mathbb{C}^q$ and the Weil action $\rho_c$,
+      the orbit span at BFS depth $n$ is:
       \begin{equation}
         \label{eq:omega-n}
         \Omega_n^{(c)}
         \;:=\;
         \mathrm{span}\bigl\{\rho_c(g)\,v_0 : g \in B_n\bigr\}
         \;\subseteq\; \mathbb{C}^q.
-        \end{equation}
-        By construction, $\Omega_n^{(c)}$ is a minimal extension of the previously
-        realized subspace:
+      \end{equation}
+      By construction, $\Omega_n^{(c)}$ is a minimal extension of the previously
+      realized subspace:
       \begin{equation}
         \label{eq:omega-n-inclusion}
         V_{n-1}^{(c)} \;\subseteq\; \Omega_n^{(c)} \;\subseteq\; \mathbb{C}^q,
-        \end{equation}
-        where $V_{n-1}^{(c)} = \mathrm{GS}(B_{n-1})$ is the Gram--Schmidt span
-        accumulated over the preceding shells.
-        $\Omega_n^{(c)}$ is not defined by $O_{n-1}$, but is constrained by the
-        already realized subspace $V_{n-1}^{(c)}$: the directions in
-        $\Omega_n^{(c)} \setminus V_{n-1}^{(c)}$ are the candidates for new
-        observable structure at depth $n$.
+      \end{equation}
+      where $V_{n-1}^{(c)} = \mathrm{GS}(B_{n-1})$ is the Gram--Schmidt span
+      accumulated over the preceding shells.
+      $\Omega_n^{(c)}$ is not defined by $O_{n-1}$, but is constrained by the
+      already realized subspace $V_{n-1}^{(c)}$: the directions in
+      $\Omega_n^{(c)} \setminus V_{n-1}^{(c)}$ are the candidates for new
+      observable structure at depth $n$.
 
       \begin{definition}[Structurally compatible continuations]
         \label{def:omega-n}
@@ -369,9 +374,9 @@ not assumed.
         structure of $G_q$ via $\rho_c$, without any admissibility filter applied.
         Admissibility is \emph{not} a property of $\Omega_n^{(c)}$;
         it is a property of $\Pi_n$ acting on $\Omega_n^{(c)}$.
-        \end{definition}
+      \end{definition}
 
-        Three properties follow immediately:
+      Three properties follow immediately:
       \begin{enumerate}[(i)]
 \item \emph{Emergence}: $\Omega_n^{(c)}$ is not given a priori — it is built
 incrementally as the BFS explores $G_q$.
@@ -391,25 +396,25 @@ $\Omega_n^{(c)}$ contains all directions generated by the group action
 of $G_q$ up to depth $n$ — including directions that $\Pi_n$ will
 subsequently reject as inadmissible.
 The admissibility filter is entirely in $\Pi_n$, not in $\Omega_n^{(c)}$.
-        \end{enumerate}
+      \end{enumerate}
 
-      \paragraph{Level 4 — The admissibility filter $\Pi_n$.}
-        The projection $\Pi_n$ acts on $\Omega_n^{(c)}$ via the BI admissibility
-        constraint $A_n \leq c_\chi/\sqrt{\lambda_n}$ and the Gram--Schmidt
-        orthogonalisation~\cite{O12,O22}.
-        It selects, from all directions in $\Omega_n^{(c)}$, those compatible with
-        the admissibility constraints.
-        $\Pi_n$ encodes the laws revealed by the O-series — Born--Infeld bound,
-        parity involution, projection locking — but does not define $\Omega_n^{(c)}$.
+    \paragraph{Level 4 — The admissibility filter $\Pi_n$.}
+      The projection $\Pi_n$ acts on $\Omega_n^{(c)}$ via the BI admissibility
+      constraint $A_n \leq c_\chi/\sqrt{\lambda_n}$ and the Gram--Schmidt
+      orthogonalisation~\cite{O12,O22}.
+      It selects, from all directions in $\Omega_n^{(c)}$, those compatible with
+      the admissibility constraints.
+      $\Pi_n$ encodes the laws revealed by the O-series — Born--Infeld bound,
+      parity involution, projection locking — but does not define $\Omega_n^{(c)}$.
 
-      \paragraph{Level 5 — The observable outcome $O_n$.}
-        The observable state $O_n$ is the image of $\Pi_n$ applied to the admissible
-        part of $\Omega_n^{(c)}$.
-        It is a discrete, shell-indexed element of the observable
-        space~\cite{O22}:
+    \paragraph{Level 5 — The observable outcome $O_n$.}
+      The observable state $O_n$ is the image of $\Pi_n$ applied to the admissible
+      part of $\Omega_n^{(c)}$.
+      It is a discrete, shell-indexed element of the observable
+      space~\cite{O22}:
       \begin{equation}
         O \;=\; \bigsqcup_{n \in \mathbb{N}_q} O_n.
-        \end{equation}
+      \end{equation}
 
       \begin{remark}[Summary: the five-level hierarchy]
   The five levels constitute a single construction with no external inputs:
@@ -436,7 +441,7 @@ The admissibility filter is entirely in $\Pi_n$, not in $\Omega_n^{(c)}$.
   This is the concrete answer to the question of where $\Omega_n$ lives:
   in $\mathbb{C}^q$, itself induced by $G_q$ — not in an external configuration
   space.
-        \end{remark}
+      \end{remark}
 
       \begin{remark}[The conjugate pair and $\Omega_n$ without preferred direction]
   The parity involution $c \leftrightarrow q-c$ (O18) acts on $\Omega_n^{(c)}$
@@ -446,27 +451,27 @@ The admissibility filter is entirely in $\Pi_n$, not in $\Omega_n^{(c)}$.
   $\{V_n^{(c)}, V_n^{(q-c)}\} = \{V_n^{(c)}, \overline{V_n^{(c)}}\}$,
   with no preferred orientation — consistent with the admissibility principle
   of A3.
-        \end{remark}
+      \end{remark}
 
   \subsection{From $\mathbb{C}^q$ to continuous spacetime: the large-$q$ limit}
-    \label{subsec:continuum-limit}
+  \label{subsec:continuum-limit}
 
-    The five-level hierarchy of Section~\ref{subsec:five-levels} is formulated
-    for finite prime $q$.
-    Physical spacetime is continuous.
-    This subsection identifies the structural bridge between the two, without
-    claiming to complete the derivation.
+  The five-level hierarchy of Section~\ref{subsec:five-levels} is formulated
+  for finite prime $q$.
+  Physical spacetime is continuous.
+  This subsection identifies the structural bridge between the two, without
+  claiming to complete the derivation.
 
-    \paragraph{The discrete structure at finite $q$.}
-      At finite $q$, the observable space $O = \bigsqcup_{n \in \mathbb{N}_q} O_n$
-      is discrete and finite.
-      The ambient representation space $\mathbb{C}^q$ has dimension $q$.
-      Physical quantities are functions on $\mathbb{Z}/q\mathbb{Z}$.
+  \paragraph{The discrete structure at finite $q$.}
+    At finite $q$, the observable space $O = \bigsqcup_{n \in \mathbb{N}_q} O_n$
+    is discrete and finite.
+    The ambient representation space $\mathbb{C}^q$ has dimension $q$.
+    Physical quantities are functions on $\mathbb{Z}/q\mathbb{Z}$.
 
-    \paragraph{The large-$q$ limit.}
-      As $q \to \infty$ with the prime structure retained, three things happen
-      simultaneously:
-      \begin{enumerate}[(i)]
+  \paragraph{The large-$q$ limit.}
+    As $q \to \infty$ with the prime structure retained, three things happen
+    simultaneously:
+    \begin{enumerate}[(i)]
 \item \emph{The representation space $\mathbb{C}^q$ approaches $L^2(\mathbb{R})$}.
 Functions on $\mathbb{Z}/q\mathbb{Z}$ with fixed Fourier support become
 functions on $\mathbb{R}$ in the Pontryagin dual limit.
@@ -482,25 +487,25 @@ differential constraint}.
 The Born--Infeld admissibility bound $A_n \leq c_\chi/\sqrt{\lambda_n}$
 becomes, in the continuum limit, the Born--Infeld Lagrangian constraint
 on effective field configurations~\cite{BornInfeld}.
-      \end{enumerate}
+    \end{enumerate}
 
-      The continuum spacetime observable is therefore not a separate postulate:
-      it is the large-$q$ limit of the discrete observable space $O$, with the
-      four-dimensional structure inherited from the homogeneous dimension of $G_q$.
+    The continuum spacetime observable is therefore not a separate postulate:
+    it is the large-$q$ limit of the discrete observable space $O$, with the
+    four-dimensional structure inherited from the homogeneous dimension of $G_q$.
 
-      \begin{remark}[Status of the continuum limit]
-        \label{rem:continuum-limit}
-        The convergence $\mathbb{C}^q \to L^2(\mathbb{R})$ and the emergence of
-        continuous spacetime geometry from the BFS shell structure are established
-        qualitatively in~\cite{Cosmochrony}.
-        A fully rigorous derivation of the Lorentzian metric from the spectral
-        structure of $G_q$ in the $q \to \infty$ limit is the subject of the
-        companion spectral geometry programme and remains open at the level of
-        an explicit theorem.
-        The present remark identifies the mechanism — not the proof.
-      \end{remark}
+    \begin{remark}[Status of the continuum limit]
+      \label{rem:continuum-limit}
+      The convergence $\mathbb{C}^q \to L^2(\mathbb{R})$ and the emergence of
+      continuous spacetime geometry from the BFS shell structure are established
+      qualitatively in~\cite{Cosmochrony}.
+      A fully rigorous derivation of the Lorentzian metric from the spectral
+      structure of $G_q$ in the $q \to \infty$ limit is the subject of the
+      companion spectral geometry programme and remains open at the level of
+      an explicit theorem.
+      The present remark identifies the mechanism — not the proof.
+    \end{remark}
 
-      \begin{remark}[Why four dimensions]
+    \begin{remark}[Why four dimensions]
   The homogeneous dimension $D = 4$ of the Heisenberg group $G_q$
   (Bass--Guivarc'h theorem: $|B_n| \sim n^4$) is not chosen to match
   the observed four dimensions of spacetime.
@@ -509,7 +514,7 @@ on effective field configurations~\cite{BornInfeld}.
   commutator, giving $D = 2 \cdot \mathrm{rank} + \mathrm{class} = 4$.
   The coincidence with the observed dimension of spacetime is therefore
   a structural prediction of the framework, not a parameter fit.
-      \end{remark}
+    \end{remark}
 
   \section{Structural Consequences of Non-Injectivity}
   \label{sec:ni-consequences}
@@ -903,27 +908,46 @@ the moment of resolution.
     \small
     \begin{tabular}{lll}
       \toprule
-      \textbf{Concept} & \textbf{Source} & \textbf{Status} \\
+      \textbf{Concept} & \textbf{Source} & \textbf{Status}
+      \\
       \midrule
-      Irreversibility & Non-injectivity (A2) & Proved (Prop.~\ref{prop:irreversibility}) \\
-      Structural fluctuations & Relational residue $\Delta_n$ & Derived \\
-      Temporal order & Irreversibility + novelty (A2) & Proved (Thm.~\ref{thm:temporal-order}) \\
-      Proto-state (wave) & Unresolved multiplicity (A1, A3) & Derived (Prop.~\ref{prop:indeterminacy}) \\
-      Structural indeterminacy & Multiple open directions (A1, A3) & Derived \\
-      Phase coherence & Admissibility preserves open directions (A3) & Derived \\
-      Coherent amplitude structure & Admissible fibre + phase & Derived \\
-      Interference & Coherent amplitude structure & Derived \\
-      Discrete transitions & Projection locking (A4, O22) & Proved (Thm.~\ref{thm:discrete-locking}) \\
-      Three stable directions & $\dim_\mathbb{R} \mathrm{Im}\,\mathbb{H} = 3$ (O23) & Proved \\
-      Superposition & Unresolved proto-state & Derived \\
-      Collapse & Proto-state resolution at locking & Derived \\
-      Entanglement & Shared non-factorisable ancestral fibre & Derived \\
-      Bell non-applicability & Temporal, non-local, non-independent fibre & Proved~\cite{Bell} \\
-      Phase coherence $\Rightarrow$ QM & Admissibility + O-series & Proved~\cite{Q1} \\
-      Born rule (SU(2) sector) & Correlator + coherence (Q1) & Proved~\cite{Q1} \\
+      Irreversibility & Non-injectivity (A2) & Proved (Prop.~
+      \ref{prop:irreversibility}) \\
+      Structural fluctuations & Relational residue $\Delta_n$ & Derived
+      \\
+      Temporal order & Irreversibility + novelty (A2) & Proved (Thm.~
+      \ref{thm:temporal-order}) \\
+      Proto-state (wave) & Unresolved multiplicity (A1, A3) & Derived (Prop.~
+      \ref{prop:indeterminacy}) \\
+      Structural indeterminacy & Multiple open directions (A1, A3) & Derived
+      \\
+      Phase coherence & Admissibility preserves open directions (A3) & Derived
+      \\
+      Coherent amplitude structure & Admissible fibre + phase & Derived
+      \\
+      Interference & Coherent amplitude structure & Derived
+      \\
+      Discrete transitions & Projection locking (A4, O22) & Proved (Thm.~
+      \ref{thm:discrete-locking}) \\
+      Three stable directions & $\dim_\mathbb{R} \mathrm{Im}\,\mathbb{H} = 3$ (O23) & Proved
+      \\
+      Superposition & Unresolved proto-state & Derived
+      \\
+      Collapse & Proto-state resolution at locking & Derived
+      \\
+      Entanglement & Shared non-factorisable ancestral fibre & Derived
+      \\
+      Bell non-applicability & Temporal, non-local, non-independent fibre & Proved~\cite{Bell}
+      \\
+      Phase coherence $\Rightarrow$ QM & Admissibility + O-series & Proved~\cite{Q1}
+      \\
+      Born rule (SU(2) sector) & Correlator + coherence (Q1) & Proved~\cite{Q1}
+      \\
       \midrule
-      Full Hilbert structure & Beyond SU(2) parity sector & \textbf{Open} \\
-      Born rule (general) & Beyond SU(2) parity sector & \textbf{Open} \\
+      Full Hilbert structure & Beyond SU(2) parity sector & \textbf{Open}
+      \\
+      Born rule (general) & Beyond SU(2) parity sector & \textbf{Open}
+      \\
       \bottomrule
     \end{tabular}
     \caption{Derivation chain from the four axioms.
