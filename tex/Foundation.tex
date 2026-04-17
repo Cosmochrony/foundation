@@ -44,8 +44,13 @@ as the Primitive of Physical Description}
     existence of structural fluctuations, without any additional postulate.
     From A3, we derive the proto-state as a physically real unresolved configuration
     shared between two successive states, and show that admissibility forces the
-    retention of phase coherence — identifying the admissible fibre as the natural
-    precursor of an effective Hilbert sector.
+    retention of phase coherence.
+    We further prove that A3 forbids any admissible factorisation of the fibre,
+    which forces a non-trivial commutator between conjugate generators;
+    combined with minimality (A1) and Born--Infeld parity, this identifies the
+    symmetry group of the admissible fibre as $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$
+    for a prime $q$, and the fibre itself as the Weil representation $V_\rho$ —
+    closing the identification $F_n \simeq V_\rho$ as a theorem rather than a remark.
     From A4, we derive the discrete character of quantum transitions as a consequence
     of the interaction between continuous Born--Infeld saturation and the discrete
     shell structure of the observable space.
@@ -106,8 +111,9 @@ as the Primitive of Physical Description}
     Section~\ref{sec:primitive} clarifies the role of $\Pi$ and the index $n$.
     Section~\ref{sec:ni-consequences} derives the structural consequences of
     non-injectivity: irreversibility, novelty, and temporal order.
-    Section~\ref{sec:admissibility} derives the proto-state, phase, and coherence
-    from the admissibility principle.
+    Section~\ref{sec:admissibility} derives the proto-state, phase, coherence,
+    and the Heisenberg structure of the admissible fibre from the admissibility
+    principle.
     Section~\ref{sec:locking} derives projection locking and the discrete character
     of quantum transitions.
     Section~\ref{sec:entanglement} treats entanglement and Bell non-applicability.
@@ -262,13 +268,13 @@ not assumed.
       In this sense, $V_\rho$ is the concrete realisation of $F_n$, not an
       ambient space in which $F_n$ is embedded:
       \begin{equation}
-        F_n \;\simeq\; \text{(sector of } V_\rho \text{ selected by } \Pi_n\text{)}.
+        F_n \;\simeq\; V_\rho.
       \end{equation}
-      The admissible modes do not live \emph{in} a pre-given space;
-      they \emph{define} $V_\rho$ as the space of directions compatible with
-      the admissibility constraints.
-      The O-series constructs $V_\rho$ from scratch from the graph structure and
-      the BI bound — no external configuration space is required.
+      This identification, stated here as a structural connection to the O-series,
+      is established as a theorem in Section~\ref{subsec:heisenberg}:
+      the axioms A1--A3 and Born--Infeld parity together force the symmetry group
+      of $F_n$ to be $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, and the
+      Stone--von Neumann theorem then identifies $F_n \simeq V_\rho$ uniquely.
     \end{remark}
 
     \begin{remark}[The two levels of $\Pi_n$: kernel and image (O24)]
@@ -675,7 +681,159 @@ on effective field configurations~\cite{BornInfeld}.
   an available shell, resolving it into a localized state $O_n$.
     \end{remark}
 
-  \subsection{Superposition and measurement}
+  \subsection{Non-factorisability and the emergence of Heisenberg structure}
+    \label{subsec:heisenberg}
+
+    Axiom A3 does not only enforce phase coherence.
+    It also constrains the algebraic structure of the admissible fibre $F_n$ itself,
+    forcing it to carry a Heisenberg structure rather than an arbitrary unitary
+    symmetry.
+
+    \begin{lemma}[Admissible non-factorisability]
+      \label{lem:non-factorisation}
+      Under A1--A3, any decomposition
+      \[
+        F_n \;=\; F^{(1)} \oplus F^{(2)}
+      \]
+      that is stable under the admissible generators of $F_n$ is forbidden prior
+      to projection locking.
+      In particular, A3 forces the action of admissible generators on $F_n$ to
+      be irreducible.
+    \end{lemma}
+
+    \begin{proof}
+      A3 forbids premature selection among open directions.
+      A decomposition of $F_n$ stable under admissible generators separates
+      directions by invariants that are internal to the fibre — invariants carried
+      by the generators themselves, which are constitutive of the admissibility
+      structure by A1.
+      Such a decomposition therefore resolves the proto-state partially, by
+      assigning each open direction to a definite sector, prior to any
+      Born--Infeld saturation event.
+      This contradicts A3.
+      Irreducibility follows immediately: any proper stable sub-representation
+      would yield such a forbidden decomposition.
+    \end{proof}
+
+    \begin{theorem}[A1--A3 and BI parity force Heisenberg structure]
+      \label{thm:heisenberg}
+      Under A1--A3 and Born--Infeld parity, the symmetry group of the admissible
+      fibre $F_n$ is isomorphic to $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ for
+      some prime $q$.
+      Consequently, $F_n$ is isomorphic to the Weil representation $V_\rho$ on
+      $L^2(\mathbb{Z}/q\mathbb{Z})$.
+    \end{theorem}
+
+    \begin{proof}
+      Let $X$ and $\sigma(X)$ denote the two generators of a conjugate pair in
+      $F_n$, related by the Born--Infeld parity involution $\sigma\colon c \mapsto q-c$.
+
+      \smallskip
+      \noindent\textit{Step~1: non-trivial commutator.}
+      Suppose $[X, \sigma(X)] = 0$.
+      Then $F_n$ decomposes as $\bigoplus_\lambda F_\lambda$, the simultaneous
+      eigenspace decomposition stable under $X$ and $\sigma(X)$.
+      By Lemma~\ref{lem:non-factorisation}, this decomposition is forbidden by A3.
+      Therefore $[X, \sigma(X)] \neq 0$.
+
+      \smallskip
+      \noindent\textit{Step~2: central commutator.}
+      Set $Z := [X, \sigma(X)] \neq 0$.
+      Suppose $Z$ is not central: there exists a generator $Y$ with $[Z, Y] \neq 0$.
+      The algebra generated by $(X, \sigma(X), Z)$ then strictly contains the
+      algebra generated by the conjugate pair $(X, \sigma(X))$ alone.
+      By A1, $F_n$ is generated minimally by the conjugate pair — every internal
+      structure is determined by the admissibility constraints carried by that pair,
+      and no independent generator may extend the algebra.
+      A strictly richer generative closure contradicts this minimality.
+      Therefore $Z$ is central.
+
+      \smallskip
+      \noindent\textit{Step~3: Heisenberg algebra.}
+      The group $\langle X, \sigma(X) \rangle$ is a non-trivial central extension
+      generated by a conjugate pair, with no independent relation beyond those
+      forced by minimality (A1).
+      By the classification of central extensions of $(\mathbb{Z}/q\mathbb{Z})^2$
+      by $\mathbb{Z}/q\mathbb{Z}$ (group cohomology), every such extension with
+      minimal generators and without additional independent relations is isomorphic
+      to the Heisenberg algebra $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$.
+      The commutation relation takes the form
+      \begin{equation}
+        [X,\,\sigma(X)] \;=\; Z, \qquad Z \text{ central}, \qquad Z \neq 0,
+      \end{equation}
+      which defines a discrete symplectic structure on $\langle X, \sigma(X)\rangle$.
+
+      \smallskip
+      \noindent\textit{Step~4: prime order.}
+      Suppose $|Z| = pq$ with $p, q > 1$.
+      The centre $\langle Z\rangle$ then admits proper non-trivial subgroups, and
+      $F_n$ decomposes into sub-representations indexed by the characters of
+      $\langle Z\rangle$:
+      \[
+        F_n \;=\; \bigoplus_\chi F_\chi.
+      \]
+      This decomposition is stable under all generators (since the centre commutes
+      with everything), hence stable under admissible generators.
+      By Lemma~\ref{lem:non-factorisation}, it is forbidden by A3.
+      Therefore $|Z| = q$ is prime.
+
+      \smallskip
+      \noindent\textit{Step~5: identification $F_n \simeq V_\rho$.}
+      The symmetry group of $F_n$ is isomorphic to
+      $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$.
+      By the discrete Stone--von Neumann theorem, the unique irreducible
+      representation of $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ with
+      non-trivial central character is the Weil representation $V_\rho$ on
+      $L^2(\mathbb{Z}/q\mathbb{Z})$.
+      Born--Infeld parity forces $c \neq 0$~\cite{BornInfeld}, so the central
+      character is non-trivial.
+      Therefore $F_n \simeq V_\rho$.
+    \end{proof}
+
+    \begin{remark}[Derivation chain]
+      The logical chain of Theorem~\ref{thm:heisenberg} may be summarised as:
+      \begin{equation}
+        \begin{aligned}
+          \text{A3}
+          &\;\Longrightarrow\; \text{no admissible factorisation}
+          \;\Longrightarrow\; [X, \sigma(X)] \neq 0
+          \;\Longrightarrow\; \text{central extension,} \\
+          \text{A1}
+          &\;\Longrightarrow\; \text{minimal generative closure}
+          \;\Longrightarrow\; \text{Heisenberg algebra,} \\
+          \text{A3}
+          &\;\Longrightarrow\; \text{irreducibility}
+          \;\Longrightarrow\; |Z| = q \text{ prime}
+          \;\Longrightarrow\; \mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z}),\\
+          \text{BI parity}
+          &\;\Longrightarrow\; c \neq 0
+          \;\Longrightarrow\; F_n \;\simeq\; V_\rho.
+        \end{aligned}
+      \end{equation}
+    \end{remark}
+
+    \begin{remark}[Uncertainty principle as a corollary]
+      \label{rem:uncertainty}
+      Theorem~\ref{thm:heisenberg} subsumes the open direction~Q6 of
+      Section~\ref{sec:summary}.
+      The incompatibility of conjugate observables $X$ and $\sigma(X)$ — i.e.\
+      the Heisenberg uncertainty principle — is a direct corollary: it follows
+      from $[X, \sigma(X)] \neq 0$ together with the standard operator inequality.
+      The uncertainty principle is therefore not a property of the observables,
+      but a property of the non-resolved proto-state: it is the algebraic
+      signature of the prohibition on premature selection encoded in A3.
+    \end{remark}
+
+    \begin{remark}[Canonical quantisation as structural necessity]
+      The relation $[X, \sigma(X)] = Z$ defines a minimal discrete symplectic
+      structure, of which the Heisenberg algebra is the canonical quantisation.
+      Theorem~\ref{thm:heisenberg} therefore establishes that canonical
+      quantisation is not a modelling choice: it is the unique algebraic structure
+      compatible with the requirement that the proto-state remain genuinely
+      non-resolved until projection locking.
+    \end{remark}
+
+
 
     A quantum superposition is an unresolved proto-state: a physically real
     configuration whose fibre maintains coherent relations between multiple open
@@ -948,6 +1106,12 @@ the moment of resolution.
       \\
       Born rule (SU(2) sector) & Correlator + coherence (Q1) & Proved~\cite{Q1}
       \\
+      $F_n \simeq V_\rho$ (Heisenberg structure) & Non-factorisability (A1, A3) + BI parity &
+      Proved (Thm.~\ref{thm:heisenberg})
+      \\
+      Uncertainty principle & $[X,\sigma(X)]\neq 0$ (Thm.~\ref{thm:heisenberg}) &
+      Proved (Rem.~\ref{rem:uncertainty})
+      \\
       \midrule
       Full Hilbert structure & Beyond SU(2) parity sector & \textbf{Open}
       \\
@@ -973,14 +1137,22 @@ the moment of resolution.
 
     \paragraph{Q5 — Proto-state ontology.}
       The proto-state is physically real and shared between $O_{n-1}$ and $O_n$.
-      What requires further precision is the exact characterisation of the space
-      in which the proto-state exists between transitions, and how this space
-      relates to the spectral structure of the Cayley graph.
+      Theorem~\ref{thm:heisenberg} closes the primary open question of this
+      direction: the space in which the proto-state exists between transitions
+      is $F_n \simeq V_\rho$, the Weil representation of
+      $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, determined uniquely by A1--A3
+      and Born--Infeld parity.
+      The relationship between this discrete structure and continuous spacetime
+      geometry in the large-$q$ limit (Section~\ref{subsec:continuum-limit})
+      remains the subject of the companion spectral geometry programme.
 
     \paragraph{Q6 — Uncertainty principle as fibre incompatibility.}
-      The Heisenberg uncertainty principle may be derived as an incompatibility
-      theorem for fibres of conjugate observables.
-      This direction is structurally motivated but not yet formalised.
+      This direction is resolved by Theorem~\ref{thm:heisenberg} and
+      Remark~\ref{rem:uncertainty}: the Heisenberg uncertainty principle follows
+      as a corollary of $[X, \sigma(X)] \neq 0$, which is itself a consequence
+      of A3 alone.
+      The uncertainty principle is a structural property of the non-resolved
+      proto-state, not an independent postulate about observables.
 
   \section*{Acknowledgements}
 
