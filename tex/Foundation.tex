@@ -506,11 +506,23 @@ on effective field configurations~\cite{BornInfeld}.
       The convergence $\mathbb{C}^q \to L^2(\mathbb{R})$ and the emergence of
       continuous spacetime geometry from the BFS shell structure are established
       qualitatively in~\cite{Cosmochrony}.
-      A fully rigorous derivation of the Lorentzian metric from the spectral
-      structure of $G_q$ in the $q \to \infty$ limit is the subject of the
-      companion spectral geometry programme and remains open at the level of
-      an explicit theorem.
-      The present remark identifies the mechanism — not the proof.
+      The companion paper~\cite{Q5a} initiates the rigorous treatment of this
+      limit, formulating it in the category of Hilbert spaces and operator algebras
+      and decomposing it into three distinct convergences: a Hilbert inductive limit
+      (T1), a representational convergence of Weil generators to metaplectic
+      generators (T2), and a Mosco convergence of admissibility forms to a
+      second-order operator $L_\Pi$ on $L^2(\mathbb{R})$ (T3).
+      The continuum limit is reduced to a single spectral tightness condition
+      (Conjecture~C of~\cite{Q5a}), which is confirmed quantitatively across all
+      tested primes: the spectral tail mass of admissible test vectors satisfies
+      $E_q(q/3)/\|f_q\|^2 < 2.1 \times 10^{-5}$ uniformly, with values decreasing
+      toward machine precision as $q$ grows.
+      The embedding hypothesis~[H1] is proved in the low-frequency regime relevant
+      to admissible sequences; the Weil-block compatibility condition and the
+      identification of the effective metric from the symbol of $L_\Pi$ are the
+      subject of the companion paper Q5b.
+      The present remark identifies the mechanism; \cite{Q5a} establishes the
+      operator-theoretic framework and the numerical evidence.
     \end{remark}
 
     \begin{remark}[Why four dimensions]
@@ -1104,8 +1116,15 @@ the moment of resolution.
       geometry in the large-$q$ limit — i.e.\ how $V_\rho$ on
       $L^2(\mathbb{Z}/q\mathbb{Z})$ approaches $L^2(\mathbb{R})$ and how the
       BFS shell structure produces a four-dimensional effective geometry —
-      remains the subject of the companion spectral geometry programme
+      is addressed in the companion spectral geometry paper~\cite{Q5a}
       (Section~\ref{subsec:continuum-limit}).
+      That paper reduces Q5 to a single spectral tightness condition (Mosco
+      tightness of the admissibility forms), confirms this condition
+      quantitatively across all tested primes, and proves the embedding in the
+      low-frequency regime relevant to admissible sequences.
+      The identification of the effective metric from the principal symbol of the
+      limit operator $L_\Pi$ and the Lorentzian signature selection are the
+      subject of Q5b.
 
   \section*{Acknowledgements}
 
@@ -1195,6 +1214,13 @@ the moment of resolution.
     $\Sigma_c(n_3) = 3$ from Born--Infeld Fibre Admissibility,''
     O23 spectral admissibility sub-programme paper, Zenodo (2026).
     \doi{10.5281/zenodo.19375136}.
+
+    \bibitem{Q5a}
+    J.~Beau,
+    ``Large-$q$ Limit of the Admissible Fibre: Representational and Operator
+    Convergence,''
+    Cosmochrony companion paper~Q5a, Zenodo (2026).
+    \doi{10.5281/zenodo.19642369}.
 
     \bibitem{Bell1964}
     J.~S.~Bell,
