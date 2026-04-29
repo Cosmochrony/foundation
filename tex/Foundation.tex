@@ -1,6 +1,6 @@
 % Admissible Non-Injective Transitions as the Primitive of Physical Description
 % Cosmochrony companion paper M
-% Provides the axiomatic foundation cited by Q1, Bell, ENI, and the white paper.
+% Provides the axiomatic foundation cited by Q1, Bell, Beau2026l, and the white paper.
 
 \documentclass[11pt,a4paper]{article}
 
@@ -9,6 +9,8 @@
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{hyperref}
+
+\bibliographystyle{plain}
 \usepackage{doi}
 
 \newtheorem{theorem}{Theorem}[section]
@@ -55,7 +57,7 @@ as the Primitive of Physical Description}
     of the interaction between continuous Born--Infeld saturation and the discrete
     shell structure of the observable space.
     This paper provides the axiomatic foundation cited by the companion
-    papers~\cite{Q1,Bell,ENI} and serves as the formal basis for the derivations
+    papers~\cite{Beau2026q1,Beau2026b,Beau2026l} and serves as the formal basis for the derivations
     carried out therein.
   \end{abstract}
 
@@ -92,12 +94,12 @@ as the Primitive of Physical Description}
   \subsection*{Relation to companion papers}
 
     This paper provides the axiomatic foundation for a chain of companion results.
-    The companion paper~\cite{Bell} establishes that Bell-type factorisation
+    The companion paper~\cite{Beau2026b} establishes that Bell-type factorisation
     fails generically under non-injective projection (A2), without invoking
     nonlocal dynamics.
-    The companion paper~\cite{ENI} proves that non-injectivity is a structural
+    The companion paper~\cite{Beau2026l} proves that non-injectivity is a structural
     necessity of any genuinely emergent description.
-    The companion paper~\cite{Q1} derives phase coherence, the singlet correlator,
+    The companion paper~\cite{Beau2026q1} derives phase coherence, the singlet correlator,
     the Tsirelson bound, and the Born rule as structural consequences of
     admissibility — using Axioms A1--A4 as stated here, combined with the concrete
     spectral results of the O-series.
@@ -126,9 +128,9 @@ as the Primitive of Physical Description}
   \label{sec:axioms}
 
   We state the four axioms from which the framework proceeds.
-  They are not independent postulates chosen for convenience — each captures
-  a structural feature that is either necessary for genuine emergence~\cite{ENI}
-  or forced by the requirement of bounded effective descriptions~\cite{BornInfeld}.
+  They are not independent postulates chosen for convBeau2026lence — each captures
+  a structural feature that is either necessary for genuine emergence~\cite{Beau2026l}
+  or forced by the requirement of bounded effective descriptions~\cite{Beau2026c}.
 
   \begin{definition}[Admissible transition]
     \label{def:admissible-transition}
@@ -154,7 +156,7 @@ as the Primitive of Physical Description}
     An admissible transition preserves the full multiplicity of open directions
     until projection locking occurs.
     It does not select among them prematurely — that is, before the
-    Born--Infeld saturation threshold is reached~\cite{BornInfeld}.
+    Born--Infeld saturation threshold is reached~\cite{Beau2026c}.
 
     \item[\textbf{A4 — Projection locking.}]
     Resolution occurs only when continuous Born--Infeld saturation meets the
@@ -169,13 +171,13 @@ as the Primitive of Physical Description}
   A4 governs when resolution occurs.
   The four axioms are logically independent: none follows from the others.
   Their joint necessity is argued in Section~\ref{sec:primitive} and in the
-  companion papers~\cite{ENI,BornInfeld}.
+  companion papers~\cite{Beau2026l,Beau2026c}.
   \end{remark}
 
   \begin{remark}[Status of Born--Infeld in A3 and A4]
   The Born--Infeld saturation threshold appearing in A3 and A4 is not an
   additional postulate: it is the unique bounded completion of the effective
-  action compatible with bounded projective flux, established in~\cite{BornInfeld}.
+  action compatible with bounded projective flux, established in~\cite{Beau2026c}.
   A3 and A4 therefore do not introduce new structure beyond A1--A2 and the
   Born--Infeld companion.
   \end{remark}
@@ -192,7 +194,7 @@ as the Primitive of Physical Description}
     The non-injectivity of~$\Pi_n$ therefore persists at every resolution step.
 
     This distinction --- observable uniqueness without configurational uniqueness --- prevents
-    Bell-type factorisation~\cite{Bell} and forces the coherent, non-factorisable fibre
+    Bell-type factorisation~\cite{Beau2026b} and forces the coherent, non-factorisable fibre
     structure derived in Section~\ref{subsec:heisenberg}.
     More generally, distinct interactions $I_1 \neq I_2$ induce distinct admissible
     sub-fibres $F_n^{(I_1)} \neq F_n^{(I_2)}$ and hence distinct observable outcomes,
@@ -320,7 +322,7 @@ not assumed.
     \begin{remark}[The two levels of $\Pi_n$: kernel and image (O24)]
       \label{rem:pi-two-levels}
       The non-injective projection $\Pi_n$ operates at two structurally distinct
-      levels, established in O24~\cite{O24}:
+      levels, established in O24~\cite{Beau2026a28}:
       \begin{enumerate}[(i)]
   \item \emph{Kernel level} ($\ker \Pi_n$): governs microscopic multiplicity
   and fluctuation amplitude.
@@ -352,6 +354,34 @@ not assumed.
       relevant for observables.
     \end{remark}
 
+    \begin{remark}[The observable space principle: $\mathcal{O} = \mathrm{Im}\,\Pi$]
+      \label{rem:observable-space}
+      A direct consequence of the five-level hierarchy is that admissible
+      observables are functions on
+      \begin{equation}
+        \mathcal{O} \;:=\; \mathrm{Im}\,\Pi
+        \;=\; \bigsqcup_{n} O_n,
+      \end{equation}
+      not on the pre-image space~$\Omega_n^{(c)}$.
+      Any structural difference between two configurations
+      $f, f' \in \Pi_n^{-1}(O_n)$ that share the same image under~$\Pi_n$
+      is invisible to every admissible observable by definition:
+      it is a difference \emph{within} the fibre, which the projection
+      identifies as observationally indistinguishable.
+      This is not an additional assumption but an immediate consequence of
+      Definition~\ref{def:omega-n} and Level~5:
+      $O_n$ is defined as $\mathrm{Im}\,\Pi_n$, and admissibility is
+      a property of $\Pi_n$ acting on $\Omega_n^{(c)}$, not of
+      $\Omega_n^{(c)}$ itself.
+      Intra-fibre variability is therefore structurally unobservable; it
+      constitutes the degree of freedom whose projected manifestation appears
+      as quantum indeterminacy in the effective description.
+      In particular, any admissible quantity that depends on the choice of
+      representative in $\Pi_n^{-1}(O_n)$ must agree for all representatives
+      in the same fibre class: this is the structural basis for the uniformity
+      of admissible spectral invariants across the fibre.
+    \end{remark}
+
 
     \label{subsec:five-levels}
 
@@ -378,7 +408,7 @@ not assumed.
     \paragraph{Level 2 — The Weil representation $\rho_c$ and its ambient space.}
       For each non-zero character $c \in (\mathbb{Z}/q\mathbb{Z})^\times$, the
       discrete Heisenberg group $G_q$ admits an irreducible $q$-dimensional Weil
-      representation~\cite{O12}:
+      representation~\cite{Beau2026a16}:
       \begin{equation}
         \rho_c : G_q \;\longrightarrow\; \mathrm{GL}(\mathbb{C}^q),
         \qquad
@@ -435,7 +465,7 @@ Gram--Schmidt span $\mathrm{GS}_{n-1}$ already accumulated over $B_{n-1}$,
 which acts as the baseline against which new directions in $\Omega_n^{(c)}$
 are measured.
 This baseline is used by $\Pi_n$ (not by $\Omega_n^{(c)}$ itself) to
-identify genuinely new directions, counted by $\sigma_c(n) = \delta r_n / |S_n|$~\cite{O12}.
+identify genuinely new directions, counted by $\sigma_c(n) = \delta r_n / |S_n|$~\cite{Beau2026a16}.
 In summary: $\Omega_n^{(c)}$ is determined by $(G_q, \rho_c, B_n)$;
 the role of $O_{n-1}$ enters only through $\Pi_n$.
 \item \emph{Pre-admissibility character}:
@@ -448,7 +478,7 @@ The admissibility filter is entirely in $\Pi_n$, not in $\Omega_n^{(c)}$.
     \paragraph{Level 4 — The admissibility filter $\Pi_n$.}
       The projection $\Pi_n$ acts on $\Omega_n^{(c)}$ via the BI admissibility
       constraint $A_n \leq c_\chi/\sqrt{\lambda_n}$ and the Gram--Schmidt
-      orthogonalisation~\cite{O12,O22}.
+      orthogonalisation~\cite{Beau2026a16,Beau2026a26}.
       It selects, from all directions in $\Omega_n^{(c)}$, those compatible with
       the admissibility constraints.
       $\Pi_n$ encodes the laws revealed by the O-series — Born--Infeld bound,
@@ -458,7 +488,7 @@ The admissibility filter is entirely in $\Pi_n$, not in $\Omega_n^{(c)}$.
       The observable state $O_n$ is the image of $\Pi_n$ applied to the admissible
       part of $\Omega_n^{(c)}$.
       It is a discrete, shell-indexed element of the observable
-      space~\cite{O22}:
+      space~\cite{Beau2026a26}:
       \begin{equation}
         O \;=\; \bigsqcup_{n \in \mathbb{N}_q} O_n.
       \end{equation}
@@ -492,7 +522,7 @@ The admissibility filter is entirely in $\Pi_n$, not in $\Omega_n^{(c)}$.
 
       \begin{remark}[The conjugate pair and $\Omega_n$ without preferred direction]
   The parity involution $c \leftrightarrow q-c$ (O18) acts on $\Omega_n^{(c)}$
-  via complex conjugation~\cite{O17}:
+  via complex conjugation~\cite{Beau2026a21}:
   $\Omega_n^{(q-c)} = \overline{\Omega_n^{(c)}}$.
   The minimal admissible fibre is therefore the pair
   $\{V_n^{(c)}, V_n^{(q-c)}\} = \{V_n^{(c)}, \overline{V_n^{(c)}}\}$,
@@ -533,7 +563,7 @@ a four-dimensional effective geometry~\cite{Cosmochrony}.
 differential constraint}.
 The Born--Infeld admissibility bound $A_n \leq c_\chi/\sqrt{\lambda_n}$
 becomes, in the continuum limit, the Born--Infeld Lagrangian constraint
-on effective field configurations~\cite{BornInfeld}.
+on effective field configurations~\cite{Beau2026c}.
     \end{enumerate}
 
     The continuum spacetime observable is therefore not a separate postulate:
@@ -545,14 +575,14 @@ on effective field configurations~\cite{BornInfeld}.
       The convergence $\mathbb{C}^q \to L^2(\mathbb{R})$ and the emergence of
       continuous spacetime geometry from the BFS shell structure are established
       qualitatively in~\cite{Cosmochrony}.
-      The companion paper~\cite{Q5a} initiates the rigorous treatment of this
+      The companion paper~\cite{Beau2026q5a} initiates the rigorous treatment of this
       limit, formulating it in the category of Hilbert spaces and operator algebras
       and decomposing it into three distinct convergences: a Hilbert inductive limit
       (T1), a representational convergence of Weil generators to metaplectic
       generators (T2), and a Mosco convergence of admissibility forms to a
       second-order operator $L_\Pi$ on $L^2(\mathbb{R})$ (T3).
       The continuum limit is reduced to a single spectral tightness condition
-      (Conjecture~C of~\cite{Q5a}), which is confirmed quantitatively across all
+      (Conjecture~C of~\cite{Beau2026q5a}), which is confirmed quantitatively across all
       tested primes: the spectral tail mass of admissible test vectors satisfies
       $E_q(q/3)/\|f_q\|^2 < 2.1 \times 10^{-5}$ uniformly, with values decreasing
       toward machine precision as $q$ grows.
@@ -560,7 +590,7 @@ on effective field configurations~\cite{BornInfeld}.
       to admissible sequences; the Weil-block compatibility condition and the identification of the effective
       metric from the symbol of $L_\Pi$ are established in the companion paper
       Q5b~\cite{Beau2026q5b}.
-      The present remark identifies the mechanism; \cite{Q5a} establishes the
+      The present remark identifies the mechanism; \cite{Beau2026q5a} establishes the
       operator-theoretic framework and the numerical evidence.
     \end{remark}
 
@@ -597,7 +627,7 @@ on effective field configurations~\cite{BornInfeld}.
       $O_n$.
       No subsequent transition $\Pi_{n'}$ for $n' > n$ can recover this
       information: the map $\Pi_n$ has positive projection entropy
-      $S_{\Pi_n} > 0$~\cite{ENI}, and no admissible transition can reduce
+      $S_{\Pi_n} > 0$~\cite{Beau2026l}, and no admissible transition can reduce
       $S_\Pi$ below zero.
       The loss is therefore structural and permanent.
     \end{proof}
@@ -820,11 +850,11 @@ on effective field configurations~\cite{BornInfeld}.
       Lemma~\ref{lem:non-factorisation} further implies that $|Z|$ is prime: if
       $|Z|$ were composite, the representation of $F_n$ would decompose over the
       characters of $\langle Z \rangle$, yielding a forbidden stable decomposition.
-      Finally, Born--Infeld parity forces $c \neq 0$~\cite{BornInfeld}, so the
+      Finally, Born--Infeld parity forces $c \neq 0$~\cite{Beau2026c}, so the
       central character is non-trivial; the discrete Stone--von Neumann theorem then
       identifies $F_n \simeq V_\rho$ uniquely.
       The detailed proof of each step is given in the companion
-      paper~\cite{HeisenbergStructure}.
+      paper~\cite{Beau2026HeisenbergStructure}.
     \end{proof}
 
     \begin{equation}
@@ -981,7 +1011,7 @@ the moment of resolution.
     \begin{remark}[Relation to the Born rule derivation in the companion paper]
   The argument above establishes the structural necessity of the squared norm
   as the resolution intensity of the proto-state.
-  The companion paper~\cite{Q1} makes this precise as a theorem in the SU(2)
+  The companion paper~\cite{Beau2026q1} makes this precise as a theorem in the SU(2)
   parity sector: the Born rule $P(a=+1|\hat{a}) = |\langle +\hat{a}|\psi\rangle|^2$
   is the unique probability assignment compatible with the coherent fibre
   structure, the SU(2) observable algebra, and the derived singlet correlator.
@@ -1011,7 +1041,7 @@ the moment of resolution.
 
   \subsection{Two types of discreteness}
 
-    The Born--Infeld saturation condition~\cite{BornInfeld} operates on a
+    The Born--Infeld saturation condition~\cite{Beau2026c} operates on a
     continuous amplitude function.
     Its saturation locus $\mathcal{L}_{\mathrm{BI}} \subset \mathbb{R}$ is
     generically real-valued — its elements carry no information about shell
@@ -1021,13 +1051,13 @@ the moment of resolution.
     \begin{equation}
       O \;=\; \bigsqcup_{n \in \mathbb{N}_q} O_n,
     \end{equation}
-    indexed by BFS shells of the Heisenberg Cayley graph~\cite{O22}.
+    indexed by BFS shells of the Heisenberg Cayley graph~\cite{Beau2026a26}.
     No component $O_{n'}$ exists for non-admissible depths.
 
     The proto-state is resolved at the first element of
     $\mathcal{L}_{\mathrm{BI}} \cap \mathbb{N}_q$ — the first depth where
     Born--Infeld saturation coincides with an available shell.
-    This is the Projection Locking theorem~\cite{O22}.
+    This is the Projection Locking theorem~\cite{Beau2026a26}.
 
     \begin{theorem}[Discreteness from projection locking, after O22]
       \label{thm:discrete-locking}
@@ -1041,7 +1071,7 @@ the moment of resolution.
 
     The number of independent stable admissible directions in the fibre is
     exactly three, derived algebraically from the admissibility constraints
-    alone~\cite{O23}:
+    alone~\cite{Beau2026a27}:
     \begin{equation}
       \begin{aligned}
         \text{BI parity}
@@ -1092,7 +1122,7 @@ the moment of resolution.
     the shared fibre is structurally non-factorisable.
     Bell-type inequalities are therefore not violated in this framework —
     their preconditions do not hold.
-    This is established formally in the companion paper~\cite{Bell}.
+    This is established formally in the companion paper~\cite{Beau2026b}.
 
   \section{Summary: What Is Derived from What}
   \label{sec:summary}
@@ -1107,14 +1137,11 @@ the moment of resolution.
       \textbf{Concept} & \textbf{Source} & \textbf{Status}
       \\
       \midrule
-      Irreversibility & Non-injectivity (A2) & Proved (Prop.~
-      \ref{prop:irreversibility}) \\
+      Irreversibility & Non-injectivity (A2) & Proved (Prop.~\ref{prop:irreversibility}) \\
       Structural fluctuations & Relational residue $\Delta_n$ & Derived
       \\
-      Temporal order & Irreversibility + novelty (A2) & Proved (Thm.~
-      \ref{thm:temporal-order}) \\
-      Proto-state (wave) & Unresolved multiplicity (A1, A3) & Derived (Prop.~
-      \ref{prop:indeterminacy}) \\
+      Temporal order & Irreversibility + novelty (A2) & Proved (Thm.~\ref{thm:temporal-order}) \\
+      Proto-state (wave) & Unresolved multiplicity (A1, A3) & Derived (Prop.~\ref{prop:indeterminacy}) \\
       Structural indeterminacy & Multiple open directions (A1, A3) & Derived
       \\
       Phase coherence & Admissibility preserves open directions (A3) & Derived
@@ -1123,8 +1150,7 @@ the moment of resolution.
       \\
       Interference & Coherent amplitude structure & Derived
       \\
-      Discrete transitions & Projection locking (A4, O22) & Proved (Thm.~
-      \ref{thm:discrete-locking}) \\
+      Discrete transitions & Projection locking (A4, O22) & Proved (Thm.~\ref{thm:discrete-locking}) \\
       Three stable directions & $\dim_\mathbb{R} \mathrm{Im}\,\mathbb{H} = 3$ (O23) & Proved
       \\
       Superposition & Unresolved proto-state & Derived
@@ -1133,11 +1159,11 @@ the moment of resolution.
       \\
       Entanglement & Shared non-factorisable ancestral fibre & Derived
       \\
-      Bell non-applicability & Temporal, non-local, non-independent fibre & Proved~\cite{Bell}
+      Bell non-applicability & Temporal, non-local, non-independent fibre & Proved~\cite{Beau2026b}
       \\
-      Phase coherence $\Rightarrow$ QM & Admissibility + O-series & Proved~\cite{Q1}
+      Phase coherence $\Rightarrow$ QM & Admissibility + O-series & Proved~\cite{Beau2026q1}
       \\
-      Born rule (SU(2) sector) & Correlator + coherence (Q1) & Proved~\cite{Q1}
+      Born rule (SU(2) sector) & Correlator + coherence (Q1) & Proved~\cite{Beau2026q1}
       \\
       $F_n \simeq V_\rho$ (Heisenberg structure) & Non-factorisability (A1, A3) + BI parity &
       Proved (Thm.~\ref{thm:heisenberg})
@@ -1163,8 +1189,8 @@ the moment of resolution.
 
     \paragraph{Q2 — Born rule beyond SU(2).}
       The Born rule $P(a=+1|\hat{a}) = |\langle +\hat{a}|\psi\rangle|^2$ is derived
-      in~\cite{Q1} for the SU(2) parity sector.
-      A first step beyond this sector is taken in~\cite{Q2}, which derives the
+      in~\cite{Beau2026q1} for the SU(2) parity sector.
+      A first step beyond this sector is taken in~\cite{Beau2026q2}, which derives the
       Born rule, singlet correlator, and Tsirelson bound for the co-admissible
       spin-$\tfrac{3}{2}$ sector on the binary icosahedral group $2I$, and
       identifies SU(2) as the unique stable sector under admissibility refinement
@@ -1180,7 +1206,7 @@ the moment of resolution.
       geometry in the large-$q$ limit — i.e.\ how $V_\rho$ on
       $L^2(\mathbb{Z}/q\mathbb{Z})$ approaches $L^2(\mathbb{R})$ and how the
       BFS shell structure produces a four-dimensional effective geometry —
-      is addressed in the companion spectral geometry paper~\cite{Q5a}
+      is addressed in the companion spectral geometry paper~\cite{Beau2026q5a}
       (Section~\ref{subsec:continuum-limit}).
       That paper reduces Q5 to a single spectral tightness condition (Mosco
       tightness of the admissibility forms), confirms this condition
@@ -1199,113 +1225,6 @@ the moment of resolution.
   the sole responsibility of the author.
 
   \clearpage
-  \begin{thebibliography}{99}
-
-    \bibitem{HeisenbergStructure}
-    J.~Beau,
-    ``Non-Factorisability and the Emergence of Heisenberg Structure
-    from Admissibility Constraints,''
-    Cosmochrony companion paper, Zenodo (2026).
-    \doi{10.5281/zenodo.19635395}.
-
-    \bibitem{Cosmochrony}
-    J.~Beau,
-    ``Cosmochrony: A Pre-Geometric Relational Framework for Emergent Physics,''
-    white paper, Zenodo (2026).
-    \doi{10.5281/zenodo.17957509}.
-
-    \bibitem{ENI}
-    J.~Beau,
-    ``Non-Injectivity as a Structural Necessity of Genuine Emergence:
-    A No-Go Theorem for Faithful Emergent Descriptions,''
-    Cosmochrony companion paper~L, Zenodo (2026).
-    \doi{10.5281/zenodo.19391746}.
-
-    \bibitem{BornInfeld}
-    J.~Beau,
-    ``Bounded Relaxation and the Dynamical Selection of Spacetime Geometry,''
-    Cosmochrony companion paper~C, Zenodo (2026).
-    \doi{10.5281/zenodo.18407505}.
-
-    \bibitem{O12}
-    J.~Beau,
-    ``Exact Weil-Block Projective Capacity on Heisenberg Graphs: Resolving the Final Obstruction to $\delta$
-    Extraction,''
-    spectr. adm. subprg. O12 paper, Zenodo (2026).
-    \doi{10.5281/zenodo.19194798}.
-
-    \bibitem{O17}
-    J.~Beau,
-    ``Fibre-Level Admissibility from Conjugate Weil Blocks: Structural Derivation of the Pair Observable,''
-    O16 spectr. adm. subprg. O17 paper, Zenodo (2026).
-    \doi{10.5281/zenodo.19299611}
-
-    \bibitem{Bell}
-    J.~Beau,
-    ``Non-Injective Projections and the Structural Failure of Bell Factorization,''
-    Cosmochrony companion paper~B, Zenodo (2026).
-    \doi{10.5281/zenodo.18371173}.
-
-    \bibitem{Q1}
-    J.~Beau,
-    ``From Admissibility to Quantum Structure: Phase Coherence and Correlations from Non-Injective Projection,''
-    Cosmochrony companion paper~Q1, Zenodo (2026).
-    \doi{10.5281/zenodo.19561060}.
-
-    \bibitem{Q2}
-    J.~Beau,
-    ``Quantum Structure beyond Spin-$\tfrac{1}{2}$: Co-Admissible Sectors and
-    the Emergence of SU(2) as a Fixed Point,''
-    Cosmochrony companion paper~Q2, Zenodo (2026).
-    \doi{10.5281/zenodo.19616444}.
-
-    \bibitem{O22}
-    J.~Beau,
-    ``Shell-Alignment from Projection Locking: A Discrete Admissibility Theorem
-    under Born--Infeld Saturation,''
-    O22 spectral admissibility sub-programme paper, Zenodo (2026).
-    \doi{10.5281/zenodo.19367375}.
-
-    \bibitem{O24}
-    J.~Beau,
-    ``Vertical Non-Injectivity and the Stability of the Observable Rank:
-    Closing the Unconditional Transfer $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$,''
-    O24 spectral admissibility sub-programme paper, Zenodo (2026).
-    \doi{10.5281/zenodo.19386581}.
-
-    \bibitem{O23}
-    J.~Beau,
-    ``Three Stable Directions from Quaternionic Minimality: Derivation of
-    $\Sigma_c(n_3) = 3$ from Born--Infeld Fibre Admissibility,''
-    O23 spectral admissibility sub-programme paper, Zenodo (2026).
-    \doi{10.5281/zenodo.19375136}.
-
-    \bibitem{Q5a}
-    J.~Beau,
-    ``Large-$q$ Limit of the Admissible Fibre: Representational and Operator
-    Convergence,''
-    Cosmochrony companion paper~Q5a, Zenodo (2026).
-    \doi{10.5281/zenodo.19642369}.
-
-    \bibitem{Beau2026pto}
-    J.~Beau,
-    ``Projective Temporal Ordering and Cumulative Projected Capacity:
-    Numerical Evidence from the Spectral Admissibility Cascade,''
-    Cosmochrony spectral admissibility sub-programme, Zenodo (2026).
-    \doi{10.5281/zenodo.19474639}.
-
-    \bibitem{Bell1964}
-    J.~S.~Bell,
-    ``On the Einstein Podolsky Rosen paradox,''
-    \textit{Physics Physique Fizika} \textbf{1}, 195--200 (1964).
-    \doi{10.1103/PhysicsPhysiqueFizika.1.195}.
-
-    \bibitem{Beau2026q5b}
-    Beau, J.,
-    ``BFS Shell Stratification and the Emergence of Four-Dimensional Lorentzian Geometry,''
-    Q5b of the Cosmochrony Spectral Geometry Programme, Zenodo (2026).
-    \doi{110.5281/zenodo.19686700}.
-
-  \end{thebibliography}
+  \bibliography{cosmochrony-bibliography,refs-external}
 
 \end{document}
