@@ -130,7 +130,7 @@ as the Primitive of Physical Description}
   \label{sec:axioms}
 
   We state the four axioms from which the framework proceeds.
-  They are not independent postulates chosen for convBeau2026lence — each captures
+  They are not independent postulates chosen for convenience — each captures
   a structural feature that is either necessary for genuine emergence~\cite{Beau2026l}
   or forced by the requirement of bounded effective descriptions~\cite{Beau2026c}.
 
@@ -139,6 +139,27 @@ as the Primitive of Physical Description}
     A transition from observable state $O_{n-1}$ to observable state $O_n$ is
     \emph{admissible} if it satisfies Axioms A1--A4 below.
   \end{definition}
+
+  \begin{remark}[Admissibility is relational, not absolute]
+    \label{rem:admissibility-relational}
+    Admissibility is never an intrinsic predicate of an observable state $O_n$ taken in
+    isolation.
+    It is a relational constraint on projective transitions: a state $O_n$ is admissible
+    only relative to a preceding state $O_{n-1}$, whose accumulated constraints determine
+    the local admissible neighbourhood.
+    We write $O_n \in \mathcal{A}(O_{n-1})$ to make this explicit, where
+    \begin{equation}
+      \label{eq:admissible-neighbourhood}
+      \mathcal{A}(O_{n-1}) \;:=\;
+      \bigl\{\, O_n \mid \text{the transition } O_{n-1} \to O_n \text{ satisfies A1--A4} \,\bigr\}
+    \end{equation}
+    is the \emph{admissible neighbourhood from $O_{n-1}$}.
+    The phrasing ``$O_n$ is admissible'' should always be read as shorthand for
+    $O_n \in \mathcal{A}(O_{n-1})$: admissibility is always \emph{from-here} admissibility,
+    conditioned on the already-realized projective position.
+    There is no fixed space of possible observable states: there is a field of local
+    admissible neighbourhoods, each determined by the point already reached.
+  \end{remark}
 
   \begin{description}
     \item[\textbf{A1 — Local projective admissibility.}]
@@ -203,6 +224,18 @@ as the Primitive of Physical Description}
     without any element of $F_n$ having been selected.
     This is the structural origin of contextuality: measurement context determines
     which sub-fibre is accessed, not which configuration is realised.
+    This contextuality is \emph{synchronic}: it concerns the choice of sub-fibre at a
+    fixed transition step $n$.
+    The admissible neighbourhood $\mathcal{A}(O_{n-1})$ (Remark~\ref{rem:admissibility-relational})
+    introduces a second, \emph{diachronic} form of contextuality: the set of accessible
+    observable states at step $n$ is itself conditioned on the previously realized state
+    $O_{n-1}$.
+    The context of a projection is therefore not merely the measurement algebra chosen at
+    step $n$, but also the already-realized projective position from which the next state
+    may be reached.
+    Standard contextuality frameworks (Kochen--Specker, sheaf-theoretic) capture synchronic
+    contextuality; the present framework extends this to diachronic contextuality, in which
+    the history of realized projections is constitutive of what is admissible next.
   \end{remark}
 
   \begin{remark}[Projective Observability Principle]
@@ -239,6 +272,21 @@ as the Primitive of Physical Description}
     There is no external substrate, no hidden carrier, no background geometry.
     The fibre $F_n$ is not defined in an abstract ambient space — it is induced by
     $O_{n-1}$ itself through the admissibility constraints of A1--A3.
+
+    The resulting evolution is recursive: once $O_n$ is realized, it immediately becomes
+    the new departure point, generating the next admissible neighbourhood $\mathcal{A}(O_n)$
+    from which $O_{n+1}$ may be reached:
+    \begin{equation}
+      \label{eq:recursive-chain}
+      O_{n-1}
+      \;\longrightarrow\; O_n
+      \;\longrightarrow\; \mathcal{A}(O_n)
+      \;\longrightarrow\; O_{n+1}.
+    \end{equation}
+    The realized state is simultaneously a destination and the generator of the next set of
+    constraints.
+    No external agent resets the context between steps: the admissible neighbourhood at
+    each stage is determined entirely by the state just reached.
 
   \subsection{The projection $\Pi_n$ as descriptive abstraction}
 
@@ -698,6 +746,25 @@ on effective field configurations~\cite{Beau2026c}.
   The quantitative structure of this projective temporal ordering — cumulative
   projected capacity and its numerical validation from the spectral admissibility
   cascade — is developed in~\cite{Beau2026pto}.
+    \end{remark}
+
+    \begin{remark}[Observable reality as projective position]
+      \label{rem:projective-position}
+      The admissible neighbourhood $\mathcal{A}(O_{n-1})$ is not a fixed space of
+      possibilities.
+      It shifts at every step, because $O_n$ conditions $\mathcal{A}(O_n)$, which differs
+      generically from $\mathcal{A}(O_{n-1})$: the projection following step $n$ is never
+      performed from an invariant reference frame.
+      Observable reality is therefore not a static projection of a fixed substrate onto a
+      fixed observable space.
+      It is the \emph{current projective position within the space of admissible reprojections}:
+      the trajectory $O_0 \leadsto O_1 \leadsto \cdots \leadsto O_n$ is constitutive of
+      what is real at step $n$, not contingent upon it.
+      The cumulative index $I(n)$ measures not elapsed time but accumulated projective
+      divergence from the initial position — how far the sequence has moved through the
+      space of admissible neighbourhoods.
+      In particular, the projection does not reveal a pre-existing reality: it redefines the
+      context from which the next reality may appear.
     \end{remark}
 
   \section{Admissibility, Wave, and Phase Coherence}
@@ -1290,6 +1357,27 @@ the moment of resolution.
       $\Pi_2$).
       The structural derivation of the full particle hierarchy from this
       recursive tower is the central open direction of the programme.
+
+    \paragraph{Spectral quasi-fixed points and stable structures.}
+      The admissible neighbourhood $\mathcal{A}(O_n)$ varies generically with $n$
+      (Remark~\ref{rem:projective-position}).
+      However, configurations $O^*$ for which $\mathcal{A}(O^*)$ is approximately
+      self-similar --- in the sense that projection from $O^*$ tends to return to a
+      spectrally close neighbourhood --- define \emph{spectral quasi-fixed points} of
+      the admissible flow.
+      These are not static states, which would contradict the irreversibility established in
+      Proposition~\ref{prop:irreversibility}, but projective orbits that traverse the same
+      spectral region repeatedly.
+      Stable physical structures --- particles, gauge symmetries, and coupling constants ---
+      are candidates for identification with such quasi-fixed points: their observed
+      stability would then be a projective property, arising from the near-invariance of
+      their admissible neighbourhood under repeated projection, not from any ontological
+      fixity.
+      The universality of $a_q(s) \cdot q^2 \approx 2$ across all tested primes
+      (O-series numerics) is consistent with the existence of such an attractor in
+      the admissible spectral flow, independent of~$q$.
+      Formalising the existence and classification of quasi-fixed points of
+      $\mathcal{A}$ is an open direction of the programme.
 
 
       Theorem~\ref{thm:heisenberg} establishes $F_n \simeq V_\rho$ at finite
