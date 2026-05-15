@@ -19,6 +19,7 @@
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{remark}[theorem]{Remark}
+\newtheorem{principle}[theorem]{Principle}
 
 \title{Admissible Non-Injective Transitions\\
 as the Primitive of Physical Description}
@@ -1278,6 +1279,15 @@ the moment of resolution.
       SU(2) gauge structure &
       Quaternionic rigidity + Q6a~\cite{Beau2026a31,Beau2026q6a} &
       Proved \\
+      Yang--Mills equations $D_\mu F^{a\mu\nu} = 0$ &
+      Spectral entropy $a_4$ variation (Q12)~\cite{Beau2026q12} &
+      Proved (structural) \\
+      Gauge--matter coupling $G_{\mu\nu} = 8\pi G_N T^{YM}_{\mu\nu}$ &
+      Joint variation $S_\Pi[g,A]$ (Q13)~\cite{Beau2026q13} &
+      Proved (structural) \\
+      Hierarchy $G_N g^2_{YM} \ll 1$ without fine-tuning &
+      Seeley--DeWitt stratification (Q13)~\cite{Beau2026q13} &
+      Structural \\
       Tower of non-injectivity &
       ENI Corollary~6~\cite{Beau2026l} &
       Proved \\
@@ -1310,6 +1320,58 @@ the moment of resolution.
     ``Conditional'': proved subject to a named hypothesis.}
     \label{tab:derived}
   \end{table}
+
+  \subsection*{Partial spectral stratification: an organising pattern from the companion programme}
+    \label{ssec:spectral-stratification}
+
+    The four axioms A1--A4 are the axiomatic primitive of the programme.
+    They do not by themselves determine the interaction content of the emergent theory;
+    that content emerges from the spectral structure of the admissible operator,
+    developed in the Q-series companion papers.
+    The companion papers~\cite{Beau2026h,Beau2026q12,Beau2026q13} establish
+    the following partial pattern, which organises the physical interpretation
+    of the Seeley--DeWitt expansion of $S_\Pi[g,A]$:
+
+    \begin{principle}[Spectral stratification of effective interactions]
+      \label{prin:stratification}
+      The physical role of an emergent interaction is determined not only by the
+      symmetry it carries, but by the spectral order at which the admissible operator
+      responds to variation.
+      The gravitational sector appears at the first non-trivial horizontal response;
+      the gauge sector appears at the vertical curvature response;
+      and mixed gauge--gravity terms appear at the next coupled order.
+    \end{principle}
+
+    The evidence base for Principle~\ref{prin:stratification} is as follows:
+
+    \[
+      \begin{array}{c|c|l}
+        \text{Spectral order} & \text{Sector} & \text{Geometric origin} \\
+        \hline
+        a_2 & \text{gravity}
+        & \text{horizontal variation of the base metric}~\text{\cite{Beau2026h}} \\
+        a_4 & \text{gauge}
+        & \text{vertical variation of the fibre connection}~\text{\cite{Beau2026q12}} \\
+        a_6 & \text{mixed coupling}
+        & \text{joint base--fibre curvature terms}~\text{\cite{Beau2026q13}} \\
+        a_{\mathrm{spin}} & \text{fermionic structure}
+        & \text{Dirac-type admissible operator (open)} \\
+      \end{array}
+    \]
+
+    \begin{remark}
+      \label{rem:stratification-status}
+      Principle~\ref{prin:stratification} is \emph{not} derived from A1--A4 alone.
+      Its correct epistemic status is: established by the companion programme,
+      consistent with A1--A4, and subject to the conditionalities of each
+      companion paper.
+      In particular, the identification $G_\Pi = \mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$
+      remains conditional on~$[\mathrm{H\text{-}color}]$~\cite{Beau2026a35,Beau2026a36},
+      the Lorentzian continuation of the spectral functional remains an open step,
+      and the fermionic entry is a structural prediction, not a derived result.
+      The test of this prediction is whether admissibility forces a Clifford module
+      and a $\mathbb{Z}_2$-grading on the admissible operator.
+    \end{remark}
 
   \subsection*{Open directions}
 
@@ -1395,6 +1457,21 @@ the moment of resolution.
       The identification of the effective metric from the principal symbol of the
       limit operator $L_\Pi$ and the Lorentzian signature selection are established
       in the companion paper Q5b~\cite{Beau2026q5b}.
+
+    \paragraph{Q14 --- Fermionic structure and chirality.}
+      The spectral stratification of Principle~\ref{prin:stratification} identifies
+      the next open level of the programme: the fermionic sector.
+      The companion papers Q12 and Q13~\cite{Beau2026q12,Beau2026q13} derive
+      bosonic gauge and gravitational dynamics from a Laplace-type admissible operator
+      $\mathcal{A}_{g,A}$.
+      Fermionic structure requires a Dirac-type operator $\mathcal{D}_{g,A}$
+      satisfying $\mathcal{D}^2 = \mathcal{A}_{g,A} + \tfrac{1}{4}R$
+      (Lichnerowicz formula), whose $\mathbb{Z}_2$-grading encodes chirality.
+      The central open question is whether the admissibility structure forces a
+      Clifford module structure on the admissible fibre and thereby selects a
+      $\mathbb{Z}_2$-grading: if so, the chiral asymmetry of the Standard Model
+      becomes a structural consequence of admissibility; if not, this constitutes
+      a structural boundary of the programme.
 
       \clearpage
   \section*{Acknowledgements}
