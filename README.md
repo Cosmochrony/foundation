@@ -85,6 +85,22 @@ The framework is governed by four independent axioms:
 
 ## Main Results
 
+### 7. Projective Incompleteness
+
+- Every admissible projection \(\Pi_n\) has a non-trivial kernel (Corollary to Theorem 5.4)
+- No observable description is ever complete
+- Direct consequence of \([X, \sigma(X)] = Z \neq 0\) (Theorem 5.4)
+
+### 8. Threefold Role of \(\Pi_n\) (Remark 3.5)
+
+\(\Pi_n\) simultaneously plays three roles, each irreducible to the others:
+
+1. **Admissibility filter**: selects observable directions from structurally compatible continuations; the discarded kernel is real and guaranteed by projective incompleteness
+2. **Generator of temporal order**: the oriented sequence \(\Pi_0, \Pi_1, \ldots\) carries the partial order of Theorem on temporal ordering; time is the topology of this graph, not an external parameter
+3. **Revelation, not creation**: \(\Pi_n\) resolves finer spectral content already present in \(\Omega_n^{(c)}\); increasing \(n\) reveals structure, it does not create it
+
+These three roles are algebraically inseparable: the non-commutativity \([X, \sigma(X)] \neq 0\) is the common algebraic source of all three simultaneously.
+
 ### 1. Irreversibility and Temporal Order
 
 - Non-injectivity ⇒ information loss
