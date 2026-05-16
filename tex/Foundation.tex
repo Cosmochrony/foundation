@@ -115,7 +115,8 @@ as the Primitive of Physical Description}
     Section~\ref{sec:axioms} states the four axioms.
     Section~\ref{sec:primitive} clarifies the role of $\Pi$ and the index $n$.
     Section~\ref{sec:ni-consequences} derives the structural consequences of
-    non-injectivity: irreversibility, novelty, and temporal order.
+    non-injectivity: irreversibility, novelty, temporal order, and the
+    projective incompleteness principle.
     Section~\ref{sec:admissibility} derives the proto-state, phase, coherence,
     and the Heisenberg structure of the admissible fibre from the admissibility
     principle.
@@ -707,6 +708,7 @@ on effective field configurations~\cite{Beau2026c}.
     \end{proof}
 
   \subsection{Novelty and structural fluctuations}
+    \label{subsec:ni-novelty}
 
     The existence of a distinct successor state $O_n \neq O_{n-1}$ defines a
     structural residue:
@@ -749,6 +751,25 @@ on effective field configurations~\cite{Beau2026c}.
   cascade — is developed in~\cite{Beau2026pto}.
     \end{remark}
 
+    \begin{remark}[Admissible transitions as a state machine]
+      \label{rem:state-machine}
+      The admissible neighbourhood $\mathcal{A}(O_{n-1})$
+      (Remark~\ref{rem:admissibility-relational}) gives the
+      chain~\eqref{eq:recursive-chain} the structure of an oriented state machine:
+      nodes are admissible projections, edges are admissible transitions, and a
+      physical history is a directed path in this graph.
+      When $|\mathcal{A}(O_{n-1})| = 1$, the successor is uniquely determined by the
+      admissibility structure alone — no external law is required.
+      When $|\mathcal{A}(O_{n-1})| > 1$, branching occurs; the relative admissibility
+      weights of the branches are the projective analogues of quantum probabilities
+      (Section~\ref{sec:admissibility}).
+      In both cases, no temporal parameter external to the transition structure is
+      needed: the index $n$ acquires its temporal meaning entirely from the
+      orientation of the admissibility graph.
+      \emph{Dynamics is the oriented topology of the admissibility graph, not a law
+      imposed upon a pre-existing time.}
+    \end{remark}
+
     \begin{remark}[Observable reality as projective position]
       \label{rem:projective-position}
       The admissible neighbourhood $\mathcal{A}(O_{n-1})$ is not a fixed space of
@@ -766,6 +787,68 @@ on effective field configurations~\cite{Beau2026c}.
       space of admissible neighbourhoods.
       In particular, the projection does not reveal a pre-existing reality: it redefines the
       context from which the next reality may appear.
+    \end{remark}
+
+  \subsection{Projective incompleteness}
+    \label{subsec:projective-incompleteness}
+
+    Theorem~\ref{thm:heisenberg} establishes that the admissibility structure forces
+    $[X, \sigma(X)] = Z \neq 0$.
+    This non-commutativity has an immediate structural consequence that is logically
+    prior to — and independent of — the wave and phase structure of
+    Section~\ref{sec:admissibility}.
+
+    \begin{corollary}[Projective incompleteness]
+      \label{cor:projective-incompleteness}
+      Under A1--A3 and Born--Infeld parity, no admissible projection $\Pi_n$ resolves
+      $\Omega_n^{(c)}$ completely.
+      Every admissible projection has a non-trivial kernel and leaves a strictly
+      positive informational residue:
+      \begin{equation}
+        \label{eq:projective-incompleteness}
+        \ker \Pi_n \;\neq\; \{0\},
+        \qquad
+        S_{\Pi_n} \;>\; 0,
+      \end{equation}
+      for every admissible $\Pi_n$.
+    \end{corollary}
+
+    \begin{proof}
+      By Theorem~\ref{thm:heisenberg}, $[X, \sigma(X)] = Z \neq 0$.
+      A projection $\Pi_n$ with $\ker \Pi_n = \{0\}$ would simultaneously resolve both
+      $X$ and $\sigma(X)$ without residual ambiguity, requiring their simultaneous
+      diagonalisation and hence $[X, \sigma(X)] = 0$.
+      This contradicts $Z \neq 0$.
+      Therefore $\ker \Pi_n \neq \{0\}$, and the projection entropy $S_{\Pi_n} > 0$
+      follows from Proposition~\ref{prop:irreversibility}.
+    \end{proof}
+
+    \begin{remark}[Structural fluctuations as necessary, not contingent]
+      \label{rem:fluctuations-necessary}
+      Corollary~\ref{cor:projective-incompleteness} changes the epistemic status of the
+      structural fluctuations introduced in Section~\ref{subsec:ni-novelty}.
+      They are not merely a consequence of abstract non-injectivity (A2 alone), but a
+      \emph{necessary consequence of the non-commutativity forced by A1--A3}: any
+      projection that left no residue would require $[X, \sigma(X)] = 0$, contradicting
+      Theorem~\ref{thm:heisenberg}.
+      The quantum vacuum is therefore not a state from which all fluctuations have been
+      removed; it is the state from which complete removal is structurally forbidden.
+    \end{remark}
+
+    \begin{remark}[Projective incompleteness and the first transition]
+      \label{rem:first-transition}
+      Corollary~\ref{cor:projective-incompleteness} also resolves a potential question
+      about the origin of the first admissible transition: what initiates $\Pi_1$ from
+      $\Pi_0$?
+      A perfectly self-closed initial state — one with $\ker \Pi_0 = \{0\}$ — is
+      structurally forbidden.
+      The initial projection necessarily leaves a non-zero residue, which constitutes
+      the first difference and guarantees that $\mathcal{A}(O_0)$ is non-empty.
+      No external mechanism is required: the first transition is a structural necessity,
+      not a contingent event.
+      This is the projective analogue of the impossibility of a perfectly symmetric
+      initial state: the admissibility constraints that select the Heisenberg structure
+      also ensure that a featureless origin is inadmissible.
     \end{remark}
 
   \section{Admissibility, Wave, and Phase Coherence}
@@ -1438,6 +1521,37 @@ the moment of resolution.
       The universality of $a_q(s) \cdot q^2 \approx 2$ across all tested primes
       (O-series numerics) is consistent with the existence of such an attractor in
       the admissible spectral flow, independent of~$q$.
+      This numerical observation acquires a structural anchor from the companion
+      paper Q10~\cite{Beau2026q10}: the horizontal coefficient $A_H(q)$ of the
+      effective spatial co-metric satisfies $A_H(q) \to 2$ as $q \to \infty$, where
+      the limiting value is identified as the Casimir eigenvalue
+      \begin{equation}
+        \label{eq:casimir-2}
+        C_{\mathrm{su}(2)}\big|_{j=1} \;=\; j(j+1) \;=\; 2
+      \end{equation}
+      of the spin-$1$ representation $\mathrm{Sym}^2(V_\rho)$ — the unique
+      $\mathrm{su}(2)$-invariant quadratic form on the effective spatial sector
+      (Q10, Proposition~5.1, via Schur's lemma).
+      The epistemic chain leading to this identification is:
+      \begin{equation}
+        \label{eq:casimir-chain}
+        [X,Y] \neq 0
+        \;\Rightarrow\; \text{no perfect resolution}
+        \;\Rightarrow\; [\mathrm{U}]
+        \;\Rightarrow\; \mathrm{su}(2)\text{-isotropy}
+        \;\Rightarrow\; C_{\mathrm{su}(2)}|_{j=1} = 2
+        \;\Rightarrow\; A_H(q) \to 2,
+      \end{equation}
+      where: the first implication is Corollary~\ref{cor:projective-incompleteness};
+      the universality hypothesis~$[\mathrm{U}]$ is structurally supported and
+      numerically confirmed for $q \leq 211$~\cite{Beau2026a29,Beau2026q10};
+      the su(2)-isotropy step is Q10~Lemma~4.1; and the Casimir identification is
+      Q10~Proposition~5.1 (unconditional).
+      The convergence $A_H(q) \to 2$ is established conditionally on~$[\mathrm{U}]$
+      in Q10~Theorem~1.1.
+      The attractor value $2$ is therefore not a free parameter but is forced by the
+      representation theory of the admissible fibre, providing a
+      representation-theoretic interpretation of the quasi-fixed point.
       Formalising the existence and classification of quasi-fixed points of
       $\mathcal{A}$ is an open direction of the programme.
 
