@@ -176,10 +176,42 @@ This paper provides:
 
 It serves as the **foundation layer** for all subsequent Cosmochrony results.
 
+## Effective Co-Metric Completion (v1.10)
+
+The updated paper integrates the downstream result that the effective co-metric is now
+fully explicit. Under the Q5a–Q5b geometric chain, with Q8 (Casimir rigidity: $A_z=2$),
+Q10 (spectral universality: $A_H=2$), and Q11 (temporal Casimir rigidity: $A_\tau=2$),
+the effective co-metric is:
+
+$$g^{\mu\nu} = \mathrm{diag}(-2,\,2,\,2,\,2).$$
+
+This is noted in the results table of Foundation as a proved consequence of Q5b, Q6b, Q8,
+Q10, and Q11 combined.
+
+## Relation to Established Frameworks (v1.10)
+
+A new section situates the four axioms A1–A4 relative to established formalisms, not by
+reduction but by structural translation — identifying what each framework corresponds to
+and what it presupposes that the present framework derives:
+
+- **Hamilton–Jacobi dynamics**: the eikonal equation
+  $g^{\mu\nu}\partial_\mu S\,\partial_\nu S = 0$ appears as an effective description
+  of projected dynamics, valid once the effective metric has been reconstructed (Q5b,
+  Q6b). It is downstream of the admissibility layer, not a primitive.
+- **Symplectic geometry**: the phase space $T^*M$ is not a primitive — $M$ emerges from
+  the Carnot–Carathéodory geometry of Q5b. Symplectic structure is induced by the
+  principal symbol of the admissibility operator.
+- **WKB approximation**: the WKB phase $S$ is a derived quantity encoding the projective
+  compression of the admissible fibre; geometric optics is the ray approximation of
+  admissible propagation in the continuum limit (Q5a).
+- **Functional renormalisation group**: the Mosco limit of the admissibility Dirichlet
+  forms (Q5a) plays a structurally analogous role to the Wetterich effective average
+  action — both describe an infrared fixed point of a flow.
+
 ## What This Paper Does Not Do
 
 - Does not derive full quantum field theory
-- Does not construct spacetime geometry explicitly
+- Does not construct spacetime geometry explicitly (handled by Q5a–Q6b)
 - Does not address all gauge sectors beyond SU(2)
 
 These are handled in companion papers and the O-series.
