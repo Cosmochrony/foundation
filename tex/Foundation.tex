@@ -1395,8 +1395,9 @@ the moment of resolution.
       SU(2) as admissibility fixed point &
       Spectral convergence (Q2)~\cite{Beau2026q2} &
       Proved \\
-      Effective spacetime geometry, $D_{\mathrm{hom}}=4$ &
-      BFS stratification (Q5b, Q6b)~\cite{Beau2026q5b,Beau2026q6b} &
+      Effective spacetime geometry, $D_{\mathrm{hom}}=4$;
+      full co-metric $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$ &
+      BFS stratification (Q5b, Q6b, Q8, Q10, Q11)~\cite{Beau2026q5b,Beau2026q6b,BeauQ8,Beau2026q10,Beau2026q11} &
       Proved \\
       Einstein equation $G_{\mu\nu} = 8\pi G\,T_{\mu\nu}$ &
       Spectral entropy variation~\cite{Beau2026h} &
@@ -1597,7 +1598,6 @@ the moment of resolution.
       Formalising the existence and classification of quasi-fixed points of
       $\mathcal{A}$ is an open direction of the programme.
 
-
       Theorem~\ref{thm:heisenberg} establishes $F_n \simeq V_\rho$ at finite
       prime~$q$.
       The relationship between this discrete structure and continuous spacetime
@@ -1613,6 +1613,9 @@ the moment of resolution.
       The identification of the effective metric from the principal symbol of the
       limit operator $L_\Pi$ and the Lorentzian signature selection are established
       in the companion paper Q5b~\cite{Beau2026q5b}.
+      The temporal coefficient $A_\tau = 2$ is subsequently fixed by Q11~\cite{Beau2026q11}
+      via temporal Casimir rigidity, closing the effective co-metric to
+      $g^{\mu\nu} = \mathrm{diag}(-2,\,2,\,2,\,2)$.
 
     \paragraph{Q14 --- Fermionic structure and chirality.}
       The spectral stratification of Principle~\ref{prin:stratification} identifies
@@ -1630,6 +1633,96 @@ the moment of resolution.
       a structural boundary of the programme.
 
       \clearpage
+  \section{Relation to Established Frameworks}
+  \label{sec:frameworks}
+
+  The four axioms A1--A4 constitute a primitive layer from which geometry, dynamics,
+  and quantum structure emerge without being presupposed.
+  It is natural to ask how this primitive relates to the established formalisms of
+  theoretical physics — not in the sense of reduction, but in the sense of structural
+  translation: what each framework corresponds to, where it appears in the emergent
+  hierarchy, and what it presupposes that the present framework derives.
+
+  \paragraph{Hamilton--Jacobi dynamics.}
+    Once the effective metric $g^{\mu\nu}$ has been reconstructed from the principal
+    symbol of the admissibility operator (Q5b, Q6b~\cite{Beau2026q5b,Beau2026q6b}),
+    the characteristic propagation equation of the effective geometry coincides with the
+    Hamilton--Jacobi equation for massless propagation.
+    This identification belongs to the already projected geometric regime, downstream of
+    the admissibility reconstruction.
+    Hamilton--Jacobi theory should therefore be understood as an effective reformulation
+    of the projected dynamics — valid once the effective configuration space has been
+    constructed by the primitive admissibility relation — not as a primitive layer of the
+    framework.
+    The detailed identification, including the eikonal equation as principal-symbol
+    characteristic, is given in Q6b~\cite{Beau2026q6b}.
+
+  \paragraph{Symplectic geometry and analytical mechanics.}
+    The framework of symplectic geometry takes a phase space — a cotangent bundle
+    $T^*M$ equipped with a canonical symplectic form — as its fundamental arena.
+    In the present framework, this phase space is not a primitive: the effective
+    configuration space $M$ emerges from the Carnot--Carath\'eodory geometry of the
+    BFS shell stratification (Q5b~\cite{Beau2026q5b}), and the cotangent structure is
+    induced by the principal symbol of the admissibility operator.
+    Symplectic geometry is therefore the appropriate language for the effective dynamics
+    on $T^*M$, valid after the configuration space has been constructed by the
+    admissibility constraints; it does not describe the admissibility structure that
+    produces it.
+
+  \paragraph{WKB approximation and geometric optics.}
+    In the WKB approximation, the quantum wave function takes the form
+    $\psi \sim A\,e^{iS/\hbar}$, where the phase $S$ is the Hamilton--Jacobi action.
+    In the present framework, the phase of an admissible mode is not an input but an
+    output of the fibre structure: it emerges from the coherence conditions imposed by
+    the admissibility filter on the Weil representation~\cite{Beau2026q1}.
+    The WKB identification therefore holds at the level of the effective description,
+    once the continuum limit has been taken (Q5a~\cite{Beau2026q5a}): the collective
+    phase of the admissible modes plays the role of $S$, and geometric optics is the
+    ray approximation of the admissible propagation structure in this limit.
+    The WKB phase is thus a derived quantity, encoding the projective compression of the
+    admissible fibre, rather than a fundamental dynamical object.
+
+  \paragraph{Functional renormalisation group.}
+    The Wetterich effective average action satisfies an exact renormalisation group
+    equation whose infrared fixed point recovers the physical effective action.
+    In the present framework, the Mosco limit of the admissibility Dirichlet forms
+    (Q5a~\cite{Beau2026q5a}) plays a structurally analogous role: the sequence
+    $\{\mathcal{E}_q\}$ flows, as $q\to\infty$, to the scalar operator $\mathcal{L}_\Pi$,
+    whose principal symbol defines the effective metric.
+    The spectral entropy functional $S_\Pi[g,A]$ of the companion programme is the
+    effective action resulting from this limit~\cite{Beau2026h,Beau2026q12,Beau2026q13}.
+    The structural difference is that the Wetterich flow renormalises a pre-existing field
+    theory, while the present limit produces the field content itself from the admissibility
+    constraints.
+
+  \paragraph{Page--Wootters construction and relational time.}
+    The Page--Wootters construction derives apparent temporal evolution from conditional
+    states of a globally stationary wave function, treating time as a relational label on
+    a clock subsystem.
+    The projective temporal ordering of the present framework~\cite{Beau2026pto} shares
+    this relational spirit — time is not a parameter of the substrate but a monotone
+    ordering induced by the admissibility cascade — but differs in one structural respect.
+    In the Page--Wootters model, the global state is fully recoverable (the projection is
+    effectively injective), whereas here the projection $\Pi$ is structurally non-injective
+    (A2, ENI~\cite{Beau2026l}).
+    Temporal ordering in the present framework is therefore irreversible at the structural
+    level: it reflects the irreversible accumulation of projected spectral capacity, not
+    the choice of a clock observable.
+
+  \paragraph{Holographic renormalisation and radial Hamilton--Jacobi.}
+    In holographic renormalisation, the on-shell gravitational action satisfies a radial
+    Hamilton--Jacobi equation whose flow encodes the renormalisation group of the boundary
+    field theory.
+    The Schwarzschild geometry derived in Q6b~\cite{Beau2026q6b} from flux conservation
+    of the admissibility operator has a structural parallel with this picture: both
+    frameworks derive a bulk geometry from a propagation constraint, and both identify the
+    horizon as a degeneration of the effective description.
+    The structural difference is that holographic renormalisation presupposes a fixed
+    anti-de Sitter background and a specific bulk-boundary duality, while the present
+    framework derives the effective geometry from the admissibility operator without a
+    background or a boundary field theory.
+
+    \clearpage
   \section*{Acknowledgements}
 
   The author acknowledges the use of large language models as a supportive tool
