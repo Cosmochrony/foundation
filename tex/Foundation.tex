@@ -1,6 +1,6 @@
 % Admissible Non-Injective Transitions as the Primitive of Physical Description
 % Cosmochrony companion paper M
-% Provides the axiomatic foundation cited by Q1, Bell, ENI, and the white paper.
+% Provides the axiomatic foundation cited by Q1, Bell, Beau2026l, and the white paper.
 
 \documentclass[11pt,a4paper]{article}
 
@@ -9,6 +9,8 @@
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{hyperref}
+
+\bibliographystyle{plain}
 \usepackage{doi}
 
 \newtheorem{theorem}{Theorem}[section]
@@ -17,6 +19,7 @@
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{remark}[theorem]{Remark}
+\newtheorem{principle}[theorem]{Principle}
 
 \title{Admissible Non-Injective Transitions\\
 as the Primitive of Physical Description}
@@ -55,13 +58,15 @@ as the Primitive of Physical Description}
     of the interaction between continuous Born--Infeld saturation and the discrete
     shell structure of the observable space.
     This paper provides the axiomatic foundation cited by the companion
-    papers~\cite{Q1,Bell,ENI} and serves as the formal basis for the derivations
+    papers~\cite{Beau2026q1,Beau2026b,Beau2026l} and serves as the formal basis for the derivations
     carried out therein.
   \end{abstract}
 
   \paragraph{Keywords.}
-    Non-injective projection; Emergence; Projective structure; Admissibility; Born–Infeld constraint; Information loss;
-    Projection entropy; Quantum emergence; Phase coherence; SU(2) structure; Gauge emergence; Fiber structure;
+    Non-injective projection; Emergence; Projective structure; Admissibility;
+    Born--Infeld constraint; Information loss;
+    Projection entropy; Quantum emergence; Phase coherence; SU(2) structure;
+    Gauge emergence; Fiber structure;
     Projective temporal ordering; Irreversibility.
 
     \clearpage
@@ -92,12 +97,12 @@ as the Primitive of Physical Description}
   \subsection*{Relation to companion papers}
 
     This paper provides the axiomatic foundation for a chain of companion results.
-    The companion paper~\cite{Bell} establishes that Bell-type factorisation
+    The companion paper~\cite{Beau2026b} establishes that Bell-type factorisation
     fails generically under non-injective projection (A2), without invoking
     nonlocal dynamics.
-    The companion paper~\cite{ENI} proves that non-injectivity is a structural
+    The companion paper~\cite{Beau2026l} proves that non-injectivity is a structural
     necessity of any genuinely emergent description.
-    The companion paper~\cite{Q1} derives phase coherence, the singlet correlator,
+    The companion paper~\cite{Beau2026q1} derives phase coherence, the singlet correlator,
     the Tsirelson bound, and the Born rule as structural consequences of
     admissibility — using Axioms A1--A4 as stated here, combined with the concrete
     spectral results of the O-series.
@@ -110,7 +115,8 @@ as the Primitive of Physical Description}
     Section~\ref{sec:axioms} states the four axioms.
     Section~\ref{sec:primitive} clarifies the role of $\Pi$ and the index $n$.
     Section~\ref{sec:ni-consequences} derives the structural consequences of
-    non-injectivity: irreversibility, novelty, and temporal order.
+    non-injectivity: irreversibility, novelty, temporal order, and the
+    projective incompleteness principle.
     Section~\ref{sec:admissibility} derives the proto-state, phase, coherence,
     and the Heisenberg structure of the admissible fibre from the admissibility
     principle.
@@ -127,14 +133,35 @@ as the Primitive of Physical Description}
 
   We state the four axioms from which the framework proceeds.
   They are not independent postulates chosen for convenience — each captures
-  a structural feature that is either necessary for genuine emergence~\cite{ENI}
-  or forced by the requirement of bounded effective descriptions~\cite{BornInfeld}.
+  a structural feature that is either necessary for genuine emergence~\cite{Beau2026l}
+  or forced by the requirement of bounded effective descriptions~\cite{Beau2026c}.
 
   \begin{definition}[Admissible transition]
     \label{def:admissible-transition}
     A transition from observable state $O_{n-1}$ to observable state $O_n$ is
     \emph{admissible} if it satisfies Axioms A1--A4 below.
   \end{definition}
+
+  \begin{remark}[Admissibility is relational, not absolute]
+    \label{rem:admissibility-relational}
+    Admissibility is never an intrinsic predicate of an observable state $O_n$ taken in
+    isolation.
+    It is a relational constraint on projective transitions: a state $O_n$ is admissible
+    only relative to a preceding state $O_{n-1}$, whose accumulated constraints determine
+    the local admissible neighbourhood.
+    We write $O_n \in \mathcal{A}(O_{n-1})$ to make this explicit, where
+    \begin{equation}
+      \label{eq:admissible-neighbourhood}
+      \mathcal{A}(O_{n-1}) \;:=\;
+      \bigl\{\, O_n \mid \text{the transition } O_{n-1} \to O_n \text{ satisfies A1--A4} \,\bigr\}
+    \end{equation}
+    is the \emph{admissible neighbourhood from $O_{n-1}$}.
+    The phrasing ``$O_n$ is admissible'' should always be read as shorthand for
+    $O_n \in \mathcal{A}(O_{n-1})$: admissibility is always \emph{from-here} admissibility,
+    conditioned on the already-realized projective position.
+    There is no fixed space of possible observable states: there is a field of local
+    admissible neighbourhoods, each determined by the point already reached.
+  \end{remark}
 
   \begin{description}
     \item[\textbf{A1 — Local projective admissibility.}]
@@ -154,7 +181,7 @@ as the Primitive of Physical Description}
     An admissible transition preserves the full multiplicity of open directions
     until projection locking occurs.
     It does not select among them prematurely — that is, before the
-    Born--Infeld saturation threshold is reached~\cite{BornInfeld}.
+    Born--Infeld saturation threshold is reached~\cite{Beau2026c}.
 
     \item[\textbf{A4 — Projection locking.}]
     Resolution occurs only when continuous Born--Infeld saturation meets the
@@ -169,17 +196,74 @@ as the Primitive of Physical Description}
   A4 governs when resolution occurs.
   The four axioms are logically independent: none follows from the others.
   Their joint necessity is argued in Section~\ref{sec:primitive} and in the
-  companion papers~\cite{ENI,BornInfeld}.
+  companion papers~\cite{Beau2026l,Beau2026c}.
   \end{remark}
 
   \begin{remark}[Status of Born--Infeld in A3 and A4]
   The Born--Infeld saturation threshold appearing in A3 and A4 is not an
   additional postulate: it is the unique bounded completion of the effective
-  action compatible with bounded projective flux, established in~\cite{BornInfeld}.
+  action compatible with bounded projective flux, established in~\cite{Beau2026c}.
   A3 and A4 therefore do not introduce new structure beyond A1--A2 and the
   Born--Infeld companion.
   \end{remark}
 
+  \begin{remark}[What projection locking selects]
+    \label{rem:a4-selects}
+    A4 resolves the transition to a unique observable state~$O_n$ in the image of~$\Pi_n$.
+    It does not select a unique underlying configuration in~$F_n$.
+
+    The multiplicity of admissible configurations in the fibre $F_n = \Pi_n^{-1}(O_n)$ is
+    not eliminated by projection locking: distinct configurations $f, f' \in F_n$ with
+    $\Pi_n(f) = \Pi_n(f') = O_n$ remain structurally present after locking, but become
+    observationally inaccessible.
+    The non-injectivity of~$\Pi_n$ therefore persists at every resolution step.
+
+    This distinction --- observable uniqueness without configurational uniqueness --- prevents
+    Bell-type factorisation~\cite{Beau2026b} and forces the coherent, non-factorisable fibre
+    structure derived in Section~\ref{subsec:heisenberg}.
+    More generally, distinct interactions $I_1 \neq I_2$ induce distinct admissible
+    sub-fibres $F_n^{(I_1)} \neq F_n^{(I_2)}$ and hence distinct observable outcomes,
+    without any element of $F_n$ having been selected.
+    This is the structural origin of contextuality: measurement context determines
+    which sub-fibre is accessed, not which configuration is realised.
+    This contextuality is \emph{synchronic}: it concerns the choice of sub-fibre at a
+    fixed transition step $n$.
+    The admissible neighbourhood $\mathcal{A}(O_{n-1})$ (Remark~\ref{rem:admissibility-relational})
+    introduces a second, \emph{diachronic} form of contextuality: the set of accessible
+    observable states at step $n$ is itself conditioned on the previously realized state
+    $O_{n-1}$.
+    The context of a projection is therefore not merely the measurement algebra chosen at
+    step $n$, but also the already-realized projective position from which the next state
+    may be reached.
+    Standard contextuality frameworks (Kochen--Specker, sheaf-theoretic) capture synchronic
+    contextuality; the present framework extends this to diachronic contextuality, in which
+    the history of realized projections is constitutive of what is admissible next.
+  \end{remark}
+
+  \begin{remark}[Projective Observability Principle]
+    \label{rem:projective-observability}
+    Axioms A1--A4 jointly imply the following criterion, which identifies what is
+    physical in the framework.
+
+    \emph{Physical observables coincide with the invariants of the projection~$\Pi_n$:
+    any quantity that depends on the choice of pre-image within~$\Pi_n^{-1}(O_n)$
+      is unphysical by construction.}
+
+    This is not an additional axiom but a consequence of A2 (which forces non-trivial
+    fibres) and A4 (which identifies $O_n$ with $\mathrm{Im}\,\Pi_n$ exactly):
+    since $\Pi_n$ is the only structure that relates the configurational level to the
+    observable level, any quantity invisible to $\Pi_n$ is invisible to physics.
+    What the projection erases --- intra-fibre distinctions --- is unphysical;
+    what it preserves --- the invariants of the fibre structure --- constitutes the
+    physical content of the theory.
+    In particular, the symmetry group of a fibre $\Pi_n^{-1}(O_n)$ is physical precisely
+    because it acts within the fibre while leaving $O_n$ unchanged: this is the structural
+    origin of gauge symmetry, developed in the companion papers~\cite{Beau2026q6a,Beau2026a35}.
+    A detailed formulation in terms of the five-level hierarchy is given in
+    Remark~\ref{rem:observable-space}.
+  \end{remark}
+
+  \clearpage
   \section{The Primitive and the Role of $\Pi$}
   \label{sec:primitive}
 
@@ -190,6 +274,21 @@ as the Primitive of Physical Description}
     There is no external substrate, no hidden carrier, no background geometry.
     The fibre $F_n$ is not defined in an abstract ambient space — it is induced by
     $O_{n-1}$ itself through the admissibility constraints of A1--A3.
+
+    The resulting evolution is recursive: once $O_n$ is realized, it immediately becomes
+    the new departure point, generating the next admissible neighbourhood $\mathcal{A}(O_n)$
+    from which $O_{n+1}$ may be reached:
+    \begin{equation}
+      \label{eq:recursive-chain}
+      O_{n-1}
+      \;\longrightarrow\; O_n
+      \;\longrightarrow\; \mathcal{A}(O_n)
+      \;\longrightarrow\; O_{n+1}.
+    \end{equation}
+    The realized state is simultaneously a destination and the generator of the next set of
+    constraints.
+    No external agent resets the context between steps: the admissible neighbourhood at
+    each stage is determined entirely by the state just reached.
 
   \subsection{The projection $\Pi_n$ as descriptive abstraction}
 
@@ -212,6 +311,48 @@ shell (A4).
     Non-injectivity does not originate from an underlying substrate, but from
     the structure of admissible configurations and their interaction-dependent
     realisation map.
+
+    \begin{remark}[The threefold role of $\Pi_n$]
+      \label{rem:pi-threefold}
+      The structural consequences established below in Sections~\ref{sec:ni-consequences}
+      and~\ref{subsec:projective-incompleteness} reveal that $\Pi_n$ plays three
+      distinct roles simultaneously, each irreducible to the others.
+      \begin{enumerate}[(i)]
+        \item \emph{Admissibility filter.}
+        $\Pi_n$ selects, from the structurally compatible continuations
+        $\Omega_n^{(c)}$, those directions satisfying the Born--Infeld and spectral
+        constraints of A1--A3.
+        What it retains constitutes the observable $O_n$; what it discards is the
+        non-trivial kernel whose existence is guaranteed by
+        Corollary~\ref{cor:projective-incompleteness}.
+        \item \emph{Generator of temporal order.}
+        The oriented sequence $\Pi_0, \Pi_1, \Pi_2, \ldots$ carries the partial order
+        established in Theorem~\ref{thm:temporal-order}.
+        Each $\Pi_n$ is a node in the admissibility graph
+        (Remark~\ref{rem:state-machine}); the index $n$ acquires its temporal meaning
+        from this orientation, not from an external parameter.
+        The dynamics of the framework is the oriented topology of this graph — not
+        a law superimposed on a pre-existing time.
+        \item \emph{Revelation, not creation.}
+        $\Pi_n$ does not produce new structure in $\chi$.
+        It selects, from the admissible spectral modes of the Weil representation
+        already present in $\Omega_n^{(c)}$, those that are observationally
+        accessible at depth $n$.
+        The BFS depth controls how much of the structure of $\chi$ has been
+        revealed; increasing $n$ does not modify $\chi$ but resolves finer spectral
+        content — as a deeper lens resolves detail that was always present in the
+        object, not detail that the lens creates.
+      \end{enumerate}
+      These three roles are inseparable: the structural constraints A1--A3 and
+      Born--Infeld parity that force the admissibility filter simultaneously
+      generate the temporal order via Theorem~\ref{thm:temporal-order} and
+      guarantee the incompleteness of every resolution via
+      Corollary~\ref{cor:projective-incompleteness}.
+      The non-commutativity $[X, \sigma(X)] \neq 0$ at the root of the
+      incompleteness (Theorem~\ref{thm:heisenberg}) is therefore not merely a
+      technical property of the fibre: it is the algebraic source of all three
+      roles at once.
+    \end{remark}
 
   \subsection{The index $n$}
 
@@ -258,6 +399,24 @@ not assumed.
     projective capacity applied to an internally defined space of admissible
     configurations.
 
+    \begin{remark}[The admissible fibre as equivalence class under projection]
+      \label{rem:shadow-analogy}
+      A useful image for the non-injectivity of~$\Pi_n$ is that of shadows cast by a fixed
+      projection setup.
+      A given shadow does not correspond to a single object:
+      it corresponds to the set of all objects whose projection yields that shadow ---
+      the admissible fibre $F_n = \Pi_n^{-1}(O_n)$.
+
+      The directionality is essential.
+      The fibre is not the collection of all shadows produced by a given object under varying
+      projections (one configuration, many images).
+      It is the collection of all configurations that produce the same observable under a fixed,
+      non-injective~$\Pi_n$ (many configurations, one observable).
+      This many-to-one structure is the source of irreversibility
+      (Section~\ref{sec:ni-consequences}) and of the non-factorisability of the proto-state
+      (Section~\ref{subsec:heisenberg}).
+    \end{remark}
+
     \begin{remark}[Connection to the O-series: $F_n$ and $V_\rho$]
       \label{rem:fn-vrho}
       In the concrete spectral realisation of the O-series, the admissible fibre
@@ -281,7 +440,7 @@ not assumed.
     \begin{remark}[The two levels of $\Pi_n$: kernel and image (O24)]
       \label{rem:pi-two-levels}
       The non-injective projection $\Pi_n$ operates at two structurally distinct
-      levels, established in O24~\cite{O24}:
+      levels, established in O24~\cite{Beau2026a28}:
       \begin{enumerate}[(i)]
   \item \emph{Kernel level} ($\ker \Pi_n$): governs microscopic multiplicity
   and fluctuation amplitude.
@@ -313,6 +472,34 @@ not assumed.
       relevant for observables.
     \end{remark}
 
+    \begin{remark}[The observable space principle: $\mathcal{O} = \mathrm{Im}\,\Pi$]
+      \label{rem:observable-space}
+      A direct consequence of the five-level hierarchy is that admissible
+      observables are functions on
+      \begin{equation}
+        \mathcal{O} \;:=\; \mathrm{Im}\,\Pi
+        \;=\; \bigsqcup_{n} O_n,
+      \end{equation}
+      not on the pre-image space~$\Omega_n^{(c)}$.
+      Any structural difference between two configurations
+      $f, f' \in \Pi_n^{-1}(O_n)$ that share the same image under~$\Pi_n$
+      is invisible to every admissible observable by definition:
+      it is a difference \emph{within} the fibre, which the projection
+      identifies as observationally indistinguishable.
+      This is not an additional assumption but an immediate consequence of
+      Definition~\ref{def:omega-n} and Level~5:
+      $O_n$ is defined as $\mathrm{Im}\,\Pi_n$, and admissibility is
+      a property of $\Pi_n$ acting on $\Omega_n^{(c)}$, not of
+      $\Omega_n^{(c)}$ itself.
+      Intra-fibre variability is therefore structurally unobservable; it
+      constitutes the degree of freedom whose projected manifestation appears
+      as quantum indeterminacy in the effective description.
+      In particular, any admissible quantity that depends on the choice of
+      representative in $\Pi_n^{-1}(O_n)$ must agree for all representatives
+      in the same fibre class: this is the structural basis for the uniformity
+      of admissible spectral invariants across the fibre.
+    \end{remark}
+
 
     \label{subsec:five-levels}
 
@@ -339,7 +526,7 @@ not assumed.
     \paragraph{Level 2 — The Weil representation $\rho_c$ and its ambient space.}
       For each non-zero character $c \in (\mathbb{Z}/q\mathbb{Z})^\times$, the
       discrete Heisenberg group $G_q$ admits an irreducible $q$-dimensional Weil
-      representation~\cite{O12}:
+      representation~\cite{Beau2026a16}:
       \begin{equation}
         \rho_c : G_q \;\longrightarrow\; \mathrm{GL}(\mathbb{C}^q),
         \qquad
@@ -396,7 +583,7 @@ Gram--Schmidt span $\mathrm{GS}_{n-1}$ already accumulated over $B_{n-1}$,
 which acts as the baseline against which new directions in $\Omega_n^{(c)}$
 are measured.
 This baseline is used by $\Pi_n$ (not by $\Omega_n^{(c)}$ itself) to
-identify genuinely new directions, counted by $\sigma_c(n) = \delta r_n / |S_n|$~\cite{O12}.
+identify genuinely new directions, counted by $\sigma_c(n) = \delta r_n / |S_n|$~\cite{Beau2026a16}.
 In summary: $\Omega_n^{(c)}$ is determined by $(G_q, \rho_c, B_n)$;
 the role of $O_{n-1}$ enters only through $\Pi_n$.
 \item \emph{Pre-admissibility character}:
@@ -409,7 +596,7 @@ The admissibility filter is entirely in $\Pi_n$, not in $\Omega_n^{(c)}$.
     \paragraph{Level 4 — The admissibility filter $\Pi_n$.}
       The projection $\Pi_n$ acts on $\Omega_n^{(c)}$ via the BI admissibility
       constraint $A_n \leq c_\chi/\sqrt{\lambda_n}$ and the Gram--Schmidt
-      orthogonalisation~\cite{O12,O22}.
+      orthogonalisation~\cite{Beau2026a16,Beau2026a26}.
       It selects, from all directions in $\Omega_n^{(c)}$, those compatible with
       the admissibility constraints.
       $\Pi_n$ encodes the laws revealed by the O-series — Born--Infeld bound,
@@ -419,7 +606,7 @@ The admissibility filter is entirely in $\Pi_n$, not in $\Omega_n^{(c)}$.
       The observable state $O_n$ is the image of $\Pi_n$ applied to the admissible
       part of $\Omega_n^{(c)}$.
       It is a discrete, shell-indexed element of the observable
-      space~\cite{O22}:
+      space~\cite{Beau2026a26}:
       \begin{equation}
         O \;=\; \bigsqcup_{n \in \mathbb{N}_q} O_n.
       \end{equation}
@@ -453,7 +640,7 @@ The admissibility filter is entirely in $\Pi_n$, not in $\Omega_n^{(c)}$.
 
       \begin{remark}[The conjugate pair and $\Omega_n$ without preferred direction]
   The parity involution $c \leftrightarrow q-c$ (O18) acts on $\Omega_n^{(c)}$
-  via complex conjugation~\cite{O17}:
+  via complex conjugation~\cite{Beau2026a21}:
   $\Omega_n^{(q-c)} = \overline{\Omega_n^{(c)}}$.
   The minimal admissible fibre is therefore the pair
   $\{V_n^{(c)}, V_n^{(q-c)}\} = \{V_n^{(c)}, \overline{V_n^{(c)}}\}$,
@@ -494,7 +681,7 @@ a four-dimensional effective geometry~\cite{Cosmochrony}.
 differential constraint}.
 The Born--Infeld admissibility bound $A_n \leq c_\chi/\sqrt{\lambda_n}$
 becomes, in the continuum limit, the Born--Infeld Lagrangian constraint
-on effective field configurations~\cite{BornInfeld}.
+on effective field configurations~\cite{Beau2026c}.
     \end{enumerate}
 
     The continuum spacetime observable is therefore not a separate postulate:
@@ -506,22 +693,22 @@ on effective field configurations~\cite{BornInfeld}.
       The convergence $\mathbb{C}^q \to L^2(\mathbb{R})$ and the emergence of
       continuous spacetime geometry from the BFS shell structure are established
       qualitatively in~\cite{Cosmochrony}.
-      The companion paper~\cite{Q5a} initiates the rigorous treatment of this
+      The companion paper~\cite{Beau2026q5a} initiates the rigorous treatment of this
       limit, formulating it in the category of Hilbert spaces and operator algebras
       and decomposing it into three distinct convergences: a Hilbert inductive limit
       (T1), a representational convergence of Weil generators to metaplectic
       generators (T2), and a Mosco convergence of admissibility forms to a
       second-order operator $L_\Pi$ on $L^2(\mathbb{R})$ (T3).
       The continuum limit is reduced to a single spectral tightness condition
-      (Conjecture~C of~\cite{Q5a}), which is confirmed quantitatively across all
+      (Conjecture~C of~\cite{Beau2026q5a}), which is confirmed quantitatively across all
       tested primes: the spectral tail mass of admissible test vectors satisfies
       $E_q(q/3)/\|f_q\|^2 < 2.1 \times 10^{-5}$ uniformly, with values decreasing
       toward machine precision as $q$ grows.
       The embedding hypothesis~[H1] is proved in the low-frequency regime relevant
-      to admissible sequences; the Weil-block compatibility condition and the
-      identification of the effective metric from the symbol of $L_\Pi$ are the
-      subject of the companion paper Q5b.
-      The present remark identifies the mechanism; \cite{Q5a} establishes the
+      to admissible sequences; the Weil-block compatibility condition and the identification of the effective
+      metric from the symbol of $L_\Pi$ are established in the companion paper
+      Q5b~\cite{Beau2026q5b}.
+      The present remark identifies the mechanism; \cite{Beau2026q5a} establishes the
       operator-theoretic framework and the numerical evidence.
     \end{remark}
 
@@ -537,7 +724,6 @@ on effective field configurations~\cite{BornInfeld}.
     \end{remark}
 
     \clearpage
-
   \section{Structural Consequences of Non-Injectivity}
   \label{sec:ni-consequences}
 
@@ -558,12 +744,13 @@ on effective field configurations~\cite{BornInfeld}.
       $O_n$.
       No subsequent transition $\Pi_{n'}$ for $n' > n$ can recover this
       information: the map $\Pi_n$ has positive projection entropy
-      $S_{\Pi_n} > 0$~\cite{ENI}, and no admissible transition can reduce
+      $S_{\Pi_n} > 0$~\cite{Beau2026l}, and no admissible transition can reduce
       $S_\Pi$ below zero.
       The loss is therefore structural and permanent.
     \end{proof}
 
   \subsection{Novelty and structural fluctuations}
+    \label{subsec:ni-novelty}
 
     The existence of a distinct successor state $O_n \neq O_{n-1}$ defines a
     structural residue:
@@ -601,6 +788,109 @@ on effective field configurations~\cite{BornInfeld}.
   It is the oriented order generated by the chain of non-injective transitions
   under A2.
   The index $n$ acquires its temporal meaning from this order — not the reverse.
+  The quantitative structure of this projective temporal ordering — cumulative
+  projected capacity and its numerical validation from the spectral admissibility
+  cascade — is developed in~\cite{Beau2026pto}.
+    \end{remark}
+
+    \begin{remark}[Admissible transitions as a state machine]
+      \label{rem:state-machine}
+      The admissible neighbourhood $\mathcal{A}(O_{n-1})$
+      (Remark~\ref{rem:admissibility-relational}) gives the
+      chain~\eqref{eq:recursive-chain} the structure of an oriented state machine:
+      nodes are admissible projections, edges are admissible transitions, and a
+      physical history is a directed path in this graph.
+      When $|\mathcal{A}(O_{n-1})| = 1$, the successor is uniquely determined by the
+      admissibility structure alone — no external law is required.
+      When $|\mathcal{A}(O_{n-1})| > 1$, branching occurs; the relative admissibility
+      weights of the branches are the projective analogues of quantum probabilities
+      (Section~\ref{sec:admissibility}).
+      In both cases, no temporal parameter external to the transition structure is
+      needed: the index $n$ acquires its temporal meaning entirely from the
+      orientation of the admissibility graph.
+      \emph{Dynamics is the oriented topology of the admissibility graph, not a law
+      imposed upon a pre-existing time.}
+    \end{remark}
+
+    \begin{remark}[Observable reality as projective position]
+      \label{rem:projective-position}
+      The admissible neighbourhood $\mathcal{A}(O_{n-1})$ is not a fixed space of
+      possibilities.
+      It shifts at every step, because $O_n$ conditions $\mathcal{A}(O_n)$, which differs
+      generically from $\mathcal{A}(O_{n-1})$: the projection following step $n$ is never
+      performed from an invariant reference frame.
+      Observable reality is therefore not a static projection of a fixed substrate onto a
+      fixed observable space.
+      It is the \emph{current projective position within the space of admissible reprojections}:
+      the trajectory $O_0 \leadsto O_1 \leadsto \cdots \leadsto O_n$ is constitutive of
+      what is real at step $n$, not contingent upon it.
+      The cumulative index $I(n)$ measures not elapsed time but accumulated projective
+      divergence from the initial position — how far the sequence has moved through the
+      space of admissible neighbourhoods.
+      In particular, the projection does not reveal a pre-existing reality: it redefines the
+      context from which the next reality may appear.
+    \end{remark}
+
+  \subsection{Projective incompleteness}
+    \label{subsec:projective-incompleteness}
+
+    Theorem~\ref{thm:heisenberg} establishes that the admissibility structure forces
+    $[X, \sigma(X)] = Z \neq 0$.
+    This non-commutativity has an immediate structural consequence that is logically
+    prior to — and independent of — the wave and phase structure of
+    Section~\ref{sec:admissibility}.
+
+    \begin{corollary}[Projective incompleteness]
+      \label{cor:projective-incompleteness}
+      Under A1--A3 and Born--Infeld parity, no admissible projection $\Pi_n$ resolves
+      $\Omega_n^{(c)}$ completely.
+      Every admissible projection has a non-trivial kernel and leaves a strictly
+      positive informational residue:
+      \begin{equation}
+        \label{eq:projective-incompleteness}
+        \ker \Pi_n \;\neq\; \{0\},
+        \qquad
+        S_{\Pi_n} \;>\; 0,
+      \end{equation}
+      for every admissible $\Pi_n$.
+    \end{corollary}
+
+    \begin{proof}
+      By Theorem~\ref{thm:heisenberg}, $[X, \sigma(X)] = Z \neq 0$.
+      A projection $\Pi_n$ with $\ker \Pi_n = \{0\}$ would simultaneously resolve both
+      $X$ and $\sigma(X)$ without residual ambiguity, requiring their simultaneous
+      diagonalisation and hence $[X, \sigma(X)] = 0$.
+      This contradicts $Z \neq 0$.
+      Therefore $\ker \Pi_n \neq \{0\}$, and the projection entropy $S_{\Pi_n} > 0$
+      follows from Proposition~\ref{prop:irreversibility}.
+    \end{proof}
+
+    \begin{remark}[Structural fluctuations as necessary, not contingent]
+      \label{rem:fluctuations-necessary}
+      Corollary~\ref{cor:projective-incompleteness} changes the epistemic status of the
+      structural fluctuations introduced in Section~\ref{subsec:ni-novelty}.
+      They are not merely a consequence of abstract non-injectivity (A2 alone), but a
+      \emph{necessary consequence of the non-commutativity forced by A1--A3}: any
+      projection that left no residue would require $[X, \sigma(X)] = 0$, contradicting
+      Theorem~\ref{thm:heisenberg}.
+      The quantum vacuum is therefore not a state from which all fluctuations have been
+      removed; it is the state from which complete removal is structurally forbidden.
+    \end{remark}
+
+    \begin{remark}[Projective incompleteness and the first transition]
+      \label{rem:first-transition}
+      Corollary~\ref{cor:projective-incompleteness} also resolves a potential question
+      about the origin of the first admissible transition: what initiates $\Pi_1$ from
+      $\Pi_0$?
+      A perfectly self-closed initial state — one with $\ker \Pi_0 = \{0\}$ — is
+      structurally forbidden.
+      The initial projection necessarily leaves a non-zero residue, which constitutes
+      the first difference and guarantees that $\mathcal{A}(O_0)$ is non-empty.
+      No external mechanism is required: the first transition is a structural necessity,
+      not a contingent event.
+      This is the projective analogue of the impossibility of a perfectly symmetric
+      initial state: the admissibility constraints that select the Heisenberg structure
+      also ensure that a featureless origin is inadmissible.
     \end{remark}
 
   \section{Admissibility, Wave, and Phase Coherence}
@@ -705,6 +995,28 @@ on effective field configurations~\cite{BornInfeld}.
     forcing it to carry a Heisenberg structure rather than an arbitrary unitary
     symmetry.
 
+    \begin{remark}[The structural tension between A2 and A4]
+      \label{rem:a2-a4-tension}
+      The non-factorisability established in this section can be understood as the minimal
+      consistent resolution of a structural tension between A2 and A4.
+
+      A2 asserts that the multiplicity of admissible configurations in~$F_n$ cannot be
+      eliminated: distinct configurations lead to the same observable, and this
+      indistinguishability is structural, not epistemic.
+      A4 asserts that the observable outcome is unique at locking.
+      Together, they impose an irresolvable constraint: the multiplicity cannot disappear
+      (A2 would be violated), yet it cannot remain directly observable (A4 would be violated).
+
+      A3 --- admissibility as non-premature selection --- is the operative axiom that
+      determines how this tension resolves.
+      It forbids any factorisation of~$F_n$ that would make the multiplicity distinguishable
+      prior to locking, forcing it to organise into a globally coherent, irreducible structure.
+      Lemma~\ref{lem:non-factorisation} formalises this constraint;
+      Theorem~\ref{thm:heisenberg} identifies the resulting structure as Heisenberg type.
+      Quantum structure is therefore the minimal algebraic form compatible with the joint
+      constraint of A2, A3, and A4.
+    \end{remark}
+
     \begin{lemma}[Admissible non-factorisability]
       \label{lem:non-factorisation}
       Under A1--A3, any decomposition
@@ -756,23 +1068,23 @@ on effective field configurations~\cite{BornInfeld}.
       Lemma~\ref{lem:non-factorisation} further implies that $|Z|$ is prime: if
       $|Z|$ were composite, the representation of $F_n$ would decompose over the
       characters of $\langle Z \rangle$, yielding a forbidden stable decomposition.
-      Finally, Born--Infeld parity forces $c \neq 0$~\cite{BornInfeld}, so the
+      Finally, Born--Infeld parity forces $c \neq 0$~\cite{Beau2026c}, so the
       central character is non-trivial; the discrete Stone--von Neumann theorem then
       identifies $F_n \simeq V_\rho$ uniquely.
       The detailed proof of each step is given in the companion
-      paper~\cite{HeisenbergStructure}.
+      paper~\cite{Beau2026HeisenbergStructure}.
     \end{proof}
 
     \begin{equation}
       \begin{aligned}
-        \text{A3}
+        \rlap{\text{A3}}\phantom{\text{BI parity}}
         &\;\Longrightarrow\; \text{no admissible factorisation}
         \;\Longrightarrow\; [X, \sigma(X)] \neq 0
         \;\Longrightarrow\; \text{central extension,} \\
-        \text{A1}
+        \rlap{\text{A1}}\phantom{\text{BI parity}}
         &\;\Longrightarrow\; \text{minimal generative closure}
         \;\Longrightarrow\; \text{Heisenberg algebra,} \\
-        \text{A3}
+        \rlap{\text{A3}}\phantom{\text{BI parity}}
         &\;\Longrightarrow\; \text{irreducibility}
         \;\Longrightarrow\; |Z| = q \text{ prime}
         \;\Longrightarrow\; \mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z}), \\
@@ -917,7 +1229,7 @@ the moment of resolution.
     \begin{remark}[Relation to the Born rule derivation in the companion paper]
   The argument above establishes the structural necessity of the squared norm
   as the resolution intensity of the proto-state.
-  The companion paper~\cite{Q1} makes this precise as a theorem in the SU(2)
+  The companion paper~\cite{Beau2026q1} makes this precise as a theorem in the SU(2)
   parity sector: the Born rule $P(a=+1|\hat{a}) = |\langle +\hat{a}|\psi\rangle|^2$
   is the unique probability assignment compatible with the coherent fibre
   structure, the SU(2) observable algebra, and the derived singlet correlator.
@@ -947,7 +1259,7 @@ the moment of resolution.
 
   \subsection{Two types of discreteness}
 
-    The Born--Infeld saturation condition~\cite{BornInfeld} operates on a
+    The Born--Infeld saturation condition~\cite{Beau2026c} operates on a
     continuous amplitude function.
     Its saturation locus $\mathcal{L}_{\mathrm{BI}} \subset \mathbb{R}$ is
     generically real-valued — its elements carry no information about shell
@@ -957,13 +1269,13 @@ the moment of resolution.
     \begin{equation}
       O \;=\; \bigsqcup_{n \in \mathbb{N}_q} O_n,
     \end{equation}
-    indexed by BFS shells of the Heisenberg Cayley graph~\cite{O22}.
+    indexed by BFS shells of the Heisenberg Cayley graph~\cite{Beau2026a26}.
     No component $O_{n'}$ exists for non-admissible depths.
 
     The proto-state is resolved at the first element of
     $\mathcal{L}_{\mathrm{BI}} \cap \mathbb{N}_q$ — the first depth where
     Born--Infeld saturation coincides with an available shell.
-    This is the Projection Locking theorem~\cite{O22}.
+    This is the Projection Locking theorem~\cite{Beau2026a26}.
 
     \begin{theorem}[Discreteness from projection locking, after O22]
       \label{thm:discrete-locking}
@@ -977,7 +1289,7 @@ the moment of resolution.
 
     The number of independent stable admissible directions in the fibre is
     exactly three, derived algebraically from the admissibility constraints
-    alone~\cite{O23}:
+    alone~\cite{Beau2026a27}:
     \begin{equation}
       \begin{aligned}
         \text{BI parity}
@@ -992,6 +1304,7 @@ the moment of resolution.
     particle generations — is algebraic in origin, not geometric or
     phenomenological.
 
+    \clearpage
   \section{Entanglement and Bell Non-Applicability}
   \label{sec:entanglement}
 
@@ -1028,8 +1341,9 @@ the moment of resolution.
     the shared fibre is structurally non-factorisable.
     Bell-type inequalities are therefore not violated in this framework —
     their preconditions do not hold.
-    This is established formally in the companion paper~\cite{Bell}.
+    This is established formally in the companion paper~\cite{Beau2026b}.
 
+    \clearpage
   \section{Summary: What Is Derived from What}
   \label{sec:summary}
 
@@ -1038,69 +1352,159 @@ the moment of resolution.
   \begin{table}[h]
     \centering
     \small
-    \begin{tabular}{lll}
+    \begin{tabular}{p{5.2cm}p{5.8cm}p{3.2cm}}
       \toprule
-      \textbf{Concept} & \textbf{Source} & \textbf{Status}
-      \\
+      \textbf{Concept} & \textbf{Source} & \textbf{Status} \\
       \midrule
-      Irreversibility & Non-injectivity (A2) & Proved (Prop.~
-      \ref{prop:irreversibility}) \\
-      Structural fluctuations & Relational residue $\Delta_n$ & Derived
-      \\
-      Temporal order & Irreversibility + novelty (A2) & Proved (Thm.~
-      \ref{thm:temporal-order}) \\
-      Proto-state (wave) & Unresolved multiplicity (A1, A3) & Derived (Prop.~
-      \ref{prop:indeterminacy}) \\
-      Structural indeterminacy & Multiple open directions (A1, A3) & Derived
-      \\
-      Phase coherence & Admissibility preserves open directions (A3) & Derived
-      \\
-      Coherent amplitude structure & Admissible fibre + phase & Derived
-      \\
-      Interference & Coherent amplitude structure & Derived
-      \\
-      Discrete transitions & Projection locking (A4, O22) & Proved (Thm.~
-      \ref{thm:discrete-locking}) \\
-      Three stable directions & $\dim_\mathbb{R} \mathrm{Im}\,\mathbb{H} = 3$ (O23) & Proved
-      \\
-      Superposition & Unresolved proto-state & Derived
-      \\
-      Collapse & Proto-state resolution at locking & Derived
-      \\
-      Entanglement & Shared non-factorisable ancestral fibre & Derived
-      \\
-      Bell non-applicability & Temporal, non-local, non-independent fibre & Proved~\cite{Bell}
-      \\
-      Phase coherence $\Rightarrow$ QM & Admissibility + O-series & Proved~\cite{Q1}
-      \\
-      Born rule (SU(2) sector) & Correlator + coherence (Q1) & Proved~\cite{Q1}
-      \\
-      $F_n \simeq V_\rho$ (Heisenberg structure) & Non-factorisability (A1, A3) + BI parity &
-      Proved (Thm.~\ref{thm:heisenberg})
-      \\
-      Uncertainty principle & $[X,\sigma(X)]\neq 0$ (Thm.~\ref{thm:heisenberg}) &
-      Proved (Rem.~\ref{rem:uncertainty})
-      \\
+      \multicolumn{3}{l}{\textit{Direct axiomatic consequences (A1--A4)}} \\
       \midrule
-      Full Hilbert structure & Beyond SU(2) parity sector & \textbf{Open}
-      \\
-      Born rule (general) & Beyond SU(2) parity sector & \textbf{Open}
-      \\
+      Irreversibility &
+      Non-injectivity (A2) &
+      Proved (Prop.~\ref{prop:irreversibility}) \\
+      Temporal order &
+      Irreversibility + novelty (A2) &
+      Proved (Thm.~\ref{thm:temporal-order}) \\
+      Proto-state (wave) &
+      Unresolved multiplicity (A1, A3) &
+      Derived (Prop.~\ref{prop:indeterminacy}) \\
+      Phase coherence &
+      Admissibility preserves open directions (A3) &
+      Derived \\
+      Discrete transitions &
+      Projection locking (A4, O22) &
+      Proved (Thm.~\ref{thm:discrete-locking}) \\
+      Three stable directions &
+      $\dim_\mathbb{R} \mathrm{Im}\,\mathbb{H} = 3$ (O23) &
+      Proved \\
+      Entanglement &
+      Shared non-factorisable ancestral fibre &
+      Derived \\
+      Bell non-applicability &
+      Non-local, non-independent fibre &
+      Proved~\cite{Beau2026b} \\
+      Born rule (SU(2) sector) &
+      Correlator + coherence~\cite{Beau2026q1} &
+      Proved \\
+      $F_n \simeq V_\rho$ (Heisenberg structure) &
+      Non-factorisability (A1, A3) + BI parity &
+      Proved (Thm.~\ref{thm:heisenberg}) \\
+      \midrule
+      \multicolumn{3}{l}{\textit{Key results of the companion programme
+        (see~\cite{Beau2026a} for the full derivation chain)}} \\
+      \midrule
+      SU(2) as admissibility fixed point &
+      Spectral convergence (Q2)~\cite{Beau2026q2} &
+      Proved \\
+      Effective spacetime geometry, $D_{\mathrm{hom}}=4$;
+      full co-metric $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$ &
+      BFS stratification (Q5b, Q6b, Q8, Q10, Q11)~\cite{Beau2026q5b,Beau2026q6b,BeauQ8,Beau2026q10,Beau2026q11} &
+      Proved \\
+      Einstein equation $G_{\mu\nu} = 8\pi G\,T_{\mu\nu}$ &
+      Spectral entropy variation~\cite{Beau2026h} &
+      Proved (structural) \\
+      SU(2) gauge structure &
+      Quaternionic rigidity + Q6a~\cite{Beau2026a31,Beau2026q6a} &
+      Proved \\
+      Yang--Mills equations $D_\mu F^{a\mu\nu} = 0$ &
+      Spectral entropy $a_4$ variation (Q12)~\cite{Beau2026q12} &
+      Proved (structural) \\
+      Gauge--matter coupling $G_{\mu\nu} = 8\pi G_N T^{YM}_{\mu\nu}$ &
+      Joint variation $S_\Pi[g,A]$ (Q13)~\cite{Beau2026q13} &
+      Proved (structural) \\
+      Hierarchy $G_N g^2_{YM} \ll 1$ without fine-tuning &
+      Seeley--DeWitt stratification (Q13)~\cite{Beau2026q13} &
+      Structural \\
+      Tower of non-injectivity &
+      ENI Corollary~6~\cite{Beau2026l} &
+      Proved \\
+      \midrule
+      \multicolumn{3}{l}{\textit{Conditional on named hypothesis}} \\
+      \midrule
+      $G_{\mathrm{SM}} =
+      \mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$ &
+      Colour co-admissibility (O31, O32)~\cite{Beau2026a35} &
+      Conditional on $[\mathrm{H\text{-}color}]$ \\
+      \midrule
+      \multicolumn{3}{l}{\textit{Open}} \\
+      \midrule
+      Full Hilbert structure (continuous spectrum) &
+      Beyond discrete fibre; large-$q$ limit &
+      \textbf{Open} \\
+      Born rule (general observables) &
+      Beyond SU(2)/$V_\rho$ sector &
+      \textbf{Open} \\
+      Colour charges, quark sector &
+      Individual sectors $c_i$ (O31, O32) &
+      \textbf{Open} \\
       \bottomrule
     \end{tabular}
     \caption{Derivation chain from the four axioms.
-    ``Derived'' denotes a consequence that follows from the axioms by
-    structural argument; ``Proved'' denotes a result with an explicit proof
-    either in this paper or in a cited companion.}
+    ``Derived'': structural consequence of the axioms.
+    ``Proved'': explicit proof in this paper or a cited companion.
+    ``Proved (structural)'': established via structural argument
+    internally consistent with the framework; full formalisation deferred.
+    ``Conditional'': proved subject to a named hypothesis.}
     \label{tab:derived}
   \end{table}
+
+  \subsection*{Partial spectral stratification: an organising pattern from the companion programme}
+    \label{ssec:spectral-stratification}
+
+    The four axioms A1--A4 are the axiomatic primitive of the programme.
+    They do not by themselves determine the interaction content of the emergent theory;
+    that content emerges from the spectral structure of the admissible operator,
+    developed in the Q-series companion papers.
+    The companion papers~\cite{Beau2026h,Beau2026q12,Beau2026q13} establish
+    the following partial pattern, which organises the physical interpretation
+    of the Seeley--DeWitt expansion of $S_\Pi[g,A]$:
+
+    \begin{principle}[Spectral stratification of effective interactions]
+      \label{prin:stratification}
+      The physical role of an emergent interaction is determined not only by the
+      symmetry it carries, but by the spectral order at which the admissible operator
+      responds to variation.
+      The gravitational sector appears at the first non-trivial horizontal response;
+      the gauge sector appears at the vertical curvature response;
+      and mixed gauge--gravity terms appear at the next coupled order.
+    \end{principle}
+
+    The evidence base for Principle~\ref{prin:stratification} is as follows:
+
+    \[
+      \begin{array}{c|c|l}
+        \text{Spectral order} & \text{Sector} & \text{Geometric origin} \\
+        \hline
+        a_2 & \text{gravity}
+        & \text{horizontal variation of the base metric}~\text{\cite{Beau2026h}} \\
+        a_4 & \text{gauge}
+        & \text{vertical variation of the fibre connection}~\text{\cite{Beau2026q12}} \\
+        a_6 & \text{mixed coupling}
+        & \text{joint base--fibre curvature terms}~\text{\cite{Beau2026q13}} \\
+        a_{\mathrm{spin}} & \text{fermionic structure}
+        & \text{Dirac-type admissible operator (open)} \\
+      \end{array}
+    \]
+
+    \begin{remark}
+      \label{rem:stratification-status}
+      Principle~\ref{prin:stratification} is \emph{not} derived from A1--A4 alone.
+      Its correct epistemic status is: established by the companion programme,
+      consistent with A1--A4, and subject to the conditionalities of each
+      companion paper.
+      In particular, the identification $G_\Pi = \mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$
+      remains conditional on~$[\mathrm{H\text{-}color}]$~\cite{Beau2026a35,Beau2026a36},
+      the Lorentzian continuation of the spectral functional remains an open step,
+      and the fermionic entry is a structural prediction, not a derived result.
+      The test of this prediction is whether admissibility forces a Clifford module
+      and a $\mathbb{Z}_2$-grading on the admissible operator.
+    \end{remark}
 
   \subsection*{Open directions}
 
     \paragraph{Q2 — Born rule beyond SU(2).}
       The Born rule $P(a=+1|\hat{a}) = |\langle +\hat{a}|\psi\rangle|^2$ is derived
-      in~\cite{Q1} for the SU(2) parity sector.
-      A first step beyond this sector is taken in~\cite{Q2}, which derives the
+      in~\cite{Beau2026q1} for the SU(2) parity sector.
+      A first step beyond this sector is taken in~\cite{Beau2026q2}, which derives the
       Born rule, singlet correlator, and Tsirelson bound for the co-admissible
       spin-$\tfrac{3}{2}$ sector on the binary icosahedral group $2I$, and
       identifies SU(2) as the unique stable sector under admissibility refinement
@@ -1109,23 +1513,216 @@ the moment of resolution.
       continuous spectra requires extending the fibre structure beyond the
       two-element parity case and remains the primary open direction.
 
-    \paragraph{Q5 — Continuum limit of the fibre.}
+    \paragraph{O31/O32 --- Colour sector and recursive non-injectivity.}
+      The SU(2) derivation proceeds via conjugate pairs $\{c, q-c\}$.
+      For primes $q \equiv 1 \pmod{3}$, the Weil representation of
+      $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ admits colour triplets
+      $\{c_1, c_2, c_3\}$ satisfying $c_1 + c_2 + c_3 \equiv 0 \pmod{q}$
+      and pairwise non-conjugacy.
+      Under Hypothesis~$[\mathrm{H\text{-}color}]$ (triplet co-admissibility,
+      numerically supported in O32~\cite{Beau2026a36}),
+      O31~\cite{Beau2026a35} derives $\mathrm{SU}(3)$ as the admissibility
+      fixed point of the colour fibre, completing the identification
+      $G_{\mathrm{SM}} = \mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$.
+
+      Each element $c_i$ of a valid triplet already carries spin-$\tfrac{1}{2}$
+      (from its conjugate pair $\{c_i, q-c_i\}$, O29~\cite{Beau2026a33})
+      and one colour charge (from the triplet structure).
+      This is the minimal quantum-number content of a quark.
+      The identification of quarks as stable projected configurations in
+      $\mathrm{Im}\,\Pi$ carrying these quantum numbers, and the derivation of
+      colour confinement as a structural consequence of the projection
+      $\Pi_{\mathrm{colour}} : \{c_i\} \to \{\text{colour-neutral objects}\}$
+      being non-injective (ENI~\cite{Beau2026l}, Corollary~6), are the primary
+      open directions of the colour sector.
+
+      More broadly, ENI Corollary~6 establishes that the four axioms force
+      non-injectivity not only at the level of the fundamental projection
+      $\Pi_1$, but at every stratum of a tower of genuinely distinct emergent
+      levels.
+      The programme's current architecture instantiates two strata: the
+      pair level (leptons, $\Pi_1$) and the triplet level (colour sector,
+      $\Pi_2$).
+      The structural derivation of the full particle hierarchy from this
+      recursive tower is the central open direction of the programme.
+
+    \paragraph{Spectral quasi-fixed points and stable structures.}
+      The admissible neighbourhood $\mathcal{A}(O_n)$ varies generically with $n$
+      (Remark~\ref{rem:projective-position}).
+      However, configurations $O^*$ for which $\mathcal{A}(O^*)$ is approximately
+      self-similar --- in the sense that projection from $O^*$ tends to return to a
+      spectrally close neighbourhood --- define \emph{spectral quasi-fixed points} of
+      the admissible flow.
+      These are not static states, which would contradict the irreversibility established in
+      Proposition~\ref{prop:irreversibility}, but projective orbits that traverse the same
+      spectral region repeatedly.
+      Stable physical structures --- particles, gauge symmetries, and coupling constants ---
+      are candidates for identification with such quasi-fixed points: their observed
+      stability would then be a projective property, arising from the near-invariance of
+      their admissible neighbourhood under repeated projection, not from any ontological
+      fixity.
+      The universality of $a_q(s) \cdot q^2 \approx 2$ across all tested primes
+      (O-series numerics) is consistent with the existence of such an attractor in
+      the admissible spectral flow, independent of~$q$.
+      This numerical observation acquires a structural anchor from the companion
+      paper Q10~\cite{Beau2026q10}: the horizontal coefficient $A_H(q)$ of the
+      effective spatial co-metric satisfies $A_H(q) \to 2$ as $q \to \infty$, where
+      the limiting value is identified as the Casimir eigenvalue
+      \begin{equation}
+        \label{eq:casimir-2}
+        C_{\mathrm{su}(2)}\big|_{j=1} \;=\; j(j+1) \;=\; 2
+      \end{equation}
+      of the spin-$1$ representation $\mathrm{Sym}^2(V_\rho)$ — the unique
+      $\mathrm{su}(2)$-invariant quadratic form on the effective spatial sector
+      (Q10, Proposition~5.1, via Schur's lemma).
+      The epistemic chain leading to this identification is:
+      \begin{equation}
+        \label{eq:casimir-chain}
+        [X,Y] \neq 0
+        \;\Rightarrow\; \text{no perfect resolution}
+        \;\Rightarrow\; [\mathrm{U}]
+        \;\Rightarrow\; \mathrm{su}(2)\text{-isotropy}
+        \;\Rightarrow\; C_{\mathrm{su}(2)}|_{j=1} = 2
+        \;\Rightarrow\; A_H(q) \to 2,
+      \end{equation}
+      where: the first implication is Corollary~\ref{cor:projective-incompleteness};
+      the universality hypothesis~$[\mathrm{U}]$ is structurally supported and
+      numerically confirmed for $q \leq 211$~\cite{Beau2026a29,Beau2026q10};
+      the su(2)-isotropy step is Q10~Lemma~4.1; and the Casimir identification is
+      Q10~Proposition~5.1 (unconditional).
+      The convergence $A_H(q) \to 2$ is established conditionally on~$[\mathrm{U}]$
+      in Q10~Theorem~1.1.
+      The attractor value $2$ is therefore not a free parameter but is forced by the
+      representation theory of the admissible fibre, providing a
+      representation-theoretic interpretation of the quasi-fixed point.
+      Formalising the existence and classification of quasi-fixed points of
+      $\mathcal{A}$ is an open direction of the programme.
+
       Theorem~\ref{thm:heisenberg} establishes $F_n \simeq V_\rho$ at finite
       prime~$q$.
       The relationship between this discrete structure and continuous spacetime
       geometry in the large-$q$ limit — i.e.\ how $V_\rho$ on
       $L^2(\mathbb{Z}/q\mathbb{Z})$ approaches $L^2(\mathbb{R})$ and how the
       BFS shell structure produces a four-dimensional effective geometry —
-      is addressed in the companion spectral geometry paper~\cite{Q5a}
+      is addressed in the companion spectral geometry paper~\cite{Beau2026q5a}
       (Section~\ref{subsec:continuum-limit}).
       That paper reduces Q5 to a single spectral tightness condition (Mosco
       tightness of the admissibility forms), confirms this condition
       quantitatively across all tested primes, and proves the embedding in the
       low-frequency regime relevant to admissible sequences.
       The identification of the effective metric from the principal symbol of the
-      limit operator $L_\Pi$ and the Lorentzian signature selection are the
-      subject of Q5b.
+      limit operator $L_\Pi$ and the Lorentzian signature selection are established
+      in the companion paper Q5b~\cite{Beau2026q5b}.
+      The temporal coefficient $A_\tau = 2$ is subsequently fixed by Q11~\cite{Beau2026q11}
+      via temporal Casimir rigidity, closing the effective co-metric to
+      $g^{\mu\nu} = \mathrm{diag}(-2,\,2,\,2,\,2)$.
 
+    \paragraph{Q14 --- Fermionic structure and chirality.}
+      The spectral stratification of Principle~\ref{prin:stratification} identifies
+      the next open level of the programme: the fermionic sector.
+      The companion papers Q12 and Q13~\cite{Beau2026q12,Beau2026q13} derive
+      bosonic gauge and gravitational dynamics from a Laplace-type admissible operator
+      $\mathcal{A}_{g,A}$.
+      Fermionic structure requires a Dirac-type operator $\mathcal{D}_{g,A}$
+      satisfying $\mathcal{D}^2 = \mathcal{A}_{g,A} + \tfrac{1}{4}R$
+      (Lichnerowicz formula), whose $\mathbb{Z}_2$-grading encodes chirality.
+      The central open question is whether the admissibility structure forces a
+      Clifford module structure on the admissible fibre and thereby selects a
+      $\mathbb{Z}_2$-grading: if so, the chiral asymmetry of the Standard Model
+      becomes a structural consequence of admissibility; if not, this constitutes
+      a structural boundary of the programme.
+
+      \clearpage
+  \section{Relation to Established Frameworks}
+  \label{sec:frameworks}
+
+  The four axioms A1--A4 constitute a primitive layer from which geometry, dynamics,
+  and quantum structure emerge without being presupposed.
+  It is natural to ask how this primitive relates to the established formalisms of
+  theoretical physics — not in the sense of reduction, but in the sense of structural
+  translation: what each framework corresponds to, where it appears in the emergent
+  hierarchy, and what it presupposes that the present framework derives.
+
+  \paragraph{Hamilton--Jacobi dynamics.}
+    Once the effective metric $g^{\mu\nu}$ has been reconstructed from the principal
+    symbol of the admissibility operator (Q5b, Q6b~\cite{Beau2026q5b,Beau2026q6b}),
+    the characteristic propagation equation of the effective geometry coincides with the
+    Hamilton--Jacobi equation for massless propagation.
+    This identification belongs to the already projected geometric regime, downstream of
+    the admissibility reconstruction.
+    Hamilton--Jacobi theory should therefore be understood as an effective reformulation
+    of the projected dynamics — valid once the effective configuration space has been
+    constructed by the primitive admissibility relation — not as a primitive layer of the
+    framework.
+    The detailed identification, including the eikonal equation as principal-symbol
+    characteristic, is given in Q6b~\cite{Beau2026q6b}.
+
+  \paragraph{Symplectic geometry and analytical mechanics.}
+    The framework of symplectic geometry takes a phase space — a cotangent bundle
+    $T^*M$ equipped with a canonical symplectic form — as its fundamental arena.
+    In the present framework, this phase space is not a primitive: the effective
+    configuration space $M$ emerges from the Carnot--Carath\'eodory geometry of the
+    BFS shell stratification (Q5b~\cite{Beau2026q5b}), and the cotangent structure is
+    induced by the principal symbol of the admissibility operator.
+    Symplectic geometry is therefore the appropriate language for the effective dynamics
+    on $T^*M$, valid after the configuration space has been constructed by the
+    admissibility constraints; it does not describe the admissibility structure that
+    produces it.
+
+  \paragraph{WKB approximation and geometric optics.}
+    In the WKB approximation, the quantum wave function takes the form
+    $\psi \sim A\,e^{iS/\hbar}$, where the phase $S$ is the Hamilton--Jacobi action.
+    In the present framework, the phase of an admissible mode is not an input but an
+    output of the fibre structure: it emerges from the coherence conditions imposed by
+    the admissibility filter on the Weil representation~\cite{Beau2026q1}.
+    The WKB identification therefore holds at the level of the effective description,
+    once the continuum limit has been taken (Q5a~\cite{Beau2026q5a}): the collective
+    phase of the admissible modes plays the role of $S$, and geometric optics is the
+    ray approximation of the admissible propagation structure in this limit.
+    The WKB phase is thus a derived quantity, encoding the projective compression of the
+    admissible fibre, rather than a fundamental dynamical object.
+
+  \paragraph{Functional renormalisation group.}
+    The Wetterich effective average action satisfies an exact renormalisation group
+    equation whose infrared fixed point recovers the physical effective action.
+    In the present framework, the Mosco limit of the admissibility Dirichlet forms
+    (Q5a~\cite{Beau2026q5a}) plays a structurally analogous role: the sequence
+    $\{\mathcal{E}_q\}$ flows, as $q\to\infty$, to the scalar operator $\mathcal{L}_\Pi$,
+    whose principal symbol defines the effective metric.
+    The spectral entropy functional $S_\Pi[g,A]$ of the companion programme is the
+    effective action resulting from this limit~\cite{Beau2026h,Beau2026q12,Beau2026q13}.
+    The structural difference is that the Wetterich flow renormalises a pre-existing field
+    theory, while the present limit produces the field content itself from the admissibility
+    constraints.
+
+  \paragraph{Page--Wootters construction and relational time.}
+    The Page--Wootters construction derives apparent temporal evolution from conditional
+    states of a globally stationary wave function, treating time as a relational label on
+    a clock subsystem.
+    The projective temporal ordering of the present framework~\cite{Beau2026pto} shares
+    this relational spirit — time is not a parameter of the substrate but a monotone
+    ordering induced by the admissibility cascade — but differs in one structural respect.
+    In the Page--Wootters model, the global state is fully recoverable (the projection is
+    effectively injective), whereas here the projection $\Pi$ is structurally non-injective
+    (A2, ENI~\cite{Beau2026l}).
+    Temporal ordering in the present framework is therefore irreversible at the structural
+    level: it reflects the irreversible accumulation of projected spectral capacity, not
+    the choice of a clock observable.
+
+  \paragraph{Holographic renormalisation and radial Hamilton--Jacobi.}
+    In holographic renormalisation, the on-shell gravitational action satisfies a radial
+    Hamilton--Jacobi equation whose flow encodes the renormalisation group of the boundary
+    field theory.
+    The Schwarzschild geometry derived in Q6b~\cite{Beau2026q6b} from flux conservation
+    of the admissibility operator has a structural parallel with this picture: both
+    frameworks derive a bulk geometry from a propagation constraint, and both identify the
+    horizon as a degeneration of the effective description.
+    The structural difference is that holographic renormalisation presupposes a fixed
+    anti-de Sitter background and a specific bulk-boundary duality, while the present
+    framework derives the effective geometry from the admissibility operator without a
+    background or a boundary field theory.
+
+    \clearpage
   \section*{Acknowledgements}
 
   The author acknowledges the use of large language models as a supportive tool
@@ -1134,100 +1731,6 @@ the moment of resolution.
   All conceptual contributions, theoretical choices, and interpretations remain
   the sole responsibility of the author.
 
-  \begin{thebibliography}{99}
-
-    \bibitem{HeisenbergStructure}
-    J.~Beau,
-    ``Non-Factorisability and the Emergence of Heisenberg Structure
-    from Admissibility Constraints,''
-    Cosmochrony companion paper, Zenodo (2026).
-    \doi{10.5281/zenodo.19635395}.
-
-    \bibitem{Cosmochrony}
-    J.~Beau,
-    ``Cosmochrony: A Pre-Geometric Relational Framework for Emergent Physics,''
-    white paper, Zenodo (2026).
-    \doi{10.5281/zenodo.17957509}.
-
-    \bibitem{ENI}
-    J.~Beau,
-    ``Non-Injectivity as a Structural Necessity of Genuine Emergence:
-    A No-Go Theorem for Faithful Emergent Descriptions,''
-    Cosmochrony companion paper~L, Zenodo (2026).
-    \doi{10.5281/zenodo.19391746}.
-
-    \bibitem{BornInfeld}
-    J.~Beau,
-    ``Bounded Relaxation and the Dynamical Selection of Spacetime Geometry,''
-    Cosmochrony companion paper~C, Zenodo (2026).
-    \doi{10.5281/zenodo.18407505}.
-
-    \bibitem{O12}
-    J.~Beau,
-    ``Exact Weil-Block Projective Capacity on Heisenberg Graphs: Resolving the Final Obstruction to $\delta$
-    Extraction,''
-    spectr. adm. subprg. O12 paper, Zenodo (2026).
-    \doi{10.5281/zenodo.19194798}.
-
-    \bibitem{O17}
-    J.~Beau,
-    ``Fibre-Level Admissibility from Conjugate Weil Blocks: Structural Derivation of the Pair Observable,''
-    O16 spectr. adm. subprg. O17 paper, Zenodo (2026).
-    \doi{10.5281/zenodo.19299611}
-
-    \bibitem{Bell}
-    J.~Beau,
-    ``Non-Injective Projections and the Structural Failure of Bell Factorization,''
-    Cosmochrony companion paper~B, Zenodo (2026).
-    \doi{10.5281/zenodo.18371173}.
-
-    \bibitem{Q1}
-    J.~Beau,
-    ``From Admissibility to Quantum Structure: Phase Coherence and Correlations from Non-Injective Projection,''
-    Cosmochrony companion paper~Q1, Zenodo (2026).
-    \doi{10.5281/zenodo.19561060}.
-
-    \bibitem{Q2}
-    J.~Beau,
-    ``Quantum Structure beyond Spin-$\tfrac{1}{2}$: Co-Admissible Sectors and
-    the Emergence of SU(2) as a Fixed Point,''
-    Cosmochrony companion paper~Q2, Zenodo (2026).
-    \doi{10.5281/zenodo.19616444}.
-
-    \bibitem{O22}
-    J.~Beau,
-    ``Shell-Alignment from Projection Locking: A Discrete Admissibility Theorem
-    under Born--Infeld Saturation,''
-    O22 spectral admissibility sub-programme paper, Zenodo (2026).
-    \doi{10.5281/zenodo.19367375}.
-
-    \bibitem{O24}
-    J.~Beau,
-    ``Vertical Non-Injectivity and the Stability of the Observable Rank:
-    Closing the Unconditional Transfer $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$,''
-    O24 spectral admissibility sub-programme paper, Zenodo (2026).
-    \doi{10.5281/zenodo.19386581}.
-
-    \bibitem{O23}
-    J.~Beau,
-    ``Three Stable Directions from Quaternionic Minimality: Derivation of
-    $\Sigma_c(n_3) = 3$ from Born--Infeld Fibre Admissibility,''
-    O23 spectral admissibility sub-programme paper, Zenodo (2026).
-    \doi{10.5281/zenodo.19375136}.
-
-    \bibitem{Q5a}
-    J.~Beau,
-    ``Large-$q$ Limit of the Admissible Fibre: Representational and Operator
-    Convergence,''
-    Cosmochrony companion paper~Q5a, Zenodo (2026).
-    \doi{10.5281/zenodo.19642369}.
-
-    \bibitem{Bell1964}
-    J.~S.~Bell,
-    ``On the Einstein Podolsky Rosen paradox,''
-    \textit{Physics Physique Fizika} \textbf{1}, 195--200 (1964).
-    \doi{10.1103/PhysicsPhysiqueFizika.1.195}.
-
-  \end{thebibliography}
+  \bibliography{cosmochrony-bibliography,refs-external}
 
 \end{document}
