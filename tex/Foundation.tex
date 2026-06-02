@@ -112,6 +112,11 @@ as the Primitive of Physical Description}
     the Tsirelson bound, and the Born rule as structural consequences of
     admissibility — using Axioms A1--A4 as stated here, combined with the concrete
     spectral results of the O-series.
+    The companion papers~\cite{Beau2026entnote,Beau2026ent1,Beau2026ent2} locate entanglement
+    quantitatively within the spectral admissibility cascade:
+    the minimal admissible pair sector carries the spin-$\tfrac12$ singlet with entropy
+    $\log 2$ (the Bell--Tsirelson quantity), while the full residual fibre-level rank
+    gives a finer observable $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$.
     The white paper~\cite{Cosmochrony} develops the full phenomenological programme;
     the present axiomatic reformulation is a foundational companion to it, not yet
     integrated into its main text.
@@ -1318,39 +1323,68 @@ the moment of resolution.
   \section{Entanglement and Bell Non-Applicability}
   \label{sec:entanglement}
 
-  \subsection{Entanglement as shared ancestral fibre}
+  \subsection{Entanglement as a shared infra-projectable cell}
 
-    Two observable systems $A$ and $B$ are entangled when they share a common
-    ancestral fibre: a past state $O_{n-k}$ in which they formed a single
-    non-factorisable configuration.
+    Two observable systems $A$ and $B$ are entangled when their joint description occupies a single
+    non-decomposable cell of the projection $\Pi_n$: a fibre that $\Pi_n$ cannot factorise into separate
+    projected descriptions of $A$ and $B$.
+    The correlation between them is exactly the part of the joint fibre that $\Pi_n$ cannot split.
 
-    The shared fibre $F_{n-k}$ reduces the admissible directions for each
-    subsystem: the admissible directions for $A$ are constrained by $B$,
-    and vice versa.
-    The correlations arise not from any interaction at the moment of
-    measurement, but from the persistence of the shared fibre — a residue of
-    the past transition in which $A$ and $B$ were joined.
+    This is a synchronic, structural property of the non-injective projection, not a residue of a past
+    interaction.
+    The binding is the non-factorisability of the fibre forced by A1 and A3 (Section~\ref{sec:admissibility});
+    it holds wherever a shared non-decomposable cell is present, independently of how that cell arose.
+    For the conjugate Weil pair $\{c,q-c\}$ that organises the spectral cascade, the binding is explicit and
+    permanent: the two characters are related by the Born--Infeld parity involution
+    $V_{q-c}\simeq\overline{V_c}$, which holds at every depth $n$.
+    The pair is a single closed object throughout the cascade, not two subsystems that were joined at an
+    earlier transition and have since separated.
+
+    This picture is now quantitatively derived rather than asserted.
+    For the conjugate pair, the minimal admissible projection is spectrally atomic: after removal of the zero
+    mode it is the two-dimensional Born--Infeld parity pair, identified with the spin-$\tfrac12$
+    representation, and its reduced state is the singlet with entanglement entropy
+    $\log 2$~\cite{Beau2026ent2,Beau2026q3}.
+    This is the entropy of the state behind the singlet correlator and the Tsirelson bound~\cite{Beau2026q1}.
+    A finer pipeline-level observable, the full residual fibre-level rank $r_{\mathrm{pair}}(n)$, gives
+    $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$, proved for matched single-character blocks and conditional
+    otherwise on a residual indiscernibility hypothesis~\cite{Beau2026entnote,Beau2026ent1}.
+    The two observables must not be conflated; they coincide only when $r_{\mathrm{pair}}(n)=2$.
+
+    The invariant carried by the shared cell is infra-projectable: it has no position in the projected
+    temporal ordering, which is itself the cumulative projected capacity.
+    It is a single unsplit object below the resolution of $\Pi_n$ (Corollary~\ref{cor:projective-incompleteness}),
+    not a pair of separately ordered events.
+    In this sense entanglement is the not-yet-time-ordered sector of the cascade, rather than a record of a past
+    joining.
+    Correlations of this kind carry no signal and admit no influence between separated projected descriptions;
+    locality at the projected level is preserved.
 
   \subsection{Why Bell's factorisation assumptions do not apply}
 
-    Bell's theorem~\cite{Bell1964} constrains models in which measurement outcomes
-    are determined by a variable $\lambda$ satisfying:
+    Bell's theorem~\cite{Bell1964} constrains models in which measurement outcomes are determined by a variable
+    $\lambda$ satisfying:
     (i) $\lambda$ is local (assignable separately to $A$ and $B$),
-    (ii) $\lambda$ is present (defined at the moment of measurement),
+    (ii) $\lambda$ is a definite value present at measurement,
     (iii) $\lambda$ is independent (statistically independent of measurement settings).
 
-    The fibre variable in the present framework satisfies none of these conditions.
-    It is not local (it belongs to the shared fibre, not to a spatial region),
-    not present (it belongs to a past transition, not the current state),
-    and not independent ($A$ and $B$ share the same ancestral fibre,
-    which cannot be factorised).
+    The fibre invariant in the present framework satisfies none of these conditions, and the decisive failure
+    is (ii).
+    A variable fixed in the common past history would itself be a local hidden variable of exactly the kind
+    Bell's theorem excludes; locating the shared fibre in the past would therefore not evade the theorem.
+    The escape is instead that the fibre invariant is infra-projectable: it never acquires a definite projected
+    value, at the present transition or any other, because it lives below the resolution of $\Pi_n$
+    (Corollary~\ref{cor:projective-incompleteness}).
+    There is no $\lambda$ with a definite value to be assigned.
 
-    The Bell factorisation assumption
-    $P(a,b|\lambda) = P(a|\lambda) \cdot P(b|\lambda)$
-    fails because it requires $\lambda$ to be assignable separately to $A$ and $B$:
-    the shared fibre is structurally non-factorisable.
-    Bell-type inequalities are therefore not violated in this framework —
-    their preconditions do not hold.
+    The invariant is also not local --- it belongs to the shared non-factorisable cell, not to a separable
+    region assignable to $A$ or $B$ --- and not independent, since $A$ and $B$ occupy the same cell, which
+    cannot be factorised.
+    The Bell factorisation assumption $P(a,b|\lambda) = P(a|\lambda) \cdot P(b|\lambda)$ fails because it
+    presupposes a definite $\lambda$ assignable separately to $A$ and $B$, and the shared infra-projectable
+    cell provides neither.
+    Bell-type inequalities are therefore not violated by a hidden mechanism in this framework --- their
+    preconditions do not hold.
     This is established formally in the companion paper~\cite{Beau2026b}.
 
     \clearpage
@@ -1387,10 +1421,13 @@ the moment of resolution.
       $\dim_\mathbb{R} \mathrm{Im}\,\mathbb{H} = 3$ (O23) &
       Proved \\
       Entanglement &
-      Shared non-factorisable ancestral fibre &
+      Shared non-factorisable infra-projectable cell~\cite{Beau2026entnote} &
       Derived \\
+      Entanglement entropy &
+      Admissible pair $\to\log 2$; residual rank $\to\log r_{\mathrm{pair}}$~\cite{Beau2026ent2,Beau2026ent1} &
+      Proved / cond. \\
       Bell non-applicability &
-      Non-local, non-independent fibre &
+      Non-local, infra-projectable fibre &
       Proved~\cite{Beau2026b} \\
       Born rule (SU(2) sector) &
       Correlator + coherence~\cite{Beau2026q1} &
