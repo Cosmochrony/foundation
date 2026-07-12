@@ -1,7 +1,7 @@
 # Admissible Non-Injective Transitions as the Primitive of Physical Description
 
 This repository contains the source of the **Foundation Cosmochrony paper**  
-[*Admissible Non-Injective Transitions as the Primitive of Physical Description*](out/Foundation.pdf).
+*Admissible Non-Injective Transitions as the Primitive of Physical Description*.
 
 This work establishes the **axiomatic foundation** of the Cosmochrony framework.
 
