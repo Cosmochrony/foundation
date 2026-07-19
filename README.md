@@ -176,17 +176,22 @@ This paper provides:
 
 It serves as the **foundation layer** for all subsequent Cosmochrony results.
 
-## Effective Co-Metric Completion (v1.10)
+## Effective Co-Metric Completion (v1.10; status revised in v1.16)
 
-The updated paper integrates the downstream result that the effective co-metric is now
-fully explicit. Under the Q5a–Q5b geometric chain, with Q8 (Casimir rigidity: $A_z=2$),
+The paper integrates the downstream result that the effective co-metric is fully
+explicit. Under the Q5a–Q5b geometric chain, with Q8 (Casimir rigidity: $A_z=2$),
 Q10 (spectral universality: $A_H=2$), and Q11 (temporal Casimir rigidity: $A_\tau=2$),
 the effective co-metric is:
 
 $$g^{\mu\nu} = \mathrm{diag}(-2,\,2,\,2,\,2).$$
 
-This is noted in the results table of Foundation as a proved consequence of Q5b, Q6b, Q8,
-Q10, and Q11 combined.
+**Status revision (v1.16).** Q5a version 3.0 withdraws the Mosco derivation of the
+spatial limit operator: the canonical filtration is exactly a growing toric Fourier
+window, the published admissibility form converges to the zero form on it, and no common
+scalar normalisation produces a non-trivial toric differential operator. The spatial
+limit operator is now the explicit, unestablished hypothesis **[H-L]** (Q5b 2.0); the
+co-metric completion above is conditional on [H-L] ($D_{\mathrm{hom}}=4$ remains
+structural), and Q5 is open.
 
 ## Relation to Established Frameworks (v1.10)
 
@@ -203,10 +208,10 @@ and what it presupposes that the present framework derives:
   principal symbol of the admissibility operator.
 - **WKB approximation**: the WKB phase $S$ is a derived quantity encoding the projective
   compression of the admissible fibre; geometric optics is the ray approximation of
-  admissible propagation in the continuum limit (Q5a).
-- **Functional renormalisation group**: the Mosco limit of the admissibility Dirichlet
-  forms (Q5a) plays a structurally analogous role to the Wetterich effective average
-  action — both describe an infrared fixed point of a flow.
+  admissible propagation in the continuum limit (conditional on [H-L]).
+- **Functional renormalisation group**: the conjectured Mosco limit of the admissibility
+  Dirichlet forms (hypothesis [H-L]) would play a structurally analogous role to the
+  Wetterich effective average action — both describe an infrared fixed point of a flow.
 
 ## What This Paper Does Not Do
 

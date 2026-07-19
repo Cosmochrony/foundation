@@ -715,23 +715,23 @@ provides the effective Lagrangian description.
       The convergence $\mathbb{C}^q \to L^2(\mathbb{R})$ and the emergence of
       continuous spacetime geometry from the BFS shell structure are established
       qualitatively in~\cite{Cosmochrony}.
-      The companion paper~\cite{Beau2026q5a} initiates the rigorous treatment of this
-      limit, formulating it in the category of Hilbert spaces and operator algebras
-      and decomposing it into three distinct convergences: a Hilbert inductive limit
-      (T1), a representational convergence of Weil generators to metaplectic
-      generators (T2), and a Mosco convergence of admissibility forms to a
-      second-order operator $L_\Pi$ on $L^2(\mathbb{R})$ (T3).
-      The continuum limit is reduced to a single spectral tightness condition
-      (Conjecture~C of~\cite{Beau2026q5a}), which is confirmed quantitatively across all
-      tested primes: the spectral tail mass of admissible test vectors satisfies
-      $E_q(q/3)/\|f_q\|^2 < 2.1 \times 10^{-5}$ uniformly, with values decreasing
-      toward machine precision as $q$ grows.
-      The embedding hypothesis~[H1] is proved in the low-frequency regime relevant
-      to admissible sequences; the Weil-block compatibility condition and the identification of the effective
-      metric from the symbol of $L_\Pi$ are established in the companion paper
-      Q5b~\cite{Beau2026q5b}.
-      The present remark identifies the mechanism; \cite{Beau2026q5a} establishes the
-      operator-theoretic framework and the numerical evidence.
+      Earlier versions of the companion paper~\cite{Beau2026q5a} (up to 2.1) initiated
+      the rigorous treatment of this limit, decomposing it into three convergences
+      (a Hilbert inductive limit, a representational convergence of Weil generators,
+      and a Mosco convergence of admissibility forms to a second-order operator
+      $L_\Pi$ on $L^2(\mathbb{R})$) and reducing it to a single spectral tightness
+      condition.
+      Q5a version 3.0 withdraws that framework: it identifies the canonical
+      filtration exactly (with the pipeline's initial vector, the filtration stage is
+      precisely a growing toric Fourier window), proves that the published
+      admissibility form converges to the zero form on this filtration, and proves
+      that no common scalar normalisation of the form produces a non-trivial toric
+      differential operator.
+      The existence of a spatial limit operator is now the explicit, unestablished
+      hypothesis [H-L] (Q5b version 2.0); the identification of the effective metric
+      from the symbol of $L_\Pi$ (Q5b~\cite{Beau2026q5b}) is conditional on [H-L].
+      The present remark identifies the intended mechanism; its rigorous realisation
+      is the open content of Q5.
     \end{remark}
 
     \begin{remark}[Why four dimensions]
@@ -1455,7 +1455,7 @@ the moment of resolution.
       Effective spacetime geometry, $D_{\mathrm{hom}}=4$;
       full co-metric $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$ &
       BFS stratification (Q5b, Q6b, Q8, Q10, Q11)~\cite{Beau2026q5b,Beau2026q6b,BeauQ8,Beau2026q10,Beau2026q11} &
-      Proved \\
+      Structural ($D_{\mathrm{hom}}=4$); co-metric conditional on [H-L] \\
       Einstein equation $G_{\mu\nu} = 8\pi G\,T_{\mu\nu}$ &
       Spectral entropy variation~\cite{Beau2026h} &
       Proved (structural) \\
@@ -1665,16 +1665,16 @@ the moment of resolution.
       BFS shell structure produces a four-dimensional effective geometry —
       is addressed in the companion spectral geometry paper~\cite{Beau2026q5a}
       (Section~\ref{subsec:continuum-limit}).
-      That paper reduces Q5 to a single spectral tightness condition (Mosco
-      tightness of the admissibility forms), confirms this condition
-      quantitatively across all tested primes, and proves the embedding in the
-      low-frequency regime relevant to admissible sequences.
-      The identification of the effective metric from the principal symbol of the
-      limit operator $L_\Pi$ and the Lorentzian signature selection are established
-      in the companion paper Q5b~\cite{Beau2026q5b}.
-      The temporal coefficient $A_\tau = 2$ is subsequently fixed by Q11~\cite{Beau2026q11}
-      via temporal Casimir rigidity, closing the effective co-metric to
-      $g^{\mu\nu} = \mathrm{diag}(-2,\,2,\,2,\,2)$.
+      Version 3.0 of that paper identifies the canonical filtration exactly (a growing
+      toric Fourier window), proves that the published admissibility form converges to
+      the zero form on it, and proves a normalisation no-go: no common scalar
+      normalisation produces a non-trivial toric differential operator.
+      Q5 therefore remains open.
+      The identification of the effective metric from the principal symbol of a limit
+      operator $L_\Pi$ and the Lorentzian signature selection (Q5b~\cite{Beau2026q5b}),
+      and the closure of the temporal coefficient $A_\tau = 2$ by
+      Q11~\cite{Beau2026q11} via temporal Casimir rigidity, are conditional on the
+      unestablished spatial limit hypothesis [H-L] (Q5b version 2.0, Q11 version 1.1).
 
     \paragraph{Q14 --- Fermionic structure and chirality.}
       The spectral stratification of Principle~\ref{prin:stratification} identifies
@@ -1704,7 +1704,8 @@ the moment of resolution.
 
   \paragraph{Hamilton--Jacobi dynamics.}
     Once the effective metric $g^{\mu\nu}$ has been reconstructed from the principal
-    symbol of the admissibility operator (Q5b, Q6b~\cite{Beau2026q5b,Beau2026q6b}),
+    symbol of the admissibility operator (Q5b, Q6b~\cite{Beau2026q5b,Beau2026q6b};
+    conditional on the spatial limit hypothesis [H-L]),
     the characteristic propagation equation of the effective geometry coincides with the
     Hamilton--Jacobi equation for massless propagation.
     This identification belongs to the already projected geometric regime, downstream of
@@ -1735,7 +1736,8 @@ the moment of resolution.
     output of the fibre structure: it emerges from the coherence conditions imposed by
     the admissibility filter on the Weil representation~\cite{Beau2026q1}.
     The WKB identification therefore holds at the level of the effective description,
-    once the continuum limit has been taken (Q5a~\cite{Beau2026q5a}): the collective
+    once the continuum limit has been taken --- an operation currently conditional on
+    the open hypothesis [H-L] (Q5a version 3.0~\cite{Beau2026q5a}): the collective
     phase of the admissible modes plays the role of $S$, and geometric optics is the
     ray approximation of the admissible propagation structure in this limit.
     The WKB phase is thus a derived quantity, encoding the projective compression of the
@@ -1744,10 +1746,11 @@ the moment of resolution.
   \paragraph{Functional renormalisation group.}
     The Wetterich effective average action satisfies an exact renormalisation group
     equation whose infrared fixed point recovers the physical effective action.
-    In the present framework, the Mosco limit of the admissibility Dirichlet forms
-    (Q5a~\cite{Beau2026q5a}) plays a structurally analogous role: the sequence
-    $\{\mathcal{E}_q\}$ flows, as $q\to\infty$, to the scalar operator $\mathcal{L}_\Pi$,
-    whose principal symbol defines the effective metric.
+    In the present framework, the conjectured Mosco limit of the admissibility
+    Dirichlet forms (hypothesis [H-L]; Q5a version 3.0~\cite{Beau2026q5a} shows the
+    published normalisation yields the zero form) would play a structurally analogous
+    role: the sequence $\{\mathcal{E}_q\}$ would flow, as $q\to\infty$, to a scalar
+    operator $\mathcal{L}_\Pi$ whose principal symbol defines the effective metric.
     The spectral entropy functional $S_\Pi[g,A]$ of the companion programme is the
     effective action resulting from this limit~\cite{Beau2026h,Beau2026q12,Beau2026q13}.
     The structural difference is that the Wetterich flow renormalises a pre-existing field
