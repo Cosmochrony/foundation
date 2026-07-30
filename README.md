@@ -12,7 +12,7 @@ or dynamics.
 
 ## Quick Summary
 
-Foundation-1.2 shows that the structure of physical reality can be derived from a
+The paper studies how much structure follows from a
 single primitive:
 
 > **Admissible transitions between observable states under a non-injective projection.**
@@ -23,8 +23,12 @@ From this primitive, the paper proves that:
 - **Proto-states (unresolved physical states)** are real and structurally required (A3)
 - **Phase coherence** is preserved because admissibility forbids premature selection
 - **Quantum discreteness** emerges from projection locking (A4)
-- **Heisenberg structure** is forced by non-factorisability of admissible fibres
-- **The observable space is identified with the Weil representation \(V_\rho\)**
+- Under an explicit representation dictionary, **non-factorisability implies
+  irreducibility and non-commutation**
+- These conditions **do not select a Heisenberg group**: an explicit
+  \(\mathfrak S_3\) countermodel has a non-central commutator
+- The Heisenberg carrier \(\mathcal H_c\) used by the O-series is a supplied,
+  conditional realisation, distinct from its associated Weil module \(V_\rho\)
 
 No quantum postulates are assumed.
 
@@ -126,22 +130,23 @@ Time is not fundamental but **emerges from projection structure**.
 
 Destroying coherence would correspond to premature selection → forbidden
 
-### 4. Emergence of Heisenberg Structure
+### 4. Carrier-Selection Boundary
 
-- Admissibility forbids factorisation of the fibre
-- This forces a **non-trivial commutator structure**
+- With a representation-theoretic dictionary, admissibility forbids invariant
+  factorisation of the fibre
+- In dimension greater than one, irreducibility forces the generating pair to
+  **not commute**
 
-Combined with minimality and parity:
-
-\[
-\text{Symmetry group} \simeq \mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})
-\]
-
-- Observable space:
+But minimal generation and parity do not make the commutator central:
 
 \[
-F_n \simeq V_\rho
+\mathfrak S_3,\quad X=(12),\quad Y=(23),\quad [X,Y]=(132)\notin Z(\mathfrak S_3)
 \]
+
+Thus the finite Heisenberg group and its carrier must be supplied by an
+additional typed hypothesis. Stone–von Neumann then fixes the Heisenberg
+carrier \(\mathcal H_c\) up to unitary equivalence; it does not identify that
+action with the distinct Weil action on \(V_\rho\).
 
 ### 5. Discrete Quantum Transitions
 
@@ -218,6 +223,7 @@ and what it presupposes that the present framework derives:
 - Does not derive full quantum field theory
 - Does not construct spacetime geometry explicitly (handled by Q5a–Q6b)
 - Does not address all gauge sectors beyond SU(2)
+- Does not derive the finite Heisenberg carrier from A1–A4
 
 These are handled in companion papers and the O-series.
 
