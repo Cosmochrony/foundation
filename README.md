@@ -5,6 +5,11 @@ This repository contains the source of the **Foundation Cosmochrony paper**
 
 This work establishes the **axiomatic foundation** of the Cosmochrony framework.
 
+Version 2.0.0 is a major corrective revision. It replaces the former positive
+Heisenberg carrier-selection claim with the finite obstruction proved by the
+integrated \(\mathfrak S_3\) countermodel and retypes the O-series carrier as a
+supplied conditional realisation.
+
 It introduces a minimal set of structural principles from which key features of
 physics — including irreversibility, temporal order, quantum coherence, and
 emergent symmetry — are derived without postulating spacetime, Hilbert space,

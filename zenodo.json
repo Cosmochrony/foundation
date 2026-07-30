@@ -2,6 +2,8 @@
   "bib_key": "Beau2026m",
   "web_url": "https://cosmochrony.org/science/non-injective/foundation/",
   "main_tex": "tex/Foundation.tex",
+  "version": "2.0.0",
+  "notes": "Version 2.0.0 — major corrective revision. This version supersedes the carrier-selection claim retained in version 1.16. A1–A3 and Born–Infeld parity do not derive Heis_3(Z/qZ): the integrated S3 countermodel satisfies the extracted carrier contract while its non-trivial commutator is non-central. The O-series Heisenberg carrier is therefore typed as a supplied conditional realisation, and the Heisenberg carrier H_c is distinguished systematically from the associated Weil module V_rho. Downstream statements that consumed the failed centrality step have been requalified, including the uncertainty and canonical-quantisation claims, the five-level carrier hierarchy, the wavefunction identification, and the large-q bridge. Projective incompleteness is now attached directly to structural non-injectivity A2 rather than to a commutator argument. The continuum-limit status correction introduced in version 1.16 remains in force.",
   "zenodo_id": 19616329,
   "doi": "10.5281/zenodo.19616329"
 }
