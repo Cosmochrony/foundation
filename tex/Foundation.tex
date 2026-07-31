@@ -365,14 +365,17 @@ discrete support (A4).
         What it retains constitutes the observable $O_n$; what it discards is the
         non-trivial kernel whose existence is guaranteed by
         Corollary~\ref{cor:projective-incompleteness}.
-        \item \emph{Generator of temporal order.}
-        The oriented sequence $\Pi_0, \Pi_1, \Pi_2, \ldots$ carries the partial order
-        established in Theorem~\ref{thm:temporal-order}.
+        \item \emph{Generator of temporal order, conditionally.}
+        Under \textup{[H-acyc]} (Definition~\ref{hyp:acyclic}), which is not derived here, the
+        oriented sequence $\Pi_0, \Pi_1, \Pi_2, \ldots$ carries the partial order of
+        Theorem~\ref{thm:temporal-order}.
         Each $\Pi_n$ is a node in the admissibility graph
-        (Remark~\ref{rem:state-machine}); the index $n$ acquires its temporal meaning
-        from this orientation, not from an external parameter.
-        The dynamics of the framework is the oriented topology of this graph — not
-        a law superimposed on a pre-existing time.
+        (Remark~\ref{rem:state-machine}); on that hypothesis the index $n$ acquires its temporal
+        meaning from this orientation, not from an external parameter, and the dynamics of the
+        framework is the oriented topology of this graph rather than a law superimposed on a
+        pre-existing time.
+        Without \textup{[H-acyc]} the sequence is still a chain of steps, each losing information
+        in its immediate image, but it is not shown to be acyclic.
         \item \emph{Revelation, not creation.}
         $\Pi_n$ does not produce new structure in $\chi$.
         In the supplied O-series realisation, it selects from the admissible
@@ -1657,10 +1660,13 @@ the moment of resolution.
       self-similar --- in the sense that projection from $O^*$ tends to return to a
       spectrally close neighbourhood --- define \emph{spectral quasi-fixed points} of
       the admissible flow.
-      These are not static states, which would contradict the immediate information loss
-      established in
-      Proposition~\ref{prop:irreversibility}, but projective orbits that traverse the same
-      spectral region repeatedly.
+      These are not static states, but projective orbits that traverse the same spectral region
+      repeatedly.
+      What excludes staticity is the novelty condition of Section~\ref{subsec:ni-novelty}, under
+      which a successor is indexed as a distinct state only when $\Delta_n \neq 0$.
+      Immediate information loss would not exclude it: a non-injective $\Pi_n$ can identify
+      several configurations and still return the same observable state, which is precisely the
+      cycle left open by \textup{[H-acyc]}.
       Stable physical structures --- particles, gauge symmetries, and coupling constants ---
       are candidates for identification with such quasi-fixed points: their observed
       stability would then be a projective property, arising from the near-invariance of

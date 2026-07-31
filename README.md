@@ -101,7 +101,8 @@ The framework is governed by four axioms with distinct roles (no independence th
 
 - Every admissible projection \(\Pi_n\) that is non-injective has a non-trivial kernel, which A2 asserts
   to be the generic case
-- No observable description is ever complete
+- No description resting on a non-injective step is complete; A2 being generic, an exceptional
+  injective transition is not excluded
 - Direct consequence of structural non-injectivity (A2): distinct admissible configurations share an
   observable image, so their difference is a non-zero kernel element. No commutator or carrier-selection
   theorem is involved.
@@ -110,14 +111,15 @@ The framework is governed by four axioms with distinct roles (no independence th
 
 \(\Pi_n\) simultaneously plays three roles, each irreducible to the others:
 
-1. **Admissibility filter**: selects observable directions from structurally compatible continuations; the discarded kernel is real and guaranteed by projective incompleteness
+1. **Admissibility filter**: selects observable directions from structurally compatible continuations; where the step is non-injective, the discarded kernel is real and guaranteed by projective incompleteness
 2. **Generator of temporal order**: the oriented sequence \(\Pi_0, \Pi_1, \ldots\) carries the partial order of the temporal-ordering theorem *under the acyclicity hypothesis* **[H-acyc]**; time would then be the topology of this graph, not an external parameter
 3. **Revelation, not creation**: \(\Pi_n\) resolves finer spectral content already present in \(\Omega_n^{(c)}\); increasing \(n\) reveals structure, it does not create it
 
 These three roles are inseparable, but their common source is the axiomatic layer, not an algebraic
 commutator: the constraints A1--A3 and Born--Infeld parity that force the admissibility filter also
-generate the temporal order and, for the non-injective transitions A2 asserts to be generic, guarantee the
-incompleteness of the resolution. They do not by themselves select the carrier group.
+generate the temporal order under [H-acyc] and, for the non-injective transitions A2 asserts to be
+generic, guarantee the incompleteness of the resolution. They do not by themselves select the carrier
+group.
 
 ### 1. Immediate Information Loss and Temporal Order
 
