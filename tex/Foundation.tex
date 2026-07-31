@@ -216,9 +216,9 @@ as the Primitive of Physical Description}
   $F_n = \Pi_n^{-1}(O_n)$ by definition, so the restriction of $\Pi_n$ to $F_n$ is constant and satisfies no
   effective non-triviality condition.
   The candidate is instead a local transition map
-  \begin{equation}
+  \[
     \widehat{\Pi}_n \colon \Omega_n^{\mathrm{loc}} \longrightarrow \mathcal{O}_n^{\mathrm{loc}},
-  \end{equation}
+  \]
   where $\Omega_n^{\mathrm{loc}}$ collects the admissible directions available from $O_{n-1}$ and
   $\mathcal{O}_n^{\mathrm{loc}} \subseteq \mathcal{A}(O_{n-1})$ collects the resolved successors they reach;
   A2 is the assertion that this map is generically many-to-one.
@@ -255,7 +255,8 @@ as the Primitive of Physical Description}
     not eliminated by projection locking: distinct configurations $f, f' \in F_n$ with
     $\Pi_n(f) = \Pi_n(f') = O_n$ remain structurally present after locking, but become
     observationally inaccessible.
-    The non-injectivity of~$\Pi_n$ therefore persists at every resolution step.
+    Where $\Pi_n$ is non-injective, that non-injectivity therefore persists through resolution:
+    locking withdraws observational access, it does not remove the configurations.
 
     This distinction --- observable uniqueness without configurational uniqueness --- prevents
     Bell-type factorisation~\cite{Beau2026b} and forces the coherent, non-factorisable fibre
@@ -385,8 +386,8 @@ discrete support (A4).
       These three roles are inseparable: the structural constraints A1--A3 and
       Born--Infeld parity that force the admissibility filter simultaneously
       generate the temporal order via Theorem~\ref{thm:temporal-order} and
-      guarantee the incompleteness of every resolution via
-      Corollary~\ref{cor:projective-incompleteness}.
+      guarantee, for the non-injective transitions A2 asserts to be generic, the
+      incompleteness of the resolution via Corollary~\ref{cor:projective-incompleteness}.
       These roles do not by themselves select the carrier group.
       The carrier-selection boundary is stated in
       Theorem~\ref{thm:heisenberg}.
@@ -781,8 +782,8 @@ provides the effective Lagrangian description.
 
     \begin{proposition}[Irreversibility from non-injectivity]
       \label{prop:irreversibility}
-      Under A2, every admissible transition involves an irreversible loss of
-      structural information.
+      Every admissible transition whose realisation map is non-injective, which A2 asserts
+      to be the generic case, involves an irreversible loss of structural information.
     \end{proposition}
 
     \begin{proof}
@@ -898,7 +899,6 @@ provides the effective Lagrangian description.
       \end{equation}
       Strict positivity of a chosen projection-entropy functional requires its
       own hypotheses.
-      for every admissible $\Pi_n$.
     \end{corollary}
 
     \begin{proof}

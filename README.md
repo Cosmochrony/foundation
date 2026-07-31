@@ -96,7 +96,8 @@ The framework is governed by four axioms with distinct roles (no independence th
 
 ### 7. Projective Incompleteness
 
-- Every admissible projection \(\Pi_n\) has a non-trivial kernel
+- Every admissible projection \(\Pi_n\) that is non-injective has a non-trivial kernel, which A2 asserts
+  to be the generic case
 - No observable description is ever complete
 - Direct consequence of structural non-injectivity (A2): distinct admissible configurations share an
   observable image, so their difference is a non-zero kernel element. No commutator or carrier-selection
@@ -112,8 +113,8 @@ The framework is governed by four axioms with distinct roles (no independence th
 
 These three roles are inseparable, but their common source is the axiomatic layer, not an algebraic
 commutator: the constraints A1--A3 and Born--Infeld parity that force the admissibility filter also
-generate the temporal order and, through A2, guarantee the incompleteness of every resolution. They do not
-by themselves select the carrier group.
+generate the temporal order and, for the non-injective transitions A2 asserts to be generic, guarantee the
+incompleteness of the resolution. They do not by themselves select the carrier group.
 
 ### 1. Irreversibility and Temporal Order
 
