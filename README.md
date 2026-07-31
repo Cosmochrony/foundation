@@ -96,9 +96,11 @@ The framework is governed by four axioms with distinct roles (no independence th
 
 ### 7. Projective Incompleteness
 
-- Every admissible projection \(\Pi_n\) has a non-trivial kernel (Corollary to Theorem 5.4)
+- Every admissible projection \(\Pi_n\) has a non-trivial kernel
 - No observable description is ever complete
-- Direct consequence of \([X, \sigma(X)] = Z \neq 0\) (Theorem 5.4)
+- Direct consequence of structural non-injectivity (A2): distinct admissible configurations share an
+  observable image, so their difference is a non-zero kernel element. No commutator or carrier-selection
+  theorem is involved.
 
 ### 8. Threefold Role of \(\Pi_n\) (Remark 3.5)
 
@@ -108,7 +110,10 @@ The framework is governed by four axioms with distinct roles (no independence th
 2. **Generator of temporal order**: the oriented sequence \(\Pi_0, \Pi_1, \ldots\) carries the partial order of Theorem on temporal ordering; time is the topology of this graph, not an external parameter
 3. **Revelation, not creation**: \(\Pi_n\) resolves finer spectral content already present in \(\Omega_n^{(c)}\); increasing \(n\) reveals structure, it does not create it
 
-These three roles are algebraically inseparable: the non-commutativity \([X, \sigma(X)] \neq 0\) is the common algebraic source of all three simultaneously.
+These three roles are inseparable, but their common source is the axiomatic layer, not an algebraic
+commutator: the constraints A1--A3 and Born--Infeld parity that force the admissibility filter also
+generate the temporal order and, through A2, guarantee the incompleteness of every resolution. They do not
+by themselves select the carrier group.
 
 ### 1. Irreversibility and Temporal Order
 
