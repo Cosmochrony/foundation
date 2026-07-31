@@ -11,7 +11,7 @@ integrated \(\mathfrak S_3\) countermodel and retypes the O-series carrier as a
 supplied conditional realisation.
 
 It introduces a minimal set of structural principles from which key features of
-physics — including irreversibility, temporal order, quantum coherence, and
+physics — including immediate information loss, a conditional temporal order, quantum coherence, and
 emergent symmetry — are derived without postulating spacetime, Hilbert space,
 or dynamics.
 
@@ -111,7 +111,7 @@ The framework is governed by four axioms with distinct roles (no independence th
 \(\Pi_n\) simultaneously plays three roles, each irreducible to the others:
 
 1. **Admissibility filter**: selects observable directions from structurally compatible continuations; the discarded kernel is real and guaranteed by projective incompleteness
-2. **Generator of temporal order**: the oriented sequence \(\Pi_0, \Pi_1, \ldots\) carries the partial order of Theorem on temporal ordering; time is the topology of this graph, not an external parameter
+2. **Generator of temporal order**: the oriented sequence \(\Pi_0, \Pi_1, \ldots\) carries the partial order of the temporal-ordering theorem *under the acyclicity hypothesis* **[H-acyc]**; time would then be the topology of this graph, not an external parameter
 3. **Revelation, not creation**: \(\Pi_n\) resolves finer spectral content already present in \(\Omega_n^{(c)}\); increasing \(n\) reveals structure, it does not create it
 
 These three roles are inseparable, but their common source is the axiomatic layer, not an algebraic
@@ -126,7 +126,8 @@ incompleteness of the resolution. They do not by themselves select the carrier g
 - Steps compose into an order **only under [H-acyc]**: two different non-injective maps can carry
   \(O_0 \to O_1\) and \(O_1 \to O_0\), giving a cycle and no strict partial order
 
-Time is not fundamental but **emerges from projection structure**.
+Time is not fundamental. It would **emerge from projection structure** once [H-acyc] is supplied;
+the immediate loss at each step is proved, the orientation of the whole chain is not.
 
 Permanent non-recovery is **not** established: projection entropy is non-negative step by step,
 which is not a monotonicity statement along the chain. It would require a temporal sufficiency

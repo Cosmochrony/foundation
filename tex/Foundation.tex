@@ -93,7 +93,7 @@ as the Primitive of Physical Description}
   \end{quote}
 
   The answer to this question — encoded in the admissibility structure — is
-  sufficient to derive irreversibility, temporal order, wave-like propagation,
+  sufficient to derive immediate information loss, wave-like propagation,
   phase coherence, and the discrete character of quantum transitions.
   No substrate, no background, and no quantum postulate is required as input.
 
@@ -129,7 +129,7 @@ as the Primitive of Physical Description}
     Section~\ref{sec:axioms} states the four axioms.
     Section~\ref{sec:primitive} clarifies the role of $\Pi$ and the index $n$.
     Section~\ref{sec:ni-consequences} derives the structural consequences of
-    non-injectivity: irreversibility, novelty, temporal order, and the
+    non-injectivity: immediate information loss, novelty, the conditional temporal order, and the
     projective incompleteness principle.
     Section~\ref{sec:admissibility} derives the proto-state, phase, and coherence,
     and tests the proposed Heisenberg carrier-selection step.
@@ -385,7 +385,8 @@ discrete support (A4).
       \end{enumerate}
       These three roles are inseparable: the structural constraints A1--A3 and
       Born--Infeld parity that force the admissibility filter simultaneously
-      generate the temporal order via Theorem~\ref{thm:temporal-order} and
+      generate the temporal order via Theorem~\ref{thm:temporal-order}, conditionally
+      on \textup{[H-acyc]}, and
       guarantee, for the non-injective transitions A2 asserts to be generic, the
       incompleteness of the resolution via Corollary~\ref{cor:projective-incompleteness}.
       These roles do not by themselves select the carrier group.
@@ -451,7 +452,7 @@ not assumed.
       projections (one configuration, many images).
       It is the collection of all configurations that produce the same observable under a fixed,
       non-injective~$\Pi_n$ (many configurations, one observable).
-      This many-to-one structure is the source of irreversibility
+      This many-to-one structure is the source of the immediate information loss
       (Section~\ref{sec:ni-consequences}) and of the non-factorisability of the proto-state
       (Section~\ref{subsec:heisenberg}).
     \end{remark}
@@ -778,7 +779,7 @@ provides the effective Lagrangian description.
   Non-injectivity (A2) and the existence of distinct successor states together
   imply three structural facts whose sources are distinct.
 
-  \subsection{Irreversibility}
+  \subsection{Immediate information loss}
 
     \begin{proposition}[Immediate information loss from non-injectivity]
       \label{prop:irreversibility}
@@ -859,10 +860,15 @@ provides the effective Lagrangian description.
 
     \begin{remark}[What would establish {[H-acyc]}]
       \label{rem:acyclic-open}
-      A strictly monotone rank, an acyclicity argument, or the temporal sufficiency property of
-      Remark~\ref{rem:no-permanence} would each supply it.
-      None is derived here, so the arrow of time is a conditional consequence of this foundation,
-      not a proved one.
+      A strictly monotone rank on observable states, or a separate proof that no admissible cycle
+      exists, would supply it.
+      The temporal sufficiency property of Remark~\ref{rem:no-permanence} would not: a Markov
+      property yields at best a non-increasing quantity by the data-processing inequality, which
+      may stay constant, and a system may return to the same observable state without recovering
+      the distinctions lost earlier.
+      The two debts may well be closed by one stronger object, but they are not the same debt.
+      Neither is derived here, so the arrow of time is a conditional consequence of this
+      foundation, not a proved one.
     \end{remark}
 
     \begin{remark}[Time as derived structure]
@@ -1651,7 +1657,8 @@ the moment of resolution.
       self-similar --- in the sense that projection from $O^*$ tends to return to a
       spectrally close neighbourhood --- define \emph{spectral quasi-fixed points} of
       the admissible flow.
-      These are not static states, which would contradict the irreversibility established in
+      These are not static states, which would contradict the immediate information loss
+      established in
       Proposition~\ref{prop:irreversibility}, but projective orbits that traverse the same
       spectral region repeatedly.
       Stable physical structures --- particles, gauge symmetries, and coupling constants ---
