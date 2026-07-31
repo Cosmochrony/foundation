@@ -5,10 +5,13 @@ This repository contains the source of the **Foundation Cosmochrony paper**
 
 This work establishes the **axiomatic foundation** of the Cosmochrony framework.
 
-Version 2.0.0 is a major corrective revision. It replaces the former positive
-Heisenberg carrier-selection claim with the finite obstruction proved by the
-integrated \(\mathfrak S_3\) countermodel and retypes the O-series carrier as a
-supplied conditional realisation.
+Version 2.1.0 corrects the status of structural non-injectivity and temporal order.
+A2 remains a local axiom in its generic form unless the applicability conditions of
+the ENI theorem are established for the local transition map.
+Immediate information loss is proved only on non-injective steps, permanent
+non-recovery remains open, and a strict temporal order requires the unestablished
+acyclicity hypothesis **[H-acyc]**.
+The carrier-selection correction introduced in version 2.0.0 remains in force.
 
 It introduces a minimal set of structural principles from which key features of
 physics — including immediate information loss, a conditional temporal order, quantum coherence, and

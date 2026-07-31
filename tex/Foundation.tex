@@ -4,11 +4,21 @@
 
 \documentclass[11pt,a4paper]{article}
 
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\input{glyphtounicode}
+\pdfgentounicode=1
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{enumerate}
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{hyperref}
+\hypersetup{
+  pdftitle={Admissible Non-Injective Transitions as the Primitive of Physical Description},
+  pdfauthor={Jérôme Beau},
+  pdfsubject={Axiomatic foundations of admissible non-injective transitions},
+  pdfkeywords={Non-injective projection, emergence, admissibility, information loss, temporal ordering}
+}
 
 \bibliographystyle{plain}
 \usepackage{doi}
@@ -1452,7 +1462,8 @@ the moment of resolution.
 
   \begin{table}[h]
     \centering
-    \small
+    \footnotesize
+    \renewcommand{\arraystretch}{0.95}
     \begin{tabular}{p{4.6cm}p{5.4cm}p{4.2cm}}
       \toprule
       \textbf{Concept} & \textbf{Source} & \textbf{Status} \\
