@@ -362,9 +362,9 @@ discrete support (A4).
         $\Pi_n$ selects, from the structurally compatible continuations
         $\Omega_n^{(c)}$, those directions satisfying the Born--Infeld and spectral
         constraints of A1--A3.
-        What it retains constitutes the observable $O_n$; what it discards is the
-        non-trivial kernel whose existence is guaranteed by
-        Corollary~\ref{cor:projective-incompleteness}.
+        What it retains constitutes the observable $O_n$; where the step is non-injective, which
+        A2 asserts to be the generic case, what it discards is the non-trivial kernel whose
+        existence is guaranteed by Corollary~\ref{cor:projective-incompleteness}.
         \item \emph{Generator of temporal order, conditionally.}
         Under \textup{[H-acyc]} (Definition~\ref{hyp:acyclic}), which is not derived here, the
         oriented sequence $\Pi_0, \Pi_1, \Pi_2, \ldots$ carries the partial order of
@@ -402,8 +402,10 @@ discrete support (A4).
     The index $n$ does not represent a pre-existing time parameter.
     It counts transitions: the number of times a state has been succeeded by
     another under the admissibility constraints.
-    Its temporal meaning is derived in Section~\ref{sec:ni-consequences} —
-    it is not assumed.
+    Its temporal meaning is derived in Section~\ref{sec:ni-consequences} rather than assumed,
+    but that derivation is conditional: orienting the chain requires \textup{[H-acyc]}
+    (Definition~\ref{hyp:acyclic}), which is not established here.
+    Without it, $n$ counts transitions without being shown to be irreversible along the chain.
 
   \subsection{Where non-injectivity lives}
     \label{subsec:ni-locus}
@@ -888,9 +890,12 @@ provides the effective Lagrangian description.
       \label{rem:state-machine}
       The admissible neighbourhood $\mathcal{A}(O_{n-1})$
       (Remark~\ref{rem:admissibility-relational}) gives the
-      chain~\eqref{eq:recursive-chain} the structure of an oriented state machine:
+      chain~\eqref{eq:recursive-chain} the structure of a directed state machine:
       nodes are admissible projections, edges are admissible transitions, and a
       physical history is a directed path in this graph.
+      The graph is directed in all cases; that it is acyclic, and so carries an orientation in
+      the sense of Theorem~\ref{thm:temporal-order}, is \textup{[H-acyc]} and is not
+      established here.
       When $|\mathcal{A}(O_{n-1})| = 1$, the successor is uniquely determined by the
       admissibility structure alone — no external law is required.
       When $|\mathcal{A}(O_{n-1})| > 1$, branching occurs; the relative admissibility
