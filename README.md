@@ -24,8 +24,10 @@ single primitive:
 
 From this primitive, the paper proves that:
 
-- **Loss in the immediate image and temporal order** arise from non-injectivity alone (A2),
-  along the non-injective transitions A2 asserts to be generic
+- **Loss in the immediate image** arises from non-injectivity alone (A2), along the transitions
+  A2 asserts to be generically non-injective
+- **Temporal order** is conditional: non-invertible steps admit cycles, so orienting the chain
+  needs an acyclicity hypothesis **[H-acyc]** that is not derived
 - **Proto-states (unresolved physical states)** are real and structurally required (A3)
 - **Phase coherence** is preserved because admissibility forbids premature selection
 - **Quantum discreteness** emerges from projection locking (A4)
@@ -117,11 +119,12 @@ commutator: the constraints A1--A3 and Born--Infeld parity that force the admiss
 generate the temporal order and, for the non-injective transitions A2 asserts to be generic, guarantee the
 incompleteness of the resolution. They do not by themselves select the carrier group.
 
-### 1. Irreversibility and Temporal Order
+### 1. Immediate Information Loss and Temporal Order
 
 - Non-injectivity ⇒ information loss in the immediate image
 - No inverse ⇒ the step is not reversible
-- Along a segment whose steps are all non-injective ⇒ temporal ordering
+- Steps compose into an order **only under [H-acyc]**: two different non-injective maps can carry
+  \(O_0 \to O_1\) and \(O_1 \to O_0\), giving a cycle and no strict partial order
 
 Time is not fundamental but **emerges from projection structure**.
 
