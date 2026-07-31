@@ -24,7 +24,8 @@ single primitive:
 
 From this primitive, the paper proves that:
 
-- **Irreversibility and temporal order** arise from non-injectivity alone (A2)
+- **Loss in the immediate image and temporal order** arise from non-injectivity alone (A2),
+  along the non-injective transitions A2 asserts to be generic
 - **Proto-states (unresolved physical states)** are real and structurally required (A3)
 - **Phase coherence** is preserved because admissibility forbids premature selection
 - **Quantum discreteness** emerges from projection locking (A4)
@@ -118,11 +119,15 @@ incompleteness of the resolution. They do not by themselves select the carrier g
 
 ### 1. Irreversibility and Temporal Order
 
-- Non-injectivity ⇒ information loss
-- Information loss ⇒ irreversibility
-- Irreversibility ⇒ temporal ordering
+- Non-injectivity ⇒ information loss in the immediate image
+- No inverse ⇒ the step is not reversible
+- Along a segment whose steps are all non-injective ⇒ temporal ordering
 
 Time is not fundamental but **emerges from projection structure**.
+
+Permanent non-recovery is **not** established: projection entropy is non-negative step by step,
+which is not a monotonicity statement along the chain. It would require a temporal sufficiency
+property that the framework does not yet supply.
 
 ### 2. Proto-State and Wave Structure
 
