@@ -78,7 +78,7 @@ There is:
 
 ### The Four Axioms
 
-The framework is governed by four independent axioms:
+The framework is governed by four axioms with distinct roles (no independence theorem is claimed):
 
 - **A1 — Local projective admissibility**  
   Admissible successor directions exist and are structurally constrained
