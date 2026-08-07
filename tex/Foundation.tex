@@ -121,14 +121,16 @@ as the Primitive of Physical Description}
     non-increasing under admissible coarse-graining,
     connecting the ENI projection entropy to the BFS capacity hierarchy
     of the spectral programme.
-    The companion paper~\cite{Beau2026q1} derives phase coherence, the singlet correlator,
-    the Tsirelson bound, and the Born rule as structural consequences of
-    admissibility — using Axioms A1--A4 as stated here, combined with the concrete
-    spectral results of the O-series.
+    The companion paper~\cite{Beau2026q1} proves an exact, unconditional Fourier-support
+    rigidity theorem in the finite Weil representation of the Heisenberg group, and the
+    precise class of rank- and support-based diagnostics this forecloses; it does not
+    derive phase coherence, the singlet correlator, the Tsirelson bound, or the Born
+    rule from admissibility.
     The companion papers~\cite{Beau2026entnote,Beau2026ent1,Beau2026ent2} locate entanglement
     quantitatively within the spectral admissibility cascade:
-    the minimal admissible pair sector carries the spin-$\tfrac12$ singlet with entropy
-    $\log 2$ (the Bell--Tsirelson quantity), while the full residual fibre-level rank
+    conditional on an explicit, undemonstrated diagonal-invariance hypothesis
+    (\cite{Beau2026q3}), the minimal admissible pair sector carries the spin-$\tfrac12$ singlet
+    with entropy $\log 2$, while the full residual fibre-level rank
     gives a finer observable $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$.
     The white paper~\cite{Cosmochrony} develops the full phenomenological programme;
     the present axiomatic reformulation is a foundational companion to it, not yet
@@ -1064,7 +1066,8 @@ provides the effective Lagrangian description.
   natural precursor of an effective Hilbert sector: it carries complex
   amplitudes and interference structure.
   This is not yet a full Hilbert space — the inner product, completeness,
-  and probability measure require additional derivation (see Q1, Q2 in
+  and probability measure remain to be established; no companion paper in
+  this programme currently supplies that derivation (see
   Section~\ref{sec:summary}).
   But the amplitude structure and interference follow from A3 alone.
     \end{remark}
@@ -1306,15 +1309,14 @@ the moment of resolution.
     admissible structure — the unique minimal such intensity compatible with
     the four structural requirements.
 
-    \begin{remark}[Relation to the Born rule derivation in the companion paper]
-  The argument above establishes the structural necessity of the squared norm
-  as the resolution intensity of the proto-state.
-  The companion paper~\cite{Beau2026q1} makes this precise as a theorem in the SU(2)
-  parity sector: the Born rule $P(a=+1|\hat{a}) = |\langle +\hat{a}|\psi\rangle|^2$
-  is the unique probability assignment compatible with the coherent fibre
-  structure, the SU(2) observable algebra, and the derived singlet correlator.
-  The two derivations are complementary: the present argument gives the
-  structural motivation; the companion gives the uniqueness proof.
+    \begin{remark}[Status of the Born-rule uniqueness argument]
+  The argument above gives the structural motivation for the squared norm as
+  the resolution intensity of the proto-state. No companion paper in this
+  programme currently supplies an independent uniqueness proof for this
+  claim: the Born-rule derivation is not established by~\cite{Beau2026q1},
+  whose proved content is a separate, unconditional rigidity theorem
+  unrelated to the Born rule. The argument above is a structural motivation,
+  not a proved uniqueness theorem, and remains open.
     \end{remark}
 
     \begin{remark}[The wavefunction lives in the admissible fibre, not in space]
@@ -1406,12 +1408,14 @@ the moment of resolution.
     The pair is a single closed object throughout the cascade, not two subsystems that were joined at an
     earlier transition and have since separated.
 
-    This picture is now quantitatively derived rather than asserted.
-    For the conjugate pair, the minimal admissible projection is spectrally atomic: after removal of the zero
-    mode it is the two-dimensional Born--Infeld parity pair, identified with the spin-$\tfrac12$
-    representation, and its reduced state is the singlet with entanglement entropy
-    $\log 2$~\cite{Beau2026ent2,Beau2026q3}.
-    This is the entropy of the state behind the singlet correlator and the Tsirelson bound~\cite{Beau2026q1}.
+    A conditional quantitative account is available. For the conjugate pair, the minimal admissible
+    projection is spectrally atomic: after removal of the zero mode it is the two-dimensional
+    Born--Infeld parity pair, identified with the spin-$\tfrac12$ representation. Under an explicit
+    hypothesis that the joint state is invariant under the diagonal action of the relevant finite
+    group — not derived from admissibility, stated and used conditionally
+    in~\cite{Beau2026q3} — its reduced state is the singlet, with entanglement entropy
+    $\log 2$~\cite{Beau2026ent2}. Neither the invariance hypothesis nor the resulting entropy value is
+    established unconditionally by Axioms A1--A4 alone.
     A finer pipeline-level observable, the full residual fibre-level rank $r_{\mathrm{pair}}(n)$, gives
     $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$, proved for matched single-character blocks and conditional
     otherwise on a residual indiscernibility hypothesis~\cite{Beau2026entnote,Beau2026ent1}.
@@ -1498,14 +1502,15 @@ the moment of resolution.
       Shared non-factorisable infra-projectable cell~\cite{Beau2026entnote} &
       Derived \\
       Entanglement entropy &
-      Admissible pair $\to\log 2$; residual rank $\to\log r_{\mathrm{pair}}$~\cite{Beau2026ent2,Beau2026ent1} &
-      Proved / cond. \\
+      Admissible pair $\to\log 2$ (conditional on an explicit, undemonstrated diagonal-invariance
+      hypothesis, \cite{Beau2026q3}); residual rank $\to\log r_{\mathrm{pair}}$~\cite{Beau2026ent2,Beau2026ent1} &
+      cond. / cond. \\
       Bell non-applicability &
       Non-local, infra-projectable fibre &
       Proved~\cite{Beau2026b} \\
       Born rule (SU(2) sector) &
-      Correlator + coherence~\cite{Beau2026q1} &
-      Proved \\
+      No companion paper currently supplies a uniqueness derivation~\cite{Beau2026q1} &
+      Open \\
       Heisenberg carrier selection &
       Audited carrier contract; $\mathfrak{S}_3$ countermodel &
       Selection fails; obstruction proved (Thm.~\ref{thm:heisenberg}) \\
@@ -1513,9 +1518,9 @@ the moment of resolution.
       \multicolumn{3}{l}{\textit{Key results of the companion programme
         (see~\cite{Beau2026a} for the full derivation chain)}} \\
       \midrule
-      SU(2) as admissibility fixed point &
-      Spectral convergence (Q2)~\cite{Beau2026q2} &
-      Proved \\
+      Laplacian eigenvalue degeneracy, spin-$\tfrac12$/spin-$\tfrac32$ on $2I$ &
+      Exact finite-group calculation (Q2)~\cite{Beau2026q2} &
+      Proved (no fixed-point or sector-selection claim follows) \\
       Effective spacetime geometry, $D_{\mathrm{hom}}=4$;
       full co-metric $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$ &
       BFS stratification (Q5b, Q6b, Q8, Q10, Q11)~\cite{Beau2026q5b,Beau2026q6b,BeauQ8,Beau2026q10,Beau2026q11} &
@@ -1623,17 +1628,23 @@ the moment of resolution.
 
   \subsection*{Open directions}
 
-    \paragraph{Q2 — Born rule beyond SU(2).}
-      The Born rule $P(a=+1|\hat{a}) = |\langle +\hat{a}|\psi\rangle|^2$ is derived
-      in~\cite{Beau2026q1} for the SU(2) parity sector.
-      A first step beyond this sector is taken in~\cite{Beau2026q2}, which derives the
-      Born rule, singlet correlator, and Tsirelson bound for the co-admissible
-      spin-$\tfrac{3}{2}$ sector on the binary icosahedral group $2I$, and
-      identifies SU(2) as the unique stable sector under admissibility refinement
-      in the large-$p$ limit.
-      The full extension to arbitrary observables, multipartite systems, and
-      continuous spectra requires extending the fibre structure beyond the
-      two-element parity case and remains the primary open direction.
+    \paragraph{The Born rule, and quantum structure beyond the finite fibre.}
+      The Born rule $P(a=+1|\hat{a}) = |\langle +\hat{a}|\psi\rangle|^2$ is not
+      derived by any companion paper of this programme; it remains a structural
+      motivation (Section~\ref{sec:summary}), not a proved uniqueness theorem.
+      The companion paper~\cite{Beau2026q2} establishes an exact finite-group fact
+      — the spin-$\tfrac12$ and spin-$\tfrac32$ representations of the binary
+      icosahedral group $2I$ induce the same Cayley-graph Laplacian eigenvalue —
+      but does not derive phase coherence, a singlet correlator, a Tsirelson bound,
+      the Born rule, or a sector-selection argument from it. The companion
+      paper~\cite{Beau2026q3} proves a conditional theorem — given an explicit,
+      undemonstrated diagonal-invariance hypothesis, the joint state of two copies
+      of an admissible sector is the SU(2) singlet, with an explicit Casimir
+      correlator — but does not derive that hypothesis, phase coherence, or the
+      Born rule. Deriving the Born rule, extending phase coherence and a
+      correlator to arbitrary observables and multipartite systems without
+      importing an undemonstrated invariance hypothesis, and identifying a
+      physically preferred sector, all remain open.
 
     \paragraph{O31/O32 --- Colour sector and recursive non-injectivity.}
       The SU(2) derivation proceeds via conjugate pairs $\{c, q-c\}$.
@@ -1801,8 +1812,8 @@ the moment of resolution.
     In the WKB approximation, the quantum wave function takes the form
     $\psi \sim A\,e^{iS/\hbar}$, where the phase $S$ is the Hamilton--Jacobi action.
     In the present framework, the phase of an admissible mode is not an input but an
-    output of the conditional spectral model: it is obtained from coherence
-    conditions imposed on the supplied Weil module~\cite{Beau2026q1}.
+    output of the conditional spectral model: it is obtained from the coherence
+    forced by Axiom A3 on the supplied Weil module.
     The WKB identification therefore holds at the level of the effective description,
     once the continuum limit has been taken --- an operation currently conditional on
     the open hypothesis [H-L] (Q5a version 3.0~\cite{Beau2026q5a}): the collective
