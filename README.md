@@ -5,13 +5,16 @@ This repository contains the source of the **Foundation Cosmochrony paper**
 
 This work establishes the **axiomatic foundation** of the Cosmochrony framework.
 
-Version 2.0.0 is a major corrective revision. It replaces the former positive
-Heisenberg carrier-selection claim with the finite obstruction proved by the
-integrated \(\mathfrak S_3\) countermodel and retypes the O-series carrier as a
-supplied conditional realisation.
+Version 2.1.0 corrects the status of structural non-injectivity and temporal order.
+A2 remains a local axiom in its generic form unless the applicability conditions of
+the ENI theorem are established for the local transition map.
+Immediate information loss is proved only on non-injective steps, permanent
+non-recovery remains open, and a strict temporal order requires the unestablished
+acyclicity hypothesis **[H-acyc]**.
+The carrier-selection correction introduced in version 2.0.0 remains in force.
 
 It introduces a minimal set of structural principles from which key features of
-physics — including irreversibility, temporal order, quantum coherence, and
+physics — including immediate information loss, a conditional temporal order, quantum coherence, and
 emergent symmetry — are derived without postulating spacetime, Hilbert space,
 or dynamics.
 
@@ -24,7 +27,10 @@ single primitive:
 
 From this primitive, the paper proves that:
 
-- **Irreversibility and temporal order** arise from non-injectivity alone (A2)
+- **Loss in the immediate image** arises from non-injectivity alone (A2), along the transitions
+  A2 asserts to be generically non-injective
+- **Temporal order** is conditional: non-invertible steps admit cycles, so orienting the chain
+  needs an acyclicity hypothesis **[H-acyc]** that is not derived
 - **Proto-states (unresolved physical states)** are real and structurally required (A3)
 - **Phase coherence** is preserved because admissibility forbids premature selection
 - **Quantum discreteness** emerges from projection locking (A4)
@@ -78,7 +84,7 @@ There is:
 
 ### The Four Axioms
 
-The framework is governed by four independent axioms:
+The framework is governed by four axioms with distinct roles (no independence theorem is claimed):
 
 - **A1 — Local projective admissibility**  
   Admissible successor directions exist and are structurally constrained
@@ -96,27 +102,41 @@ The framework is governed by four independent axioms:
 
 ### 7. Projective Incompleteness
 
-- Every admissible projection \(\Pi_n\) has a non-trivial kernel (Corollary to Theorem 5.4)
-- No observable description is ever complete
-- Direct consequence of \([X, \sigma(X)] = Z \neq 0\) (Theorem 5.4)
+- Every admissible projection \(\Pi_n\) that is non-injective has a non-trivial kernel, which A2 asserts
+  to be the generic case
+- No description resting on a non-injective step is complete; A2 being generic, an exceptional
+  injective transition is not excluded
+- Direct consequence of structural non-injectivity (A2): distinct admissible configurations share an
+  observable image, so their difference is a non-zero kernel element. No commutator or carrier-selection
+  theorem is involved.
 
 ### 8. Threefold Role of \(\Pi_n\) (Remark 3.5)
 
 \(\Pi_n\) simultaneously plays three roles, each irreducible to the others:
 
-1. **Admissibility filter**: selects observable directions from structurally compatible continuations; the discarded kernel is real and guaranteed by projective incompleteness
-2. **Generator of temporal order**: the oriented sequence \(\Pi_0, \Pi_1, \ldots\) carries the partial order of Theorem on temporal ordering; time is the topology of this graph, not an external parameter
+1. **Admissibility filter**: selects observable directions from structurally compatible continuations; where the step is non-injective, the discarded kernel is real and guaranteed by projective incompleteness
+2. **Generator of temporal order**: the oriented sequence \(\Pi_0, \Pi_1, \ldots\) carries the partial order of the temporal-ordering theorem *under the acyclicity hypothesis* **[H-acyc]**; time would then be the topology of this graph, not an external parameter
 3. **Revelation, not creation**: \(\Pi_n\) resolves finer spectral content already present in \(\Omega_n^{(c)}\); increasing \(n\) reveals structure, it does not create it
 
-These three roles are algebraically inseparable: the non-commutativity \([X, \sigma(X)] \neq 0\) is the common algebraic source of all three simultaneously.
+These three roles are inseparable, but their common source is the axiomatic layer, not an algebraic
+commutator: the constraints A1--A3 and Born--Infeld parity that force the admissibility filter also
+generate the temporal order under [H-acyc] and, for the non-injective transitions A2 asserts to be
+generic, guarantee the incompleteness of the resolution. They do not by themselves select the carrier
+group.
 
-### 1. Irreversibility and Temporal Order
+### 1. Immediate Information Loss and Temporal Order
 
-- Non-injectivity ⇒ information loss
-- Information loss ⇒ irreversibility
-- Irreversibility ⇒ temporal ordering
+- Non-injectivity ⇒ information loss in the immediate image
+- No inverse ⇒ the step is not reversible
+- Steps compose into an order **only under [H-acyc]**: two different non-injective maps can carry
+  \(O_0 \to O_1\) and \(O_1 \to O_0\), giving a cycle and no strict partial order
 
-Time is not fundamental but **emerges from projection structure**.
+Time is not fundamental. It would **emerge from projection structure** once [H-acyc] is supplied;
+the immediate loss at each step is proved, the orientation of the whole chain is not.
+
+Permanent non-recovery is **not** established: projection entropy is non-negative step by step,
+which is not a monotonicity statement along the chain. It would require a temporal sufficiency
+property that the framework does not yet supply.
 
 ### 2. Proto-State and Wave Structure
 

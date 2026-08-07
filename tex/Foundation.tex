@@ -4,11 +4,21 @@
 
 \documentclass[11pt,a4paper]{article}
 
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\input{glyphtounicode}
+\pdfgentounicode=1
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{enumerate}
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{hyperref}
+\hypersetup{
+  pdftitle={Admissible Non-Injective Transitions as the Primitive of Physical Description},
+  pdfauthor={Jérôme Beau},
+  pdfsubject={Axiomatic foundations of admissible non-injective transitions},
+  pdfkeywords={Non-injective projection, emergence, admissibility, information loss, temporal ordering}
+}
 
 \bibliographystyle{plain}
 \usepackage{doi}
@@ -43,8 +53,9 @@ as the Primitive of Physical Description}
     Four axioms govern this structure: local projective admissibility (A1),
     structural non-injectivity (A2), admissibility as non-premature selection (A3),
     and projection locking (A4).
-    From A1 and A2 alone, we derive irreversibility, the arrow of time, and the
-    existence of structural fluctuations, without any additional postulate.
+    Along the transitions A2 asserts to be generically non-injective, A1 and A2 give immediate-image
+    information loss and structural fluctuations; neither permanent non-recovery nor the arrow of
+    time follows, since non-invertible steps admit cycles.
     From A3, we derive the proto-state as a physically real unresolved configuration
     shared between two successive states, and show that admissibility forces the
     retention of phase coherence.
@@ -61,8 +72,7 @@ as the Primitive of Physical Description}
     From A4, we derive the discrete character of quantum transitions as a consequence
     of the interaction between continuous Born--Infeld saturation and the discrete
     shell structure of the observable space.
-    This paper provides an axiomatic foundation for the companion programme and
-    records explicitly where that foundation stops short of carrier selection.
+    The foundation is stated with the point at which it stops short of carrier selection.
   \end{abstract}
 
   \paragraph{Keywords.}
@@ -93,7 +103,7 @@ as the Primitive of Physical Description}
   \end{quote}
 
   The answer to this question — encoded in the admissibility structure — is
-  sufficient to derive irreversibility, temporal order, wave-like propagation,
+  sufficient to derive immediate information loss, wave-like propagation,
   phase coherence, and the discrete character of quantum transitions.
   No substrate, no background, and no quantum postulate is required as input.
 
@@ -111,14 +121,16 @@ as the Primitive of Physical Description}
     non-increasing under admissible coarse-graining,
     connecting the ENI projection entropy to the BFS capacity hierarchy
     of the spectral programme.
-    The companion paper~\cite{Beau2026q1} derives phase coherence, the singlet correlator,
-    the Tsirelson bound, and the Born rule as structural consequences of
-    admissibility — using Axioms A1--A4 as stated here, combined with the concrete
-    spectral results of the O-series.
+    The companion paper~\cite{Beau2026q1} proves an exact, unconditional Fourier-support
+    rigidity theorem in the finite Weil representation of the Heisenberg group, and the
+    precise class of rank- and support-based diagnostics this forecloses; it does not
+    derive phase coherence, the singlet correlator, the Tsirelson bound, or the Born
+    rule from admissibility.
     The companion papers~\cite{Beau2026entnote,Beau2026ent1,Beau2026ent2} locate entanglement
     quantitatively within the spectral admissibility cascade:
-    the minimal admissible pair sector carries the spin-$\tfrac12$ singlet with entropy
-    $\log 2$ (the Bell--Tsirelson quantity), while the full residual fibre-level rank
+    conditional on an explicit, undemonstrated diagonal-invariance hypothesis
+    (\cite{Beau2026q3}), the minimal admissible pair sector carries the spin-$\tfrac12$ singlet
+    with entropy $\log 2$, while the full residual fibre-level rank
     gives a finer observable $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$.
     The white paper~\cite{Cosmochrony} develops the full phenomenological programme;
     the present axiomatic reformulation is a foundational companion to it, not yet
@@ -129,7 +141,7 @@ as the Primitive of Physical Description}
     Section~\ref{sec:axioms} states the four axioms.
     Section~\ref{sec:primitive} clarifies the role of $\Pi$ and the index $n$.
     Section~\ref{sec:ni-consequences} derives the structural consequences of
-    non-injectivity: irreversibility, novelty, temporal order, and the
+    non-injectivity: immediate information loss, novelty, the conditional temporal order, and the
     projective incompleteness principle.
     Section~\ref{sec:admissibility} derives the proto-state, phase, and coherence,
     and tests the proposed Heisenberg carrier-selection step.
@@ -145,7 +157,7 @@ as the Primitive of Physical Description}
   \label{sec:axioms}
 
   We state the four axioms from which the framework proceeds.
-  They are not independent postulates chosen for convenience — each captures
+  They are not arbitrary postulates chosen for convenience — each captures
   a structural feature that is either necessary for genuine emergence~\cite{Beau2026l}
   or motivated by the requirement of bounded effective descriptions~\cite{Beau2026c}.
 
@@ -204,13 +216,32 @@ as the Primitive of Physical Description}
     The transition from admissible to admitted is structurally discrete.
   \end{description}
 
-  \begin{remark}[Independence of the axioms]
+  \begin{remark}[Roles of the axioms, and the status of A2]
   A1 asserts existence of admissible directions.
   A2 asserts their generic non-injectivity.
   A3 constrains which transitions are admissible.
   A4 governs when resolution occurs.
-  The four axioms are logically independent: none follows from the others.
-  Their joint role is argued in Section~\ref{sec:primitive} and in the
+  These are distinct roles; no logical-independence theorem is claimed for A1--A4.
+  ENI~\cite{Beau2026l} proves that a projection is necessarily non-injective whenever it is surjective, its
+  observables are defined by the projection, and the description is effectively non-trivial.
+  Importing that theorem requires naming the local map it would apply to, and the fibre map is not it:
+  $F_n = \Pi_n^{-1}(O_n)$ by definition, so the restriction of $\Pi_n$ to $F_n$ is constant and satisfies no
+  effective non-triviality condition.
+  The candidate is instead a local transition map
+  \[
+    \widehat{\Pi}_n \colon \Omega_n^{\mathrm{loc}} \longrightarrow \mathcal{O}_n^{\mathrm{loc}},
+  \]
+  where $\Omega_n^{\mathrm{loc}}$ collects the admissible directions available from $O_{n-1}$ and
+  $\mathcal{O}_n^{\mathrm{loc}} \subseteq \mathcal{A}(O_{n-1})$ collects the resolved successors they reach;
+  A2 is the assertion that this map is generically many-to-one.
+  The three ENI premises are not established for $\widehat{\Pi}_n$ here.
+  Surjectivity onto $\mathcal{O}_n^{\mathrm{loc}}$ holds by construction, but that observables at step $n$ are
+  defined by $\widehat{\Pi}_n$ alone, and that the local description is effectively non-trivial, are separate
+  conditions on the observable level, not consequences of A1.
+  Until a lemma supplies them, A2 is retained as a local axiom, and its ``generic'' formulation is kept.
+  Establishing the lemma would replace A2 by a necessary consequence of ENI and require a re-audit of the
+  downstream statements written under it.
+  The joint role of the four axioms is argued in Section~\ref{sec:primitive} and in the
   companion papers~\cite{Beau2026l,Beau2026c}.
   \end{remark}
 
@@ -236,7 +267,8 @@ as the Primitive of Physical Description}
     not eliminated by projection locking: distinct configurations $f, f' \in F_n$ with
     $\Pi_n(f) = \Pi_n(f') = O_n$ remain structurally present after locking, but become
     observationally inaccessible.
-    The non-injectivity of~$\Pi_n$ therefore persists at every resolution step.
+    Where $\Pi_n$ is non-injective, that non-injectivity therefore persists through resolution:
+    locking withdraws observational access, it does not remove the configurations.
 
     This distinction --- observable uniqueness without configurational uniqueness --- prevents
     Bell-type factorisation~\cite{Beau2026b} and forces the coherent, non-factorisable fibre
@@ -342,17 +374,20 @@ discrete support (A4).
         $\Pi_n$ selects, from the structurally compatible continuations
         $\Omega_n^{(c)}$, those directions satisfying the Born--Infeld and spectral
         constraints of A1--A3.
-        What it retains constitutes the observable $O_n$; what it discards is the
-        non-trivial kernel whose existence is guaranteed by
-        Corollary~\ref{cor:projective-incompleteness}.
-        \item \emph{Generator of temporal order.}
-        The oriented sequence $\Pi_0, \Pi_1, \Pi_2, \ldots$ carries the partial order
-        established in Theorem~\ref{thm:temporal-order}.
+        What it retains constitutes the observable $O_n$; where the step is non-injective, which
+        A2 asserts to be the generic case, what it discards is the non-trivial kernel whose
+        existence is guaranteed by Corollary~\ref{cor:projective-incompleteness}.
+        \item \emph{Generator of temporal order, conditionally.}
+        Under \textup{[H-acyc]} (Definition~\ref{hyp:acyclic}), which is not derived here, the
+        oriented sequence $\Pi_0, \Pi_1, \Pi_2, \ldots$ carries the partial order of
+        Theorem~\ref{thm:temporal-order}.
         Each $\Pi_n$ is a node in the admissibility graph
-        (Remark~\ref{rem:state-machine}); the index $n$ acquires its temporal meaning
-        from this orientation, not from an external parameter.
-        The dynamics of the framework is the oriented topology of this graph — not
-        a law superimposed on a pre-existing time.
+        (Remark~\ref{rem:state-machine}); on that hypothesis the index $n$ acquires its temporal
+        meaning from this orientation, not from an external parameter, and the dynamics of the
+        framework is the oriented topology of this graph rather than a law superimposed on a
+        pre-existing time.
+        Without \textup{[H-acyc]} the sequence is still a chain of steps, each losing information
+        in its immediate image, but it is not shown to be acyclic.
         \item \emph{Revelation, not creation.}
         $\Pi_n$ does not produce new structure in $\chi$.
         In the supplied O-series realisation, it selects from the admissible
@@ -365,9 +400,10 @@ discrete support (A4).
       \end{enumerate}
       These three roles are inseparable: the structural constraints A1--A3 and
       Born--Infeld parity that force the admissibility filter simultaneously
-      generate the temporal order via Theorem~\ref{thm:temporal-order} and
-      guarantee the incompleteness of every resolution via
-      Corollary~\ref{cor:projective-incompleteness}.
+      generate the temporal order via Theorem~\ref{thm:temporal-order}, conditionally
+      on \textup{[H-acyc]}, and
+      guarantee, for the non-injective transitions A2 asserts to be generic, the
+      incompleteness of the resolution via Corollary~\ref{cor:projective-incompleteness}.
       These roles do not by themselves select the carrier group.
       The carrier-selection boundary is stated in
       Theorem~\ref{thm:heisenberg}.
@@ -378,8 +414,10 @@ discrete support (A4).
     The index $n$ does not represent a pre-existing time parameter.
     It counts transitions: the number of times a state has been succeeded by
     another under the admissibility constraints.
-    Its temporal meaning is derived in Section~\ref{sec:ni-consequences} —
-    it is not assumed.
+    Its temporal meaning is derived in Section~\ref{sec:ni-consequences} rather than assumed,
+    but that derivation is conditional: orienting the chain requires \textup{[H-acyc]}
+    (Definition~\ref{hyp:acyclic}), which is not established here.
+    Without it, $n$ counts transitions without being shown to be irreversible along the chain.
 
   \subsection{Where non-injectivity lives}
     \label{subsec:ni-locus}
@@ -431,7 +469,7 @@ not assumed.
       projections (one configuration, many images).
       It is the collection of all configurations that produce the same observable under a fixed,
       non-injective~$\Pi_n$ (many configurations, one observable).
-      This many-to-one structure is the source of irreversibility
+      This many-to-one structure is the source of the immediate information loss
       (Section~\ref{sec:ni-consequences}) and of the non-factorisability of the proto-state
       (Section~\ref{subsec:heisenberg}).
     \end{remark}
@@ -758,25 +796,35 @@ provides the effective Lagrangian description.
   Non-injectivity (A2) and the existence of distinct successor states together
   imply three structural facts whose sources are distinct.
 
-  \subsection{Irreversibility}
+  \subsection{Immediate information loss}
 
-    \begin{proposition}[Irreversibility from non-injectivity]
+    \begin{proposition}[Immediate information loss from non-injectivity]
       \label{prop:irreversibility}
-      Under A2, every admissible transition involves an irreversible loss of
-      structural information.
+      Every admissible transition whose realisation map is non-injective, which A2 asserts
+      to be the generic case, loses structural information in its immediate image: the
+      directions it identifies are not distinguishable in $O_n$, and $\Pi_n$ admits no
+      inverse.
     \end{proposition}
 
     \begin{proof}
       Since multiple directions from $O_{n-1}$ map to the same $O_n$ under
       $\Pi_n$, the information distinguishing these directions is absent from
-      $O_n$.
-      No subsequent transition $\Pi_{n'}$ for $n' > n$ can recover this
-      information: the map $\Pi_n$ has positive projection entropy
-      $S_{\Pi_n} > 0$~\cite{Beau2026l}, and no admissible transition can reduce
-      $S_\Pi$ below zero.
-      The loss is therefore structural and permanent;
-      its monotone information-theoretic quantification is given in~\cite{Beau2026fe}.
+      $O_n$, and $\Pi_n$ has positive projection entropy
+      $S_{\Pi_n} > 0$~\cite{Beau2026l}.
     \end{proof}
+
+    \begin{remark}[Permanence is not established here]
+      \label{rem:no-permanence}
+      The proposition is local to the step $n$.
+      That no later transition can recover the identified directions does not follow from it:
+      $S_\Pi \geq 0$ bounds each projection separately and constrains no composition, so
+      non-negativity is not a monotonicity statement along $n$.
+      Fibre Erasure~\cite{Beau2026fe} is explicit that ENI alone does not imply monotonicity;
+      its monotone requires the structural sufficiency hypothesis \textup{[H-suff]} and runs
+      along the coarse-graining axis $\ell$, which is not the temporal axis $n$.
+      Permanent non-recovery would need a temporal sufficiency or Markov property that is not
+      derived here.
+    \end{remark}
 
   \subsection{Novelty and structural fluctuations}
     \label{subsec:ni-novelty}
@@ -795,27 +843,55 @@ provides the effective Lagrangian description.
 
   \subsection{Temporal order}
 
-    \begin{theorem}[Temporal order from A2]
+    Non-invertibility of each step does not by itself orient the states.
+    A segment may have every transition non-injective and still revisit a state: let
+    $O_0 \to O_1$ and $O_1 \to O_0$ be carried by two different non-injective maps.
+    Each step loses information in its immediate image, yet the reachability graph has a cycle and
+    admits no strict partial order.
+    Novelty between adjacent states does not exclude a later return either.
+    Orienting the chain therefore requires an input beyond A2.
+
+    \begin{definition}[{[H-acyc]}: no return; not established]
+      \label{hyp:acyclic}
+      The reachability relation generated by the admissible transitions is acyclic; equivalently,
+      some rank function on observable states is strictly monotone along every admissible
+      transition.
+    \end{definition}
+
+    \begin{theorem}[Temporal order; conditional on {[H-acyc]}]
       \label{thm:temporal-order}
-      Under A2, the chain of observable states $\{O_n\}_{n \geq 0}$ carries a
-      canonical oriented, non-trivial partial order.
+      Along a segment of the chain of observable states $\{O_n\}$ whose transitions are all
+      non-injective --- the generic case under A2 --- and under \textup{[H-acyc]}, the states carry
+      a canonical oriented, non-trivial strict partial order.
     \end{theorem}
 
     \begin{proof}
-      Irreversibility (Proposition~\ref{prop:irreversibility}) establishes an
-      asymmetric relation: $O_{n-1} \to O_n$ is not reversible, so $O_{n-1}$
-      and $O_n$ are not equivalent under the transition structure.
-      Novelty ($\Delta_n \neq 0$) ensures $O_n \neq O_{n-1}$, so the order
-      is non-trivial.
-      The composition of transitions defines transitivity.
-      Together: asymmetry, irreflexivity, and transitivity give a strict partial
-      order compatible with the chain structure.
+      Transitivity is given by composition of transitions.
+      \textup{[H-acyc]} excludes cycles, hence gives irreflexivity and asymmetry of the
+      reachability relation.
+      Novelty ($\Delta_n \neq 0$) ensures $O_n \neq O_{n-1}$, so the order is non-trivial.
+      Together these give a strict partial order compatible with the chain structure.
+      Proposition~\ref{prop:irreversibility} supplies the information-theoretic content of each
+      step, not the orientation.
     \end{proof}
 
+    \begin{remark}[What would establish {[H-acyc]}]
+      \label{rem:acyclic-open}
+      A strictly monotone rank on observable states, or a separate proof that no admissible cycle
+      exists, would supply it.
+      The temporal sufficiency property of Remark~\ref{rem:no-permanence} would not: a Markov
+      property yields at best a non-increasing quantity by the data-processing inequality, which
+      may stay constant, and a system may return to the same observable state without recovering
+      the distinctions lost earlier.
+      The two debts may well be closed by one stronger object, but they are not the same debt.
+      Neither is derived here, so the arrow of time is a conditional consequence of this
+      foundation, not a proved one.
+    \end{remark}
+
     \begin{remark}[Time as derived structure]
-  The arrow of time is not postulated.
-  It is the oriented order generated by the chain of non-injective transitions
-  under A2.
+  The arrow of time is not postulated as a separate primitive.
+  It is the oriented order carried by the chain of non-injective transitions under A2 once
+  \textup{[H-acyc]} is granted; that hypothesis is not derived here.
   The index $n$ acquires its temporal meaning from this order — not the reverse.
   The quantitative structure of this projective temporal ordering — cumulative
   projected capacity and its numerical validation from the spectral admissibility
@@ -826,19 +902,21 @@ provides the effective Lagrangian description.
       \label{rem:state-machine}
       The admissible neighbourhood $\mathcal{A}(O_{n-1})$
       (Remark~\ref{rem:admissibility-relational}) gives the
-      chain~\eqref{eq:recursive-chain} the structure of an oriented state machine:
+      chain~\eqref{eq:recursive-chain} the structure of a directed state machine:
       nodes are admissible projections, edges are admissible transitions, and a
       physical history is a directed path in this graph.
+      The graph is directed in all cases; that it is acyclic, and so carries an orientation in
+      the sense of Theorem~\ref{thm:temporal-order}, is \textup{[H-acyc]} and is not
+      established here.
       When $|\mathcal{A}(O_{n-1})| = 1$, the successor is uniquely determined by the
       admissibility structure alone — no external law is required.
       When $|\mathcal{A}(O_{n-1})| > 1$, branching occurs; the relative admissibility
       weights of the branches are the projective analogues of quantum probabilities
       (Section~\ref{sec:admissibility}).
-      In both cases, no temporal parameter external to the transition structure is
-      needed: the index $n$ acquires its temporal meaning entirely from the
-      orientation of the admissibility graph.
-      \emph{Dynamics is the oriented topology of the admissibility graph, not a law
-      imposed upon a pre-existing time.}
+      In both cases, no temporal parameter external to the transition structure is needed.
+      Under \textup{[H-acyc]}, the index $n$ then acquires its temporal meaning entirely from the
+      orientation of the admissibility graph, and \emph{dynamics is the oriented topology of that
+      graph, not a law imposed upon a pre-existing time}.
     \end{remark}
 
     \begin{remark}[Observable reality as projective position]
@@ -879,7 +957,6 @@ provides the effective Lagrangian description.
       \end{equation}
       Strict positivity of a chosen projection-entropy functional requires its
       own hypotheses.
-      for every admissible $\Pi_n$.
     \end{corollary}
 
     \begin{proof}
@@ -904,9 +981,10 @@ provides the effective Lagrangian description.
       Corollary~\ref{cor:projective-incompleteness} also resolves a potential question
       about the origin of the first admissible transition: what initiates $\Pi_1$ from
       $\Pi_0$?
-      A2 excludes an injective initial realisation map, but it does not by itself
-      prove that an admissible successor exists or dynamically initiate the first
-      transition.
+      Being generic, A2 does not exclude that a particular transition, the initial one included,
+      is injective; where $\Pi_1$ is non-injective the corollary applies to it.
+      A2 does not by itself prove that an admissible successor exists, nor dynamically initiate
+      the first transition.
       Existence of $\mathcal{A}(O_0)$ is therefore a separate condition.
     \end{remark}
 
@@ -988,7 +1066,8 @@ provides the effective Lagrangian description.
   natural precursor of an effective Hilbert sector: it carries complex
   amplitudes and interference structure.
   This is not yet a full Hilbert space — the inner product, completeness,
-  and probability measure require additional derivation (see Q1, Q2 in
+  and probability measure remain to be established; no companion paper in
+  this programme currently supplies that derivation (see
   Section~\ref{sec:summary}).
   But the amplitude structure and interference follow from A3 alone.
     \end{remark}
@@ -1230,15 +1309,14 @@ the moment of resolution.
     admissible structure — the unique minimal such intensity compatible with
     the four structural requirements.
 
-    \begin{remark}[Relation to the Born rule derivation in the companion paper]
-  The argument above establishes the structural necessity of the squared norm
-  as the resolution intensity of the proto-state.
-  The companion paper~\cite{Beau2026q1} makes this precise as a theorem in the SU(2)
-  parity sector: the Born rule $P(a=+1|\hat{a}) = |\langle +\hat{a}|\psi\rangle|^2$
-  is the unique probability assignment compatible with the coherent fibre
-  structure, the SU(2) observable algebra, and the derived singlet correlator.
-  The two derivations are complementary: the present argument gives the
-  structural motivation; the companion gives the uniqueness proof.
+    \begin{remark}[Status of the Born-rule uniqueness argument]
+  The argument above gives the structural motivation for the squared norm as
+  the resolution intensity of the proto-state. No companion paper in this
+  programme currently supplies an independent uniqueness proof for this
+  claim: the Born-rule derivation is not established by~\cite{Beau2026q1},
+  whose proved content is a separate, unconditional rigidity theorem
+  unrelated to the Born rule. The argument above is a structural motivation,
+  not a proved uniqueness theorem, and remains open.
     \end{remark}
 
     \begin{remark}[The wavefunction lives in the admissible fibre, not in space]
@@ -1330,19 +1408,22 @@ the moment of resolution.
     The pair is a single closed object throughout the cascade, not two subsystems that were joined at an
     earlier transition and have since separated.
 
-    This picture is now quantitatively derived rather than asserted.
-    For the conjugate pair, the minimal admissible projection is spectrally atomic: after removal of the zero
-    mode it is the two-dimensional Born--Infeld parity pair, identified with the spin-$\tfrac12$
-    representation, and its reduced state is the singlet with entanglement entropy
-    $\log 2$~\cite{Beau2026ent2,Beau2026q3}.
-    This is the entropy of the state behind the singlet correlator and the Tsirelson bound~\cite{Beau2026q1}.
+    A conditional quantitative account is available. For the conjugate pair, the minimal admissible
+    projection is spectrally atomic: after removal of the zero mode it is the two-dimensional
+    Born--Infeld parity pair, identified with the spin-$\tfrac12$ representation. Under an explicit
+    hypothesis that the joint state is invariant under the diagonal action of the relevant finite
+    group — not derived from admissibility, stated and used conditionally
+    in~\cite{Beau2026q3} — its reduced state is the singlet, with entanglement entropy
+    $\log 2$~\cite{Beau2026ent2}. Neither the invariance hypothesis nor the resulting entropy value is
+    established unconditionally by Axioms A1--A4 alone.
     A finer pipeline-level observable, the full residual fibre-level rank $r_{\mathrm{pair}}(n)$, gives
     $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$, proved for matched single-character blocks and conditional
     otherwise on a residual indiscernibility hypothesis~\cite{Beau2026entnote,Beau2026ent1}.
     The two observables must not be conflated; they coincide only when $r_{\mathrm{pair}}(n)=2$.
 
     The invariant carried by the shared cell is infra-projectable: it has no position in the projected
-    temporal ordering, which is itself the cumulative projected capacity.
+    temporal ordering, which is itself the cumulative projected capacity and, as an ordering, is
+    conditional on \textup{[H-acyc]}.
     It is a single unsplit object below the resolution of $\Pi_n$ (Corollary~\ref{cor:projective-incompleteness}),
     not a pair of separately ordered events.
     In this sense entanglement is the not-yet-time-ordered sector of the cascade, rather than a record of a past
@@ -1385,19 +1466,26 @@ the moment of resolution.
 
   \begin{table}[h]
     \centering
-    \small
-    \begin{tabular}{p{5.2cm}p{5.8cm}p{3.2cm}}
+    \footnotesize
+    \renewcommand{\arraystretch}{0.95}
+    \begin{tabular}{p{4.6cm}p{5.4cm}p{4.2cm}}
       \toprule
       \textbf{Concept} & \textbf{Source} & \textbf{Status} \\
       \midrule
       \multicolumn{3}{l}{\textit{Direct axiomatic consequences (A1--A4)}} \\
       \midrule
-      Irreversibility &
+      Loss in the immediate image &
       Non-injectivity (A2) &
-      Proved (Prop.~\ref{prop:irreversibility}) \\
+      Proved on non-injective steps (Prop.~\ref{prop:irreversibility}) \\
+      Permanent non-recovery &
+      Would need temporal sufficiency &
+      Open (Rem.~\ref{rem:no-permanence}) \\
+      Acyclicity of the chain &
+      Not derived from A1--A4 &
+      Hypothesis [H-acyc] (Def.~\ref{hyp:acyclic}) \\
       Temporal order &
-      Irreversibility + novelty (A2) &
-      Proved (Thm.~\ref{thm:temporal-order}) \\
+      Novelty (A2) + [H-acyc] &
+      Conditional (Thm.~\ref{thm:temporal-order}) \\
       Proto-state (wave) &
       Unresolved multiplicity (A1, A3) &
       Derived (Prop.~\ref{prop:indeterminacy}) \\
@@ -1414,14 +1502,15 @@ the moment of resolution.
       Shared non-factorisable infra-projectable cell~\cite{Beau2026entnote} &
       Derived \\
       Entanglement entropy &
-      Admissible pair $\to\log 2$; residual rank $\to\log r_{\mathrm{pair}}$~\cite{Beau2026ent2,Beau2026ent1} &
-      Proved / cond. \\
+      Admissible pair $\to\log 2$ (conditional on an explicit, undemonstrated diagonal-invariance
+      hypothesis, \cite{Beau2026q3}); residual rank $\to\log r_{\mathrm{pair}}$~\cite{Beau2026ent2,Beau2026ent1} &
+      cond. / cond. \\
       Bell non-applicability &
       Non-local, infra-projectable fibre &
       Proved~\cite{Beau2026b} \\
       Born rule (SU(2) sector) &
-      Correlator + coherence~\cite{Beau2026q1} &
-      Proved \\
+      No companion paper currently supplies a uniqueness derivation~\cite{Beau2026q1} &
+      Open \\
       Heisenberg carrier selection &
       Audited carrier contract; $\mathfrak{S}_3$ countermodel &
       Selection fails; obstruction proved (Thm.~\ref{thm:heisenberg}) \\
@@ -1429,9 +1518,9 @@ the moment of resolution.
       \multicolumn{3}{l}{\textit{Key results of the companion programme
         (see~\cite{Beau2026a} for the full derivation chain)}} \\
       \midrule
-      SU(2) as admissibility fixed point &
-      Spectral convergence (Q2)~\cite{Beau2026q2} &
-      Proved \\
+      Laplacian eigenvalue degeneracy, spin-$\tfrac12$/spin-$\tfrac32$ on $2I$ &
+      Exact finite-group calculation (Q2)~\cite{Beau2026q2} &
+      Proved (no fixed-point or sector-selection claim follows) \\
       Effective spacetime geometry, $D_{\mathrm{hom}}=4$;
       full co-metric $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$ &
       BFS stratification (Q5b, Q6b, Q8, Q10, Q11)~\cite{Beau2026q5b,Beau2026q6b,BeauQ8,Beau2026q10,Beau2026q11} &
@@ -1539,17 +1628,23 @@ the moment of resolution.
 
   \subsection*{Open directions}
 
-    \paragraph{Q2 — Born rule beyond SU(2).}
-      The Born rule $P(a=+1|\hat{a}) = |\langle +\hat{a}|\psi\rangle|^2$ is derived
-      in~\cite{Beau2026q1} for the SU(2) parity sector.
-      A first step beyond this sector is taken in~\cite{Beau2026q2}, which derives the
-      Born rule, singlet correlator, and Tsirelson bound for the co-admissible
-      spin-$\tfrac{3}{2}$ sector on the binary icosahedral group $2I$, and
-      identifies SU(2) as the unique stable sector under admissibility refinement
-      in the large-$p$ limit.
-      The full extension to arbitrary observables, multipartite systems, and
-      continuous spectra requires extending the fibre structure beyond the
-      two-element parity case and remains the primary open direction.
+    \paragraph{The Born rule, and quantum structure beyond the finite fibre.}
+      The Born rule $P(a=+1|\hat{a}) = |\langle +\hat{a}|\psi\rangle|^2$ is not
+      derived by any companion paper of this programme; it remains a structural
+      motivation (Section~\ref{sec:summary}), not a proved uniqueness theorem.
+      The companion paper~\cite{Beau2026q2} establishes an exact finite-group fact
+      — the spin-$\tfrac12$ and spin-$\tfrac32$ representations of the binary
+      icosahedral group $2I$ induce the same Cayley-graph Laplacian eigenvalue —
+      but does not derive phase coherence, a singlet correlator, a Tsirelson bound,
+      the Born rule, or a sector-selection argument from it. The companion
+      paper~\cite{Beau2026q3} proves a conditional theorem — given an explicit,
+      undemonstrated diagonal-invariance hypothesis, the joint state of two copies
+      of an admissible sector is the SU(2) singlet, with an explicit Casimir
+      correlator — but does not derive that hypothesis, phase coherence, or the
+      Born rule. Deriving the Born rule, extending phase coherence and a
+      correlator to arbitrary observables and multipartite systems without
+      importing an undemonstrated invariance hypothesis, and identifying a
+      physically preferred sector, all remain open.
 
     \paragraph{O31/O32 --- Colour sector and recursive non-injectivity.}
       The SU(2) derivation proceeds via conjugate pairs $\{c, q-c\}$.
@@ -1592,9 +1687,13 @@ the moment of resolution.
       self-similar --- in the sense that projection from $O^*$ tends to return to a
       spectrally close neighbourhood --- define \emph{spectral quasi-fixed points} of
       the admissible flow.
-      These are not static states, which would contradict the irreversibility established in
-      Proposition~\ref{prop:irreversibility}, but projective orbits that traverse the same
-      spectral region repeatedly.
+      These are not static states, but projective orbits that traverse the same spectral region
+      repeatedly.
+      What excludes staticity is the novelty condition of Section~\ref{subsec:ni-novelty}, under
+      which a successor is indexed as a distinct state only when $\Delta_n \neq 0$.
+      Immediate information loss would not exclude it: a non-injective $\Pi_n$ can identify
+      several configurations and still return the same observable state, which is precisely the
+      cycle left open by \textup{[H-acyc]}.
       Stable physical structures --- particles, gauge symmetries, and coupling constants ---
       are candidates for identification with such quasi-fixed points: their observed
       stability would then be a projective property, arising from the near-invariance of
@@ -1713,8 +1812,8 @@ the moment of resolution.
     In the WKB approximation, the quantum wave function takes the form
     $\psi \sim A\,e^{iS/\hbar}$, where the phase $S$ is the Hamilton--Jacobi action.
     In the present framework, the phase of an admissible mode is not an input but an
-    output of the conditional spectral model: it is obtained from coherence
-    conditions imposed on the supplied Weil module~\cite{Beau2026q1}.
+    output of the conditional spectral model: it is obtained from the coherence
+    forced by Axiom A3 on the supplied Weil module.
     The WKB identification therefore holds at the level of the effective description,
     once the continuum limit has been taken --- an operation currently conditional on
     the open hypothesis [H-L] (Q5a version 3.0~\cite{Beau2026q5a}): the collective
@@ -1742,14 +1841,17 @@ the moment of resolution.
     states of a globally stationary wave function, treating time as a relational label on
     a clock subsystem.
     The projective temporal ordering of the present framework~\cite{Beau2026pto} shares
-    this relational spirit — time is not a parameter of the substrate but a monotone
-    ordering induced by the admissibility cascade — but differs in one structural respect.
+    this relational spirit — time would be, not a parameter of the substrate, but a monotone
+    ordering induced by the admissibility cascade, an ordering that is itself conditional on
+    \textup{[H-acyc]} — but differs in one structural respect.
     In the Page--Wootters model, the global state is fully recoverable (the projection is
     effectively injective), whereas here the projection $\Pi$ is structurally non-injective
     (A2, ENI~\cite{Beau2026l}).
-    Temporal ordering in the present framework is therefore irreversible at the structural
-    level: it reflects the irreversible accumulation of projected spectral capacity, not
-    the choice of a clock observable.
+    Along the non-injective transitions A2 asserts to be generic, no step of the present framework
+    is reversible: what the comparison rests on is the accumulation of projected spectral capacity,
+    not the choice of a clock observable.
+    That these steps compose into any ordering at all, global arrow included, is conditional on
+    \textup{[H-acyc]}.
 
   \paragraph{Holographic renormalisation and radial Hamilton--Jacobi.}
     In holographic renormalisation, the on-shell gravitational action satisfies a radial
