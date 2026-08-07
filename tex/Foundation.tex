@@ -110,9 +110,12 @@ as the Primitive of Physical Description}
   \subsection*{Relation to companion papers}
 
     This paper provides the axiomatic foundation for a chain of companion results.
-    The companion paper~\cite{Beau2026b} establishes that Bell-type factorisation
-    fails generically under non-injective projection (A2), without invoking
-    nonlocal dynamics.
+    Bare non-injectivity does not determine Bell factorisability~\cite{Beau2026BellNoGo}.
+    A finite countermodel supplies a non-injective projection with deterministic local
+    response functions and a setting-independent measure.
+    The published companion paper~\cite{Beau2026b} claims the contrary implication,
+    but its proof restricts the Bell variable to observable-level data and its central
+    conclusion is therefore not available as an input here.
     The companion paper~\cite{Beau2026l} proves that non-injectivity is a structural
     necessity of any genuinely emergent description.
     The companion paper~\cite{Beau2026fe} develops the information-theoretic
@@ -147,7 +150,7 @@ as the Primitive of Physical Description}
     and tests the proposed Heisenberg carrier-selection step.
     Section~\ref{sec:locking} derives projection locking and the discrete character
     of quantum transitions.
-    Section~\ref{sec:entanglement} treats entanglement and Bell non-applicability.
+    Section~\ref{sec:entanglement} treats entanglement and the open Bell-factorisation bridge.
     Section~\ref{sec:summary} summarises what is derived from what, and identifies
     the open directions.
 
@@ -270,9 +273,11 @@ as the Primitive of Physical Description}
     Where $\Pi_n$ is non-injective, that non-injectivity therefore persists through resolution:
     locking withdraws observational access, it does not remove the configurations.
 
-    This distinction --- observable uniqueness without configurational uniqueness --- prevents
-    Bell-type factorisation~\cite{Beau2026b} and forces the coherent, non-factorisable fibre
-    structure derived in Section~\ref{subsec:heisenberg}.
+    This distinction --- observable uniqueness without configurational uniqueness --- does not
+    by itself prevent Bell-type factorisation.
+    Any Bell-local model can be made non-injective by adjoining an independent erased label,
+    without changing its observable probabilities.
+    A separate obstruction to a setting-independent global coupling would be required.
     More generally, distinct interactions $I_1 \neq I_2$ induce distinct admissible
     sub-fibres $F_n^{(I_1)} \neq F_n^{(I_2)}$ and hence distinct observable outcomes,
     without any element of $F_n$ having been selected.
@@ -1388,7 +1393,7 @@ the moment of resolution.
     phenomenological.
 
     \clearpage
-  \section{Entanglement and Bell Non-Applicability}
+  \section{Entanglement and the Open Bell-Factorisation Bridge}
   \label{sec:entanglement}
 
   \subsection{Entanglement as a shared infra-projectable cell}
@@ -1431,32 +1436,38 @@ the moment of resolution.
     Correlations of this kind carry no signal and admit no influence between separated projected descriptions;
     locality at the projected level is preserved.
 
-  \subsection{Why Bell's factorisation assumptions do not apply}
+  \subsection{What a Bell-factorisation result would require}
 
-    Bell's theorem~\cite{Bell1964} constrains models in which measurement outcomes are determined by a variable
-    $\lambda$ satisfying:
-    (i) $\lambda$ is local (assignable separately to $A$ and $B$),
-    (ii) $\lambda$ is a definite value present at measurement,
-    (iii) $\lambda$ is independent (statistically independent of measurement settings).
+    Bell's theorem~\cite{Bell1964} concerns the existence of a setting-independent variable
+    $\lambda$ for which
+    \[
+      P(a,b|A,B,\lambda)=P(a|A,\lambda)P(b|B,\lambda).
+    \]
+    The variable is not required to be reconstructible from observable data.
+    In particular, an underlying configuration $\omega$ is itself an admissible candidate
+    for~$\lambda$.
 
-    The fibre invariant in the present framework satisfies none of these conditions, and the decisive failure
-    is (ii).
-    A variable fixed in the common past history would itself be a local hidden variable of exactly the kind
-    Bell's theorem excludes; locating the shared fibre in the past would therefore not evade the theorem.
-    The escape is instead that the fibre invariant is infra-projectable: it never acquires a definite projected
-    value, at the present transition or any other, because it lives below the resolution of $\Pi_n$
-    (Corollary~\ref{cor:projective-incompleteness}).
-    There is no $\lambda$ with a definite value to be assigned.
+    Non-injectivity only states that observable data do not determine~$\omega$ uniquely.
+    It does not prevent conditioning on~$\omega$ in a candidate Bell-local completion.
+    For example, let settings at $A$ and $B$ take values $x,y\in\{0,1\}$ respectively, and let
+    \[
+      \Omega=\{-1,+1\}^{4}\times\{0,1\},
+      \qquad
+      \Pi_{xy}(A_0,A_1,B_0,B_1,r)=(A_x,B_y),
+    \]
+    with the uniform measure.
+    Every map~$\Pi_{xy}$ has fibres of size eight, yet $\lambda=\omega$ gives deterministic
+    local response functions, measurement independence, and CHSH value zero.
+    This countermodel disproves the implication from non-injectivity to failure of Bell
+    factorisation claimed in~\cite{Beau2026b}; the general no-go theorem and the identification
+    of the correct obstruction are proved in~\cite{Beau2026BellNoGo}.
 
-    The invariant is also not local --- it belongs to the shared non-factorisable cell, not to a separable
-    region assignable to $A$ or $B$ --- and not independent, since $A$ and $B$ occupy the same cell, which
-    cannot be factorised.
-    The Bell factorisation assumption $P(a,b|\lambda) = P(a|\lambda) \cdot P(b|\lambda)$ fails because it
-    presupposes a definite $\lambda$ assignable separately to $A$ and $B$, and the shared infra-projectable
-    cell provides neither.
-    Bell-type inequalities are therefore not violated by a hidden mechanism in this framework --- their
-    preconditions do not hold.
-    This is established formally in the companion paper~\cite{Beau2026b}.
+    The missing input is a compatibility obstruction for the complete family of
+    measurement contexts: equivalently, the absence of a setting-independent global
+    coupling over local response assignments.
+    A shared infra-projectable cell may motivate such an obstruction, but Axioms A1--A4
+    do not currently derive it.
+    Bell non-factorisability is therefore open in the present framework.
 
     \clearpage
   \section{Summary: What Is Derived from What}
@@ -1505,9 +1516,9 @@ the moment of resolution.
       Admissible pair $\to\log 2$ (conditional on an explicit, undemonstrated diagonal-invariance
       hypothesis, \cite{Beau2026q3}); residual rank $\to\log r_{\mathrm{pair}}$~\cite{Beau2026ent2,Beau2026ent1} &
       cond. / cond. \\
-      Bell non-applicability &
-      Non-local, infra-projectable fibre &
-      Proved~\cite{Beau2026b} \\
+      Bell non-factorisability &
+      Requires an obstruction to a setting-independent global coupling &
+      Open; non-injectivity alone refuted as sufficient \\
       Born rule (SU(2) sector) &
       No companion paper currently supplies a uniqueness derivation~\cite{Beau2026q1} &
       Open \\
