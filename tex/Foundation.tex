@@ -131,9 +131,10 @@ as the Primitive of Physical Description}
     rule from admissibility.
     The companion papers~\cite{Beau2026entnote,Beau2026ent1,Beau2026ent2} locate entanglement
     quantitatively within the spectral admissibility cascade:
-    conditional on two explicit, undemonstrated hypotheses -- the absence of additional
-    effective symmetries beyond Born--Infeld parity (\cite{Beau2026a27}, within the scope of
-    \cite{Beau2026a22}) and a diagonal-invariance hypothesis (\cite{Beau2026q3}) -- the minimal
+    conditional on two explicit, undemonstrated hypotheses -- the atomic-carrier hypothesis
+    (H-carrier) of~\cite{Beau2026ent2}, whose rank-three input is the supplied selection rule
+    of~\cite{Beau2026a27} within the open fibre-identification problem of~\cite{Beau2026a22},
+    and a diagonal-invariance hypothesis (\cite{Beau2026q3}) -- the minimal
     admissible pair sector carries the spin-$\tfrac12$ singlet with entropy $\log 2$, while the
     full residual fibre-level rank gives a finer observable $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$.
     The white paper~\cite{Cosmochrony} develops the full phenomenological programme;
@@ -517,8 +518,9 @@ not assumed.
   new relative to the already realized subspace.
   \item \emph{Image level} ($\mathrm{Im}\,\Pi_n \cap \mathrm{Ntrl}$):
   governs the observable structure.
-  Its real rank is rigidly fixed to 3 by the quaternionic maximality of
-  $\mathrm{Im}\,\mathbb{H}$ (O23, Theorem~3.2) and is independent of the
+  Its real rank is taken to be 3, the adjoint dimension of the supplied
+  spinor carrier (O23, Theorem~3.1) — a supplied selection rule whose
+  derivation from admissibility is open — and is independent of the
   cardinality of $\ker \Pi_n$.
       \end{enumerate}
       The Verticality Lemma of O24 (Lemma~3.1) establishes that every
@@ -669,7 +671,7 @@ The admissibility filter is entirely in $\Pi_n$, not in $\Omega_n^{(c)}$.
       It selects, from all directions in $\Omega_n^{(c)}$, those compatible with
       the admissibility constraints.
       $\Pi_n$ encodes the laws revealed by the O-series — Born--Infeld bound,
-      parity involution, projection locking — but does not define $\Omega_n^{(c)}$.
+      candidate parity involution, projection locking — but does not define $\Omega_n^{(c)}$.
 
     \paragraph{Level 5 — The observable outcome $O_n$.}
       The observable state $O_n$ is the image of $\Pi_n$ applied to the admissible
@@ -709,10 +711,13 @@ The admissibility filter is entirely in $\Pi_n$, not in $\Omega_n^{(c)}$.
       \end{remark}
 
       \begin{remark}[The conjugate pair and $\Omega_n$ without preferred direction]
-  The parity involution $c \leftrightarrow q-c$ (O18) acts on $\Omega_n^{(c)}$
+  The conjugation $c \leftrightarrow q-c$ acts on $\Omega_n^{(c)}$
   via complex conjugation~\cite{Beau2026a21}:
   $\Omega_n^{(q-c)} = \overline{\Omega_n^{(c)}}$.
-  The minimal admissible fibre is therefore the pair
+  Reading this pair as the minimal admissible fibre is the candidate parity
+  structure of the programme (a structurally motivated hypothesis; the fibre
+  identification is stated as an open classification problem
+  in~\cite{Beau2026a22}); under that reading the minimal fibre is the pair
   $\{V_n^{(c)}, V_n^{(q-c)}\} = \{V_n^{(c)}, \overline{V_n^{(c)}}\}$,
   with no preferred orientation — consistent with the admissibility principle
   of A3.
@@ -1376,25 +1381,27 @@ the moment of resolution.
 
   \subsection{Three stable directions}
 
-    The number of independent stable admissible directions in the fibre is
-    exactly three, derived algebraically from the admissibility constraints,
-    conditional on the absence of additional effective symmetries beyond
-    Born--Infeld parity within the scope of~\cite{Beau2026a22} — a hypothesis
-    stated by~\cite{Beau2026a27} itself as a condition on this result, not
-    derived there or elsewhere:
+    For a supplied irreducible two-dimensional unitary carrier
+    $V_\rho \cong \mathbb{C}^2$, the traceless neutral sector is
+    $\mathfrak{su}(2) \cong \mathrm{Im}\,\mathbb{H}$, of real dimension
+    exactly three (\cite{Beau2026a27}, Theorem~3.1).
+    The chain connecting this theorem to the Born--Infeld structure and to
+    the observable threshold is status-typed as follows:
     \begin{equation}
       \begin{aligned}
-        \text{BI parity}
-        &\;\Rightarrow\; \text{fibre involution } c \leftrightarrow q-c \\
-        &\;\Rightarrow\; \text{non-abelian admissible support} \\
-        &\;\Rightarrow\; \mathbb{H}\text{-minimality} \\
-        &\;\Rightarrow\; \dim_{\mathbb{R}} \mathrm{Im}\,\mathbb{H} = 3 \\
-        &\;\Rightarrow\; \Sigma_c(n_3) = 3.
+        \text{BI parity (equivariant, proved)}
+        &\;\xrightarrow{\;\text{open}\;}\; \text{fibre involution } c \leftrightarrow q-c \\
+        &\;\xrightarrow{\;\text{open}\;}\; V_\rho \cong \mathbb{C}^2
+        \;\xrightarrow{\;\text{proved}\;}\; \dim_{\mathbb{R}} \mathrm{Im}\,\mathbb{H} = 3
+        \;\xrightarrow{\;\text{open}\;}\; \Sigma_c(n_3) = 3.
       \end{aligned}
     \end{equation}
-    The emergence of exactly three stable directions — and with it, three
-    particle generations — is algebraic in origin, not geometric or
-    phenomenological.
+    Only the adjoint-dimension arrow is a theorem; the fibre identification is
+    the open classification problem of~\cite{Beau2026a22}, and the threshold
+    $\Sigma_c(n_3) = 3$ is a supplied selection rule~\cite{Beau2026a27}.
+    The reading of exactly three stable directions — and with it, three
+    particle generations — as algebraic in origin is conditional on the two
+    open bridges.
 
     \clearpage
   \section{Entanglement and the Open Bell-Factorisation Bridge}
@@ -1412,16 +1419,15 @@ the moment of resolution.
     The binding is the non-factorisability of the fibre forced by A1 and A3 (Section~\ref{sec:admissibility});
     it holds wherever a shared non-decomposable cell is present, independently of how that cell arose.
     For the conjugate Weil pair $\{c,q-c\}$ that organises the spectral cascade, the binding is explicit and
-    permanent: the two characters are related by the Born--Infeld parity involution
-    $V_{q-c}\simeq\overline{V_c}$, which holds at every depth $n$.
+    permanent: the two characters are related by complex conjugation,
+    $V_{q-c}\simeq\overline{V_c}$ (the Born--Infeld parity candidate), which holds at every depth $n$.
     The pair is a single closed object throughout the cascade, not two subsystems that were joined at an
     earlier transition and have since separated.
 
     A conditional quantitative account is available. For the conjugate pair, the minimal admissible
-    projection's general analytical proof of spectral atomicity itself rests on a further explicit
-    hypothesis — the absence of additional effective symmetries beyond Born--Infeld parity, within
-    the scope of~\cite{Beau2026a22}, stated as a condition on its own rank-3 result
-    by~\cite{Beau2026a27} — under which, after removal of the zero mode, it is the two-dimensional
+    pair carrier is fixed by an explicit atomic-carrier hypothesis — (H-carrier)
+    in~\cite{Beau2026ent2}, derived nowhere in the corpus; its rank-three input is the supplied
+    selection rule of~\cite{Beau2026a27} — under which the pair sector is the two-dimensional
     Born--Infeld parity pair, identified with the spin-$\tfrac12$ representation. Under a further,
     independent explicit hypothesis that the joint state is invariant under the diagonal action of
     the relevant finite group — not derived from admissibility, stated and used conditionally
@@ -1514,8 +1520,8 @@ the moment of resolution.
       Projection locking (A4, O22) &
       Proved (Thm.~\ref{thm:discrete-locking}) \\
       Three stable directions &
-      $\dim_\mathbb{R} \mathrm{Im}\,\mathbb{H} = 3$ (O23), conditional on O23's own stated absence-of-additional-
-      symmetries hypothesis &
+      $\dim_\mathbb{R} \mathrm{Im}\,\mathbb{H} = 3$ for a supplied spinor carrier (O23, Thm~3.1);
+      carrier selection and $\Sigma_c$ identification open &
       cond. \\
       Entanglement &
       Shared non-factorisable infra-projectable cell~\cite{Beau2026entnote} &
