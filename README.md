@@ -246,8 +246,9 @@ and what it presupposes that the present framework derives:
 ## What This Paper Does Not Do
 
 - Does not derive full quantum field theory
-- Does not construct spacetime geometry explicitly (handled by Q5a–Q6b)
-- Does not address all gauge sectors beyond SU(2)
+- Does not construct spacetime geometry; the spatial continuum is open (Q5a)
+- Does not select a gauge group; the SU(2) sector rests on the spinor carrier supplied
+  conditionally by O23
 - Does not derive the finite Heisenberg carrier from A1–A4
 
 These are handled in companion papers and the O-series.
