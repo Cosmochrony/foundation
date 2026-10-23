@@ -2,7 +2,7 @@
   "bib_key": "Beau2026m",
   "web_url": "https://cosmochrony.org/science/non-injective/foundation/",
   "main_tex": "tex/Foundation.tex",
-  "notes": "Version 2.3 corrects the status of the SU(2) sector, following the Q6a 2.3 audit. The admissibility constraints restrict the algebraic structure of the fibre but do not select it; the SU(2) structure of the spin-1/2 sector enters through the spinor carrier supplied conditionally by O23, whose selection is open. The summary table lists the SU(2) gauge structure as conditional on that supplied carrier (admissible factorisation of O27 and Q6a 2.3), not as proved. No Foundation theorem is changed.",
+  "notes": "Version 2.3 corrects the status of the gauge-group and continuum statements, following the Q6a 2.3 audit. The admissibility constraints restrict the algebraic structure of the fibre but do not select it; the SU(2) structure of the spin-1/2 sector enters through the spinor carrier supplied conditionally by O23, and the summary table lists the SU(2) gauge structure as conditional on that carrier. No identification of the gauge group SU(3) x SU(2) x U(1) is established: O31 version 2.0 is a withdrawal notice, the summary table lists that group as open, and the colour-sector paragraph credits O31 and O29 only with what they currently state. The large-q continuum limit is stated as a set of requirements whose realisation is open (Q5a, hypothesis [H-L]). No Foundation theorem is changed.",
   "zenodo_id": 19616329,
   "doi": "10.5281/zenodo.19616329"
 }

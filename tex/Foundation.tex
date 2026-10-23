@@ -317,7 +317,8 @@ as the Primitive of Physical Description}
     physical content of the theory.
     In particular, the symmetry group of a fibre $\Pi_n^{-1}(O_n)$ is physical precisely
     because it acts within the fibre while leaving $O_n$ unchanged: this is the structural
-    origin of gauge symmetry, developed in the companion papers~\cite{Beau2026q6a,Beau2026a35}.
+    origin of gauge symmetry, developed in the companion paper~\cite{Beau2026q6a}, which defines gauge charges as
+    fibre invariants and does not determine the gauge group.
     A detailed formulation in terms of the five-level hierarchy is given in
     Remark~\ref{rem:observable-space}.
   \end{remark}
@@ -740,50 +741,45 @@ The admissibility filter is entirely in $\Pi_n$, not in $\Omega_n^{(c)}$.
     Physical quantities are functions on $\mathbb{Z}/q\mathbb{Z}$.
 
   \paragraph{The large-$q$ limit.}
-    As $q \to \infty$ with the prime structure retained, three things happen
-    simultaneously:
+    As $q \to \infty$ with the prime structure retained, a continuum description would require
+    three things simultaneously:
     \begin{enumerate}[(i)]
 \item \emph{A continuum carrier limit would require an explicit scaling map}.
 The finite Heisenberg carrier $\mathcal{H}_c$ and its associated Weil module
 must be kept distinct.
 No convergence from either finite action to an operator on $L^2(\mathbb{R})$
 follows from the carrier construction alone; the normalization no-go discussed
-below is an obstruction to the previously assumed bridge.
-\item \emph{The BFS shell structure approaches a continuous foliation}.
+below is an obstruction to such a bridge.
+\item \emph{The BFS shell structure would have to approach a continuous foliation}.
 The polynomial ball growth $|B_n| \sim c\, n^4$ (Bass--Guivarc'h,
-homogeneous dimension $D = 4$) induces, in the $q \to \infty$ limit,
-a continuous layering of the configuration space compatible with
-a four-dimensional effective geometry~\cite{Cosmochrony}.
-\item \emph{The discrete admissibility filter $\Pi_n$ approaches a
+homogeneous dimension $D = 4$) is proved; a continuous layering of the configuration
+space compatible with a four-dimensional effective geometry~\cite{Cosmochrony} would
+follow only from a spatial continuum limit, which is open.
+\item \emph{The discrete admissibility filter $\Pi_n$ would have to approach a
 differential constraint}.
 The capacity admissibility bound $A_n \leq c_{\mathrm{BI}}/\sqrt{\lambda_n}$
-becomes, in the continuum limit, the capacity constraint on effective field
+would become, in such a limit, the capacity constraint on effective field
 configurations~\cite{Beau2026c}, whose Born--Infeld saturation candidate
 provides the effective Lagrangian description.
     \end{enumerate}
 
-    The continuum spacetime observable is therefore not a separate postulate:
-    it is the large-$q$ limit of the discrete observable space $O$, with the
-    four-dimensional structure inherited from the homogeneous dimension of $G_q$.
+    If these three requirements were met, the continuum spacetime observable would not be a
+    separate postulate: it would be the large-$q$ limit of the discrete observable space $O$,
+    with the four-dimensional structure inherited from the homogeneous dimension of $G_q$.
+    That limit is not established (Remark~\ref{rem:continuum-limit}).
 
     \begin{remark}[Status of the continuum limit]
       \label{rem:continuum-limit}
       The convergence $\mathbb{C}^q \to L^2(\mathbb{R})$ and the emergence of
-      continuous spacetime geometry from the BFS shell structure are established
-      qualitatively in~\cite{Cosmochrony}.
-      Earlier versions of the companion paper~\cite{Beau2026q5a} (up to 2.1) initiated
-      the rigorous treatment of this limit, decomposing it into three convergences
-      (a Hilbert inductive limit, a representational convergence of Weil generators,
-      and a Mosco convergence of admissibility forms to a second-order operator
-      $L_\Pi$ on $L^2(\mathbb{R})$) and reducing it to a single spectral tightness
-      condition.
-      Q5a version 3.0 withdraws that framework: it identifies the canonical
+      continuous spacetime geometry from the BFS shell structure are described
+      qualitatively in~\cite{Cosmochrony}; they are not established.
+      The companion paper~\cite{Beau2026q5a} identifies the canonical
       filtration exactly (with the pipeline's initial vector, the filtration stage is
       precisely a growing toric Fourier window), proves that the published
       admissibility form converges to the zero form on this filtration, and proves
       that no common scalar normalisation of the form produces a non-trivial toric
       differential operator.
-      The existence of a spatial limit operator is now the explicit, unestablished
+      The existence of a spatial limit operator is the explicit, unestablished
       hypothesis [H-L] (Q5b version 2.0); the identification of the effective metric
       from the symbol of $L_\Pi$ (Q5b~\cite{Beau2026q5b}) is conditional on [H-L].
       The present remark identifies the intended mechanism; its rigorous realisation
@@ -1573,10 +1569,9 @@ the moment of resolution.
       Proved \\
       $G_{\mathrm{SM}} =
       \mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$ &
-      Colour co-admissibility (O31, O32)~\cite{Beau2026a35,Beau2026a36};
-      single-frequency BI fingerprint &
-      Proved for the standard graph
-      (O31~v1.5, Prop.~4.23~\cite{Beau2026a35}) \\
+      No derivation: O31 version~2.0 is a withdrawal notice~\cite{Beau2026a35};
+      O32 measurements identify no group~\cite{Beau2026a36} &
+      Open \\
       \midrule
       \multicolumn{3}{l}{\textit{Open}} \\
       \midrule
@@ -1644,13 +1639,11 @@ the moment of resolution.
       Its correct epistemic status is: established by the companion programme,
       consistent with A1--A4, and subject to the conditionalities of each
       companion paper.
-      In particular, the identification $G_\Pi = \mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$
-      is established for the standard graph via~$[\mathrm{H\text{-}color}]$, proved analytically
-      in O31~\cite{Beau2026a35} (Proposition~4.23) via the single-frequency structure of the
-      fingerprint: each O12 fingerprint vector carries frequency
-      $B = c_1 b_1 + c_2 b_2 + c_3 b_3$, and the orbit dilation $B\mapsto\omega B$ is a
-      bijection of $\mathbb{Z}/q\mathbb{Z}$.
-      The test of this prediction is whether admissibility forces a Clifford module
+      In particular, the gauge group $G_\Pi$ is a supplied input of the $a_4$ row: no identification
+      $G_\Pi = \mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$ is established.
+      O31 version~2.0 is a withdrawal notice that asserts no derivation of a gauge factor or of that
+      group~\cite{Beau2026a35}, and the O32 measurements identify no group~\cite{Beau2026a36}.
+      The open $a_{\mathrm{spin}}$ row would be tested by whether admissibility forces a Clifford module
       and a $\mathbb{Z}_2$-grading on the admissible operator.
     \end{remark}
 
@@ -1677,23 +1670,15 @@ the moment of resolution.
     \paragraph{O31/O32 --- Colour sector and recursive non-injectivity.}
       The SU(2) sector is read on conjugate pairs $\{c, q-c\}$, under the carrier supplied
       conditionally by O23~\cite{Beau2026a27}.
-      For primes $q \equiv 1 \pmod{3}$, the supplied finite-field carrier and
-      its associated Weil structure admit colour triplets
+      The supplied finite-field carrier admits triplets
       $\{c_1, c_2, c_3\}$ satisfying $c_1 + c_2 + c_3 \equiv 0 \pmod{q}$
-      and pairwise non-conjugacy.
-      Under $[\mathrm{H\text{-}color}]$ (triplet co-admissibility,
-      proved analytically in O31~\cite{Beau2026a35} via the single-frequency structure of the
-      Born--Infeld fingerprint),
-      O31~\cite{Beau2026a35} derives $\mathrm{SU}(3)$ as the admissibility
-      fixed point of the colour fibre, completing the identification
-      $G_{\mathrm{SM}} = \mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$.
-
-      Each element $c_i$ of a valid triplet already carries spin-$\tfrac{1}{2}$
-      (from its conjugate pair $\{c_i, q-c_i\}$, O29~\cite{Beau2026a33})
-      and one colour charge (from the triplet structure).
-      This is the minimal quantum-number content of a quark.
+      and pairwise non-conjugacy, for every prime $q \geq 7$~\cite{Beau2026a35}.
+      No result identifies such triplets with a colour sector: O31 version~2.0 asserts no
+      triplet co-admissibility and no derivation of $\mathrm{SU}(3)$ or of
+      $G_{\mathrm{SM}} = \mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$~\cite{Beau2026a35},
+      and O29 identifies no spin-$\tfrac{1}{2}$ module in its measured spaces~\cite{Beau2026a33}.
       The identification of quarks as stable projected configurations in
-      $\mathrm{Im}\,\Pi$ carrying these quantum numbers, and the derivation of
+      $\mathrm{Im}\,\Pi$ carrying colour and spin quantum numbers, and the derivation of
       colour confinement as a structural consequence of the projection
       $\Pi_{\mathrm{colour}} : \{c_i\} \to \{\text{colour-neutral objects}\}$
       being non-injective (ENI~\cite{Beau2026l}, Corollary~6), are the primary
@@ -1703,9 +1688,9 @@ the moment of resolution.
       non-injectivity not only at the level of the fundamental projection
       $\Pi_1$, but at every stratum of a tower of genuinely distinct emergent
       levels.
-      The programme's current architecture instantiates two strata: the
+      The programme proposes two strata: the
       pair level (leptons, $\Pi_1$) and the triplet level (colour sector,
-      $\Pi_2$).
+      $\Pi_2$), whose colour identification is open.
       The structural derivation of the full particle hierarchy from this
       recursive tower is the central open direction of the programme.
 
