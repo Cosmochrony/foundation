@@ -64,10 +64,10 @@ It underpins:
 It replaces traditional starting points such as:
 
 - background spacetime
-- Hilbert space formalism
 - dynamical evolution laws
 
-with a purely **relational and projective structure**.
+with a **relational and projective structure**; the complex carriers on which amplitudes are written are
+supplied, not derived, and a full Hilbert structure is open.
 
 ## Core Structure
 
