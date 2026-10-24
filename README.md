@@ -3,7 +3,7 @@
 This repository contains the source of the **Foundation Cosmochrony paper**  
 *Admissible Non-Injective Transitions as the Primitive of Physical Description*.
 
-This work establishes the **axiomatic foundation** of the Cosmochrony framework.
+This work proposes the **axiomatic foundation** of the Cosmochrony framework.
 
 A2 is a local axiom in its generic form unless the applicability conditions of the ENI theorem are
 established for the local transition map. Immediate information loss is proved only on non-injective
@@ -22,16 +22,16 @@ single primitive:
 
 > **Admissible transitions between observable states under a non-injective projection.**
 
-From this primitive, the paper proves that:
+From this primitive, the paper states the following:
 
 - **Loss in the immediate image** arises from non-injectivity alone (A2), along the transitions
   A2 asserts to be generically non-injective
 - **Temporal order** is conditional: non-invertible steps admit cycles, so orienting the chain
   needs an acyclicity hypothesis **[H-acyc]** that is not derived
-- **Proto-states (unresolved physical states)** are real and structurally required (A3)
+- **Proto-states (unresolved physical states)** are real and structurally required (A1, A3)
 - **Phase coherence** is not derived: A3 forbids premature selection, which preserves the open directions but
   not, by itself, their relative phases; relative phases need the supplied complex carrier
-- **Quantum discreteness** emerges from projection locking (A4)
+- **Quantum discreteness** follows from projection locking (A3, A4)
 - Under an explicit representation dictionary, **non-factorisability implies
   irreducibility and non-commutation**
 - These conditions **do not select a Heisenberg group**: an explicit
@@ -119,7 +119,7 @@ The framework is governed by four axioms with distinct roles (no independence th
   observable image, so their difference is a non-zero kernel element. No commutator or carrier-selection
   theorem is involved.
 
-### 8. Threefold Role of \(\Pi_n\) (Remark 3.5)
+### 8. Threefold Role of \(\Pi_n\) (Remark 3.1)
 
 \(\Pi_n\) simultaneously plays three roles, each irreducible to the others:
 
