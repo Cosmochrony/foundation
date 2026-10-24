@@ -206,22 +206,16 @@ This paper provides:
 
 It serves as the **foundation layer** for all subsequent Cosmochrony results.
 
-## Effective Co-Metric Completion (v1.10; status revised in v1.16)
+## Effective Co-Metric
 
-The paper integrates the downstream result that the effective co-metric is fully
-explicit. Under the Q5a–Q5b geometric chain, with Q8 (Casimir rigidity: $A_z=2$),
-Q10 (spectral universality: $A_H=2$), and Q11 (temporal Casimir rigidity: $A_\tau=2$),
-the effective co-metric is:
-
-$$g^{\mu\nu} = \mathrm{diag}(-2,\,2,\,2,\,2).$$
-
-**Status revision (v1.16).** Q5a version 3.0 withdraws the Mosco derivation of the
-spatial limit operator: the canonical filtration is exactly a growing toric Fourier
-window, the published admissibility form converges to the zero form on it, and no common
-scalar normalisation produces a non-trivial toric differential operator. The spatial
-limit operator is now the explicit, unestablished hypothesis **[H-L]** (Q5b 2.0); the
-co-metric completion above is conditional on [H-L] ($D_{\mathrm{hom}}=4$ remains
-structural), and Q5 is open.
+No coefficient value of the effective co-metric is established, and $g^{\mu\nu} = \mathrm{diag}(-2,\,2,\,2,\,2)$
+is not derived. The $\mathfrak{su}(2)$ Casimir acts as 2 on the spin-one module, but invariance fixes an invariant
+form only up to a positive factor (Q10); the uniformity hypothesis [U] is not established, and Q10 derives no
+coefficient. Spatial $\mathrm{SU}(2)$ invariance leaves $A_\tau/A_H$ unconstrained, so $A_\tau = 2$ is not derived
+on that route (Q11). The canonical filtration is a growing toric Fourier window on which the published admissibility
+form converges to the zero form, and no common scalar normalisation gives a non-trivial toric differential operator
+(Q5a); the spatial limit operator is the unestablished hypothesis **[H-L]** (Q5b), $D_{\mathrm{hom}}=4$ remains
+structural, and Q5 is open.
 
 ## Relation to Established Frameworks (v1.10)
 
@@ -246,8 +240,9 @@ and what it presupposes that the present framework derives:
 ## What This Paper Does Not Do
 
 - Does not derive full quantum field theory
-- Does not construct spacetime geometry explicitly (handled by Q5a–Q6b)
-- Does not address all gauge sectors beyond SU(2)
+- Does not construct spacetime geometry; the spatial continuum is open (Q5a)
+- Does not select a gauge group; the SU(2) sector rests on the spinor carrier supplied
+  conditionally by O23
 - Does not derive the finite Heisenberg carrier from A1–A4
 
 These are handled in companion papers and the O-series.
