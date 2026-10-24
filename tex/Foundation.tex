@@ -1555,21 +1555,21 @@ the moment of resolution.
       BFS stratification (Q5b, Q6b, Q8, Q10, Q11)~\cite{Beau2026q5b,Beau2026q6b,BeauQ8,Beau2026q10,Beau2026q11} &
       Structural ($D_{\mathrm{hom}}=4$); co-metric conditional on [H-L], with no coefficient
       value established ($\mathrm{diag}(-2,2,2,2)$ not derived; Q10, Q11) \\
-      Einstein equation $G_{\mu\nu} = 8\pi G\,T_{\mu\nu}$ &
-      Spectral entropy variation~\cite{Beau2026h} &
-      Proved (structural) \\
+      Einstein tensor (infrared) &
+      Entropy variation, supplied metric~\cite{Beau2026h} &
+      Conditional (matched coefficient $\neq 0$, $R L_4^2 \ll 1$) \\
       SU(2) gauge structure &
       Admissible factorisation + Q6a~\cite{Beau2026a31,Beau2026q6a} &
       Conditional (supplied carrier; $\mathrm{Im}\,\Pi_{\mathrm{adm}}=\mathrm{Ntrl}$) \\
       Yang--Mills equations $D_\mu F^{a\mu\nu} = 0$ &
-      Spectral entropy $a_4$ variation (Q12)~\cite{Beau2026q12} &
-      Proved (structural) \\
+      $a_4$ variation, supplied metric (Q12)~\cite{Beau2026q12} &
+      Proved for a supplied compact group \\
       Gauge--matter coupling $G_{\mu\nu} = 8\pi G_N T^{YM}_{\mu\nu}$ &
       Joint variation $S_\Pi[g,A]$ (Q13)~\cite{Beau2026q13} &
-      Proved (structural) \\
-      Hierarchy $G_N g^2_{YM} \ll 1$ without fine-tuning &
+      Conditional (matched coefficients; Euclidean) \\
+      Hierarchy $G_N g^2_{YM} \ll 1$ &
       Seeley--DeWitt stratification (Q13)~\cite{Beau2026q13} &
-      Structural \\
+      Not derived (couplings are matching data) \\
       Tower of non-injectivity &
       ENI Corollary~6~\cite{Beau2026l} &
       Proved \\
@@ -1595,8 +1595,6 @@ the moment of resolution.
     \caption{Derivation chain from the four axioms.
     ``Derived'': structural consequence of the axioms.
     ``Proved'': explicit proof in this paper or a cited companion.
-    ``Proved (structural)'': established via structural argument
-    internally consistent with the framework; full formalisation deferred.
     ``Conditional'': proved subject to a named hypothesis.}
     \label{tab:derived}
   \end{table}
@@ -1608,7 +1606,8 @@ the moment of resolution.
     They do not by themselves determine the interaction content of the emergent theory;
     that content emerges from the spectral structure of the admissible operator,
     developed in the Q-series companion papers.
-    The companion papers~\cite{Beau2026h,Beau2026q12,Beau2026q13} establish
+    On a supplied Riemannian metric, for a supplied compact gauge group and with the renormalized couplings
+    supplied as matching data, the companion papers~\cite{Beau2026h,Beau2026q12,Beau2026q13} support
     the following partial pattern, which organises the physical interpretation
     of the Seeley--DeWitt expansion of $S_\Pi[g,A]$:
 
@@ -1619,7 +1618,8 @@ the moment of resolution.
       responds to variation.
       The gravitational sector appears at the first non-trivial horizontal response;
       the gauge sector appears at the vertical curvature response;
-      and mixed gauge--gravity terms appear at the next coupled order.
+      and mixed gauge--gravity invariants first occur at the next order, where only their inventory is
+      available.
     \end{principle}
 
     The evidence base for Principle~\ref{prin:stratification} is as follows:
@@ -1629,11 +1629,11 @@ the moment of resolution.
         \text{Spectral order} & \text{Sector} & \text{Geometric origin} \\
         \hline
         a_2 & \text{gravity}
-        & \text{horizontal variation of the base metric}~\text{\cite{Beau2026h}} \\
+        & \text{base-metric variation, cutoff scheme}~\text{\cite{Beau2026h}} \\
         a_4 & \text{gauge}
         & \text{vertical variation of the fibre connection}~\text{\cite{Beau2026q12}} \\
-        a_6 & \text{mixed coupling}
-        & \text{joint base--fibre curvature terms}~\text{\cite{Beau2026q13}} \\
+        a_6 & \text{mixed invariants}
+        & \text{inventory only}~\text{\cite{Beau2026q13}} \\
         a_{\mathrm{spin}} & \text{fermionic structure}
         & \text{Dirac-type admissible operator (open)} \\
       \end{array}
@@ -1642,9 +1642,12 @@ the moment of resolution.
     \begin{remark}
       \label{rem:stratification-status}
       Principle~\ref{prin:stratification} is \emph{not} derived from A1--A4 alone.
-      Its correct epistemic status is: established by the companion programme,
-      consistent with A1--A4, and subject to the conditionalities of each
-      companion paper.
+      Its correct epistemic status is: supported by the companion programme under the conditions stated
+      above, consistent with A1--A4, and subject to the conditionalities of each companion paper.
+      The separation of divergence degrees, quadratic at $a_2$ and logarithmic at $a_4$, holds in the
+      proper-time cutoff scheme and is not scheme-independent~\cite{Beau2026h,Beau2026q12}; no hierarchy of
+      the physical couplings is predicted, $G_N$ and $g_{\mathrm{YM}}$ being independent matching
+      data~\cite{Beau2026q13}, and the derivation is Euclidean.
       In particular, the gauge group $G_\Pi$ is a supplied input of the $a_4$ row: no identification
       $G_\Pi = \mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$ is established.
       O31 version~2.0 is a withdrawal notice that asserts no derivation of a gauge factor or of that
@@ -1781,9 +1784,10 @@ the moment of resolution.
     \paragraph{Q14 --- Fermionic structure and chirality.}
       The spectral stratification of Principle~\ref{prin:stratification} identifies
       the next open level of the programme: the fermionic sector.
-      The companion papers Q12 and Q13~\cite{Beau2026q12,Beau2026q13} derive
-      bosonic gauge and gravitational dynamics from a Laplace-type admissible operator
-      $\mathcal{A}_{g,A}$.
+      On a supplied metric and a supplied compact gauge group, Q12~\cite{Beau2026q12} derives the source-free
+      Yang--Mills equations from a Laplace-type admissible operator $\mathcal{A}_{g,A}$, and
+      Q13~\cite{Beau2026q13} joins them with the conditional Einstein sector of Gravity~\cite{Beau2026h}
+      into a conditional, Euclidean Einstein--Yang--Mills system whose couplings are matching data.
       Fermionic structure requires a Dirac-type operator $\mathcal{D}_{g,A}$
       satisfying $\mathcal{D}^2 = \mathcal{A}_{g,A} + \tfrac{1}{4}R$
       (Lichnerowicz formula), whose $\mathbb{Z}_2$-grading encodes chirality.
@@ -1854,11 +1858,12 @@ the moment of resolution.
     published normalisation yields the zero form) would play a structurally analogous
     role: the sequence $\{\mathcal{E}_q\}$ would flow, as $q\to\infty$, to a scalar
     operator $\mathcal{L}_\Pi$ whose principal symbol defines the effective metric.
-    The spectral entropy functional $S_\Pi[g,A]$ of the companion programme is the
-    effective action resulting from this limit~\cite{Beau2026h,Beau2026q12,Beau2026q13}.
-    The structural difference is that the Wetterich flow renormalises a pre-existing field
-    theory, while the present limit produces the field content itself from the admissibility
-    constraints.
+    The spectral entropy functional $S_\Pi[g,A]$ of the companion programme would be the
+    effective action resulting from this limit; the companion papers evaluate it on a supplied metric and
+    supplied gauge data, not on a constructed limit operator~\cite{Beau2026h,Beau2026q12,Beau2026q13}.
+    The intended structural difference is that the Wetterich flow renormalises a pre-existing field
+    theory, while the present limit would produce the field content itself from the admissibility
+    constraints; that production is not established.
 
   \paragraph{Page--Wootters construction and relational time.}
     The Page--Wootters construction derives apparent temporal evolution from conditional
