@@ -188,7 +188,7 @@ action with the distinct Weil action on \(V_\rho\).
 - ⇒ **Projection locking**
 - ⇒ intrinsic discreteness of transitions
 
-No quantisation postulate is needed.
+No separate quantisation postulate is needed, under A3 and A4.
 
 ### 6. Entanglement and Bell
 
