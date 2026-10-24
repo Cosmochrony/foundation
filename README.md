@@ -40,8 +40,16 @@ From this primitive, the paper proves that:
   \(\mathfrak S_3\) countermodel has a non-central commutator
 - The Heisenberg carrier \(\mathcal H_c\) used by the O-series is a supplied,
   conditional realisation, distinct from its associated Weil module \(V_\rho\)
+- Its homogeneous dimension \(D_{\mathrm{hom}} = 4\) is a property of that supplied carrier, holds on the finite
+  group only for balls of radius \(n \ll \sqrt q\), and is not identified with the \(3+1\) structure of spacetime
+- **Complex amplitudes** enter with the spinor carrier supplied conditionally by O23; coherence alone does not
+  select them over real or quaternionic formulations, whose status depends on the composition rule
+- **Projective incompleteness** does not guarantee the initial transition: the existence of an admissible
+  successor is a separate condition
+- The Einstein, Yang–Mills and Einstein–Yang–Mills statements of the companion papers are conditional on
+  supplied geometric and gauge data, the couplings being matching data; no coupling hierarchy is derived
 
-No quantum postulates are assumed.
+No quantum postulate enters the axioms; the complex spinor carrier used for amplitudes is supplied, not derived.
 
 ## Context
 
@@ -183,13 +191,9 @@ No quantisation postulate is needed.
 
 ### 6. Entanglement and Bell
 
-- Entanglement = **shared ancestral fibre**
-- Bell factorisation fails because:
-
-    - projection is non-injective
-    - information is already lost upstream
-
-No nonlocal dynamics is required.
+- Entanglement is read as a **shared non-factorisable infra-projectable cell**
+- Non-injectivity alone is **not sufficient** for Bell non-factorisability: the failure of factorisation would
+  require an obstruction to a setting-independent global coupling, and that obstruction is open
 
 ## What This Paper Establishes
 
