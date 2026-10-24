@@ -50,7 +50,8 @@ From this primitive, the paper states the following:
 - The Einstein, Yang–Mills and Einstein–Yang–Mills statements of the companion papers are conditional on
   supplied geometric and gauge data, the couplings being matching data; no coupling hierarchy is derived
 
-No quantum postulate enters the axioms; the complex carriers used for amplitudes are supplied, not derived.
+No quantum postulate is stated as an axiom, but the complex carriers used for amplitudes are supplied, not derived,
+and the Born weight is an additional rule.
 
 ## Context
 
@@ -231,7 +232,7 @@ and what it presupposes that the present framework derives, takes conditionally,
 - **Hamilton–Jacobi dynamics**: the eikonal equation
   $g^{\mu\nu}\partial_\mu S\,\partial_\nu S = 0$ appears as an effective description
   of projected dynamics, valid once the effective metric has been reconstructed (Q5b,
-  Q6b). It is downstream of the admissibility layer, not a primitive.
+  Q6b), conditionally on [H-L]. It is downstream of the admissibility layer, not a primitive.
 - **Symplectic geometry**: the phase space $T^*M$ is not a primitive — $M$ would emerge from
   the Carnot–Carathéodory geometry of Q5b, conditionally on [H-L], and the symplectic structure would be
   induced by the principal symbol of the admissibility operator.
@@ -240,7 +241,9 @@ and what it presupposes that the present framework derives, takes conditionally,
   admissible propagation in the continuum limit (conditional on [H-L]).
 - **Functional renormalisation group**: the conjectured Mosco limit of the admissibility
   Dirichlet forms (hypothesis [H-L]) would play a structurally analogous role to the
-  Wetterich effective average action — both describe an infrared fixed point of a flow.
+  Wetterich effective average action — both describe an infrared fixed point of a flow; the companion papers
+  evaluate the spectral entropy functional on supplied geometric and gauge data, not on a constructed limit
+  operator, and the production of field content by the limit is not established.
 
 ## What This Paper Does Not Do
 
@@ -260,4 +263,5 @@ temporal ordering; irreversibility; projection entropy; proto-state
 
 ## Position in the Programme
 
-Foundation-1.2 is the **entry point** of the framework:
+Foundation is the **entry point** of the axiomatic layer of the programme; its relation to the other papers is
+recorded in the programme registry.
