@@ -11,9 +11,9 @@ steps, permanent non-recovery is open, and a strict temporal order requires the 
 acyclicity hypothesis **[H-acyc]**. The axioms do not select the Heisenberg carrier.
 
 It proposes a set of structural principles from which immediate information loss, a conditional
-temporal order and phase coherence are derived without postulating spacetime or dynamics; the complex
-carriers on which amplitudes are written are supplied, the Born weight is an additional rule, and a
-full Hilbert structure is open.
+temporal order and the structural indeterminacy of the proto-state are derived without postulating spacetime
+or dynamics; the complex carriers on which amplitudes are written are supplied, phase coherence is not derived
+from A3 alone, the Born weight is an additional rule, and a full Hilbert structure is open.
 
 ## Quick Summary
 
@@ -29,7 +29,8 @@ From this primitive, the paper proves that:
 - **Temporal order** is conditional: non-invertible steps admit cycles, so orienting the chain
   needs an acyclicity hypothesis **[H-acyc]** that is not derived
 - **Proto-states (unresolved physical states)** are real and structurally required (A3)
-- **Phase coherence** is preserved because admissibility forbids premature selection
+- **Phase coherence** is not derived: A3 forbids premature selection, which preserves the open directions but
+  not, by itself, their relative phases; relative phases need the supplied complex carrier
 - **Quantum discreteness** emerges from projection locking (A4)
 - Under an explicit representation dictionary, **non-factorisability implies
   irreducibility and non-commutation**
@@ -150,18 +151,17 @@ property that the framework does not yet supply.
 
 - The proto-state is a **real unresolved configuration**
 - It exists between two observable states
-- It is the physical origin of:
+- It is the structural precursor of:
 
-    - wave-like behaviour
+    - wave-like behaviour (interference also needs relative phases on a supplied complex carrier)
     - superposition
-    - coherence
 
 ### 3. Phase Coherence
 
-- Coherence is not postulated
-- It is **forced by admissibility (A3)**
-
-Destroying coherence would correspond to premature selection → forbidden
+- A3 forbids premature selection among open directions, so it preserves their multiplicity
+- It does not by itself forbid an erasure of relative phases that selects no direction
+- Coherence follows from A3 only under the additional reading that such an erasure is a premature selection;
+  that reading is **not derived**
 
 ### 4. Carrier-Selection Boundary
 
@@ -200,11 +200,11 @@ No quantisation postulate is needed.
 This paper provides:
 
 - a **proposed axiomatic system**, stated with the point at which it stops short of carrier selection
-- a **derivation** of immediate information loss, phase coherence and discreteness from the axioms
+- a **derivation** of immediate information loss, the structural indeterminacy of the proto-state and
+  discreteness from the axioms
 - a **proposed common origin**, partly conditional, for:
 
     - time
-    - quantum coherence
     - discreteness
     - symmetry
 
@@ -222,21 +222,21 @@ form converges to the zero form, and no common scalar normalisation gives a non-
 $D_{\mathrm{hom}}=4$ is a property of the supplied Heisenberg carrier, holds on the finite group only for
 $n \ll \sqrt q$, and is not identified with the $3+1$ structure of spacetime.
 
-## Relation to Established Frameworks (v1.10)
+## Relation to Established Frameworks
 
-A new section situates the four axioms A1–A4 relative to established formalisms, not by
+A section situates the four axioms A1–A4 relative to established formalisms, not by
 reduction but by structural translation — identifying what each framework corresponds to
-and what it presupposes that the present framework derives:
+and what it presupposes that the present framework derives, takes conditionally, or supplies:
 
 - **Hamilton–Jacobi dynamics**: the eikonal equation
   $g^{\mu\nu}\partial_\mu S\,\partial_\nu S = 0$ appears as an effective description
   of projected dynamics, valid once the effective metric has been reconstructed (Q5b,
   Q6b). It is downstream of the admissibility layer, not a primitive.
-- **Symplectic geometry**: the phase space $T^*M$ is not a primitive — $M$ emerges from
-  the Carnot–Carathéodory geometry of Q5b. Symplectic structure is induced by the
-  principal symbol of the admissibility operator.
-- **WKB approximation**: the WKB phase $S$ is a derived quantity encoding the projective
-  compression of the admissible fibre; geometric optics is the ray approximation of
+- **Symplectic geometry**: the phase space $T^*M$ is not a primitive — $M$ would emerge from
+  the Carnot–Carathéodory geometry of Q5b, conditionally on [H-L], and the symplectic structure would be
+  induced by the principal symbol of the admissibility operator.
+- **WKB approximation**: the WKB phase $S$ is an effective quantity defined on the supplied carrier, not
+  derived from the axioms; geometric optics is the ray approximation of
   admissible propagation in the continuum limit (conditional on [H-L]).
 - **Functional renormalisation group**: the conjectured Mosco limit of the admissibility
   Dirichlet forms (hypothesis [H-L]) would play a structurally analogous role to the
