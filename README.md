@@ -5,18 +5,15 @@ This repository contains the source of the **Foundation Cosmochrony paper**
 
 This work establishes the **axiomatic foundation** of the Cosmochrony framework.
 
-Version 2.1.0 corrects the status of structural non-injectivity and temporal order.
-A2 remains a local axiom in its generic form unless the applicability conditions of
-the ENI theorem are established for the local transition map.
-Immediate information loss is proved only on non-injective steps, permanent
-non-recovery remains open, and a strict temporal order requires the unestablished
-acyclicity hypothesis **[H-acyc]**.
-The carrier-selection correction introduced in version 2.0.0 remains in force.
+A2 is a local axiom in its generic form unless the applicability conditions of the ENI theorem are
+established for the local transition map. Immediate information loss is proved only on non-injective
+steps, permanent non-recovery is open, and a strict temporal order requires the unestablished
+acyclicity hypothesis **[H-acyc]**. The axioms do not select the Heisenberg carrier.
 
-It introduces a minimal set of structural principles from which key features of
-physics — including immediate information loss, a conditional temporal order, quantum coherence, and
-emergent symmetry — are derived without postulating spacetime, Hilbert space,
-or dynamics.
+It proposes a set of structural principles from which immediate information loss, a conditional
+temporal order and phase coherence are derived without postulating spacetime or dynamics; the complex
+carriers on which amplitudes are written are supplied, the Born weight is an additional rule, and a
+full Hilbert structure is open.
 
 ## Quick Summary
 
@@ -42,14 +39,17 @@ From this primitive, the paper proves that:
   conditional realisation, distinct from its associated Weil module \(V_\rho\)
 - Its homogeneous dimension \(D_{\mathrm{hom}} = 4\) is a property of that supplied carrier, holds on the finite
   group only for balls of radius \(n \ll \sqrt q\), and is not identified with the \(3+1\) structure of spacetime
-- **Complex amplitudes** enter with the spinor carrier supplied conditionally by O23; coherence alone does not
-  select them over real or quaternionic formulations, whose status depends on the composition rule
-- **Projective incompleteness** does not guarantee the initial transition: the existence of an admissible
-  successor is a separate condition
+- **Complex amplitudes** enter with the supplied carriers (the Heisenberg–Schrödinger carrier and the spinor
+  carrier of O23); coherence alone does not select them over real or quaternionic formulations, whose status
+  depends on the composition rule
+- The **Born weight** is an additional rule: phase invariance, positivity and normalisability do not single
+  out the squared norm
+- **Projective incompleteness** does not guarantee the initial transition: A1 posits admissible directions,
+  but the existence of a successor satisfying all four axioms is a distinct condition
 - The Einstein, Yang–Mills and Einstein–Yang–Mills statements of the companion papers are conditional on
   supplied geometric and gauge data, the couplings being matching data; no coupling hierarchy is derived
 
-No quantum postulate enters the axioms; the complex spinor carrier used for amplitudes is supplied, not derived.
+No quantum postulate enters the axioms; the complex carriers used for amplitudes are supplied, not derived.
 
 ## Context
 
@@ -199,9 +199,9 @@ No quantisation postulate is needed.
 
 This paper provides:
 
-- a **minimal and complete axiomatic system**
-- a **derivation (not postulation)** of core physical structures
-- a **unified origin** for:
+- a **proposed axiomatic system**, stated with the point at which it stops short of carrier selection
+- a **derivation** of immediate information loss, phase coherence and discreteness from the axioms
+- a **proposed common origin**, partly conditional, for:
 
     - time
     - quantum coherence
@@ -218,8 +218,9 @@ form only up to a positive factor (Q10); the uniformity hypothesis [U] is not es
 coefficient. Spatial $\mathrm{SU}(2)$ invariance leaves $A_\tau/A_H$ unconstrained, so $A_\tau = 2$ is not derived
 on that route (Q11). The canonical filtration is a growing toric Fourier window on which the published admissibility
 form converges to the zero form, and no common scalar normalisation gives a non-trivial toric differential operator
-(Q5a); the spatial limit operator is the unestablished hypothesis **[H-L]** (Q5b), $D_{\mathrm{hom}}=4$ remains
-structural, and Q5 is open.
+(Q5a); the spatial limit operator is the unestablished hypothesis **[H-L]** (Q5b), and Q5 is open.
+$D_{\mathrm{hom}}=4$ is a property of the supplied Heisenberg carrier, holds on the finite group only for
+$n \ll \sqrt q$, and is not identified with the $3+1$ structure of spacetime.
 
 ## Relation to Established Frameworks (v1.10)
 
