@@ -54,6 +54,13 @@ pdflatex -file-line-error -interaction=nonstopmode -synctex=1 \
     -recorder \
     "$TEX_FILE"
 
+# Step 4b: Fourth pdflatex run (a float can move a label to a new page on the third run)
+echo -e "${GREEN}Step 4b/5: Fourth pdflatex run (label convergence)${NC}"
+pdflatex -file-line-error -interaction=nonstopmode -synctex=1 \
+    -output-directory="$OUTPUT_DIR" \
+    -recorder \
+    "$TEX_FILE"
+
 # Step 5: Final check
 if [ -f "$OUTPUT_DIR/$MAIN_NAME.pdf" ]; then
     echo -e "${GREEN}=== Compilation successful ===${NC}"
