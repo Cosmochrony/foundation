@@ -37,7 +37,7 @@ From this primitive, the paper states the following:
 - These conditions **do not select a Heisenberg group**: an explicit
   \(\mathfrak S_3\) countermodel has a non-central commutator
 - The Heisenberg carrier \(\mathcal H_c\) used by the O-series is a supplied,
-  conditional realisation, distinct from its associated Weil module \(\mathcal W\); the symbol \(V_\rho\)
+  conditional realisation, distinct from its associated Weil modules \(\mathcal W\) (Weil blocks \(V_c\)); the symbol \(V_\rho\)
   is kept for the spinor carrier \(\mathbb C^2\) supplied conditionally by O23
 - Its homogeneous dimension \(D_{\mathrm{hom}} = 4\) is a property of that supplied carrier, holds on the finite
   group only for balls of radius \(n \ll \sqrt q\), and is not identified with the \(3+1\) structure of spacetime
