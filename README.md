@@ -28,9 +28,12 @@ From this primitive, the paper states the following:
   A2 asserts to be generically non-injective
 - **Temporal order** is conditional: non-invertible steps admit cycles, so orienting the chain
   needs an acyclicity hypothesis **[H-acyc]** that is not derived
-- **Proto-states (unresolved physical states)** are real and structurally required (A1, A3)
+- **Proto-states** are defined as the unresolved configurations shared between two successive states; their
+  structural indeterminacy among the admissible directions is derived from A1 and A3, and their physical reality
+  is the paper's interpretive reading
 - **Phase coherence** is not derived: A3 forbids premature selection, which preserves the open directions but
-  not, by itself, their relative phases; relative phases need the supplied complex carrier
+  does not, by itself, forbid an erasure of their relative phases; relative phases need the supplied complex
+  carrier
 - **Quantum discreteness** follows from projection locking (A3, A4)
 - Under an explicit representation dictionary, **non-factorisability implies
   irreducibility and non-commutation**
@@ -151,8 +154,9 @@ property that the framework does not yet supply.
 
 ### 2. Proto-State and Wave Structure
 
-- The proto-state is a **real unresolved configuration**
-- It exists between two observable states
+- The proto-state is **defined** as the unresolved configuration between two observable states, and read as
+  physically real
+- Its **structural indeterminacy** among the admissible directions is derived from A1 and A3
 - It is the structural precursor of:
 
     - wave-like behaviour (interference also needs relative phases on a supplied complex carrier)
