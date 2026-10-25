@@ -37,7 +37,8 @@ From this primitive, the paper states the following:
 - These conditions **do not select a Heisenberg group**: an explicit
   \(\mathfrak S_3\) countermodel has a non-central commutator
 - The Heisenberg carrier \(\mathcal H_c\) used by the O-series is a supplied,
-  conditional realisation, distinct from its associated Weil module \(V_\rho\)
+  conditional realisation, distinct from its associated Weil module \(\mathcal W\); the symbol \(V_\rho\)
+  is kept for the spinor carrier \(\mathbb C^2\) supplied conditionally by O23
 - Its homogeneous dimension \(D_{\mathrm{hom}} = 4\) is a property of that supplied carrier, holds on the finite
   group only for balls of radius \(n \ll \sqrt q\), and is not identified with the \(3+1\) structure of spacetime
 - **Complex amplitudes** enter with the supplied carriers (the Heisenberg–Schrödinger carrier and the spinor
@@ -180,7 +181,7 @@ But minimal generation and parity do not make the commutator central:
 Thus the finite Heisenberg group and its carrier must be supplied by an
 additional typed hypothesis. Stone–von Neumann then fixes the Heisenberg
 carrier \(\mathcal H_c\) up to unitary equivalence; it does not identify that
-action with the distinct Weil action on \(V_\rho\).
+action with the distinct Weil action on \(\mathcal W\).
 
 ### 5. Discrete Quantum Transitions
 
@@ -232,10 +233,10 @@ and what it presupposes that the present framework derives, takes conditionally,
 - **Hamilton–Jacobi dynamics**: the eikonal equation
   $g^{\mu\nu}\partial_\mu S\,\partial_\nu S = 0$ appears as an effective description
   of projected dynamics, valid once the effective metric has been reconstructed (Q5b,
-  Q6b), conditionally on [H-L]. It is downstream of the admissibility layer, not a primitive.
+  Q6b), conditionally on [H-L] and the open lifting hypothesis [H-lift]. It is downstream of the admissibility layer, not a primitive.
 - **Symplectic geometry**: the phase space $T^*M$ is not a primitive — $M$ would emerge from
   the Carnot–Carathéodory geometry of Q5b, conditionally on [H-L], and the symplectic structure would be
-  induced by the principal symbol of the admissibility operator.
+  induced by the principal symbol of the admissibility operator, under the further open hypothesis [H-lift].
 - **WKB approximation**: the WKB phase $S$ is an effective quantity defined on the supplied carrier, not
   derived from the axioms; geometric optics is the ray approximation of
   admissible propagation in the continuum limit (conditional on [H-L]).

@@ -118,8 +118,10 @@ as the Primitive of Physical Description}
     The published companion paper~\cite{Beau2026b} claims the contrary implication,
     but its proof restricts the Bell variable to observable-level data and its central
     conclusion is therefore not available as an input here.
-    The companion paper~\cite{Beau2026l} proves that non-injectivity is a structural
-    necessity of any genuinely emergent description.
+    The companion paper~\cite{Beau2026l} proves that a projection is necessarily non-injective
+    when it satisfies three premises (surjectivity, observables defined by the projection, effective
+    non-triviality); Remark~\ref{rem:a2-status} explains why these premises are not established here
+    for the local map of A2.
     The companion paper~\cite{Beau2026fe} develops the information-theoretic
     architecture of the resulting projection loss:
     it establishes a monotone fibre-erasure functional $I(c;\sigma(\ell))$
@@ -165,8 +167,9 @@ as the Primitive of Physical Description}
 
   We state the four axioms from which the framework proceeds.
   They are not arbitrary postulates chosen for convenience — each captures
-  a structural feature that is either necessary for genuine emergence~\cite{Beau2026l}
-  or motivated by the requirement of bounded effective descriptions~\cite{Beau2026c}.
+  a structural feature motivated either by the necessity theorem for emergent
+  projections~\cite{Beau2026l}, whose premises are not established here for the local map of A2
+  (Remark~\ref{rem:a2-status}), or by the requirement of bounded effective descriptions~\cite{Beau2026c}.
 
   \begin{definition}[Admissible transition]
     \label{def:admissible-transition}
@@ -224,6 +227,7 @@ as the Primitive of Physical Description}
   \end{description}
 
   \begin{remark}[Roles of the axioms, and the status of A2]
+  \label{rem:a2-status}
   A1 asserts existence of admissible directions.
   A2 asserts their generic non-injectivity.
   A3 constrains which transitions are admissible.
@@ -491,7 +495,10 @@ O23~\cite{Beau2026a27}, whose selection is open.
       $\mathrm{Cay}(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z}),S_q)$ and a
       Heisenberg--Schr\"odinger carrier $\mathcal{H}_c$.
       Its spectral construction then uses the associated symplectic action and
-      Weil module $V_\rho$.
+      Weil module $\mathcal{W}$; for a sector label $c$, $V_c$ denotes the corresponding block of
+      $\mathcal{W}$ (Section~\ref{sec:entanglement}).
+      This notation identifies neither $\mathcal{W}$ nor $V_c$ with $F_n$, with $\mathcal{H}_c$ or with
+      the spinor carrier $V_\rho \cong \mathbb{C}^2$ supplied conditionally by O23~\cite{Beau2026a27}.
       Identifying the abstract admissible fibre with the supplied Heisenberg
       carrier is a modelling dictionary,
       \begin{equation}
@@ -785,8 +792,9 @@ provides the effective Lagrangian description.
       that, under its stated conditions on the saturation depth and the weights, no common scalar
       normalisation of the form produces a non-trivial toric differential operator.
       The existence of a spatial limit operator is the explicit, unestablished
-      hypothesis [H-L] (Q5b version 2.0); the identification of the effective metric
-      from the symbol of $L_\Pi$ (Q5b~\cite{Beau2026q5b}) is conditional on [H-L].
+      hypothesis [H-L]; the identification of the effective metric
+      from the symbol of $L_\Pi$ (Q5b~\cite{Beau2026q5b}) is conditional on [H-L] and on the open
+      lifting hypothesis [H-lift].
       The present remark identifies the intended mechanism; its rigorous realisation
       is the open content of Q5.
     \end{remark}
@@ -1364,7 +1372,7 @@ the moment of resolution; this requirement presupposes the additional reading of
   In the O-series, its concrete realisation is conditionally modelled in the
   supplied Heisenberg carrier $\mathcal{H}_c$.
   The axioms do not identify $F_n$ with $\mathcal{H}_c$ or with the associated
-  Weil module $V_\rho$.
+  Weil module $\mathcal{W}$.
   The wavefunction does not propagate in space; it encodes the relational
   phase structure of an unresolved admissible configuration.
     \end{remark}
@@ -1408,7 +1416,7 @@ the moment of resolution; this requirement presupposes the additional reading of
   \subsection{Three stable directions}
 
     For a supplied irreducible two-dimensional unitary carrier
-    $V_\rho \cong \mathbb{C}^2$ (the spinor carrier of O23, in its notation; not the Weil module of
+    $V_\rho \cong \mathbb{C}^2$ (the spinor carrier of O23, in its notation; not the Weil module $\mathcal{W}$ of
     Remark~\ref{rem:fn-vrho}), the traceless neutral sector is
     $\mathfrak{su}(2) \cong \mathrm{Im}\,\mathbb{H}$, of real dimension
     exactly three (\cite{Beau2026a27}, Theorem~3.1).
@@ -1419,8 +1427,8 @@ the moment of resolution; this requirement presupposes the additional reading of
         \text{BI parity (covariant, proved)}
         &\;\xrightarrow{\;\text{open}\;}\; \text{fibre involution } c \leftrightarrow q-c \\
         &\;\xrightarrow{\;\text{open}\;}\; V_\rho \cong \mathbb{C}^2
-        \;\xrightarrow{\;\text{proved}\;}\; \dim_{\mathbb{R}} \mathrm{Im}\,\mathbb{H} = 3
-        \;\xrightarrow{\;\text{open}\;}\; \Sigma_c(n_3) = 3.
+        \;\xrightarrow{\;\text{proved}\;}\; \dim_{\mathbb{R}} \mathrm{Im}\,\mathbb{H} = 3 \\
+        &\;\xrightarrow{\;\text{open}\;}\; \Sigma_c(n_3) = 3.
       \end{aligned}
     \end{equation}
     Only the adjoint-dimension arrow is a theorem; the fibre identification is
@@ -1447,7 +1455,7 @@ the moment of resolution; this requirement presupposes the additional reading of
     of Lemma~\ref{lem:non-factorisation};
     it holds wherever a shared non-decomposable cell is present, independently of how that cell arose.
     For the conjugate Weil pair $\{c,q-c\}$ that organises the spectral cascade, with $V_c$ and $V_{q-c}$ the
-    corresponding blocks of the Weil module of Remark~\ref{rem:fn-vrho}, the binding is explicit and
+    corresponding blocks of the Weil module $\mathcal{W}$ of Remark~\ref{rem:fn-vrho}, the binding is explicit and
     permanent: the two characters are related by complex conjugation,
     $V_{q-c}\simeq\overline{V_c}$ (the Born--Infeld parity candidate), which holds at every depth $n$.
     The pair is a single closed object throughout the cascade, not two subsystems that were joined at an
@@ -1520,7 +1528,9 @@ the moment of resolution; this requirement presupposes the additional reading of
   \begin{table}[p]
     \centering
     \scriptsize
-    \renewcommand{\arraystretch}{0.84}
+    \renewcommand{\arraystretch}{0.83}
+    \setlength{\tabcolsep}{3pt}
+    \makebox[\linewidth][c]{%
     \begin{tabular}{p{4.6cm}p{5.4cm}p{4.2cm}}
       \toprule
       \textbf{Concept} & \textbf{Source} & \textbf{Status} \\
@@ -1579,7 +1589,7 @@ the moment of resolution; this requirement presupposes the additional reading of
       Homogeneous dimension $D_{\mathrm{hom}}=4$ of the supplied carrier;
       effective co-metric &
       BFS stratification (Q5b, Q6b, Q8, Q10, Q11)~\cite{Beau2026q5b,Beau2026q6b,BeauQ8,Beau2026q10,Beau2026q11} &
-      Proved ($D_{\mathrm{hom}}=4$, local on $G_q$); co-metric conditional on [H-L], no coefficient
+      Proved ($D_{\mathrm{hom}}=4$, local on $G_q$); co-metric conditional on [H-L], [H-lift], no coefficient
       value ($\mathrm{diag}(-2,2,2,2)$ not derived) \\
       Einstein tensor as dominant local IR term &
       Entropy variation, supplied metric~\cite{Beau2026h} &
@@ -1597,8 +1607,8 @@ the moment of resolution; this requirement presupposes the additional reading of
       None (Q13)~\cite{Beau2026q13} &
       Not derived (couplings are matching data) \\
       Tower of non-injectivity &
-      ENI Corollary~6~\cite{Beau2026l} &
-      Proved \\
+      ENI Corollary~6~\cite{Beau2026l}; premises open for these strata &
+      Proved under its premises (not A1--A4) \\
       $G_{\mathrm{SM}} =
       \mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$ &
       No derivation: O31 version~2.0 is a withdrawal notice~\cite{Beau2026a35};
@@ -1617,7 +1627,7 @@ the moment of resolution; this requirement presupposes the additional reading of
       Individual sectors $c_i$ (O31, O32) &
       \textbf{Open} \\
       \bottomrule
-    \end{tabular}
+    \end{tabular}}
     \caption{Derivation chain from the four axioms.
     ``Derived'': structural consequence of the axioms.
     ``Proved'': explicit proof in this paper or a cited companion.
@@ -1660,9 +1670,11 @@ the moment of resolution; this requirement presupposes the additional reading of
         \text{Spectral order} & \text{Sector} & \text{Geometric origin} \\
         \hline
         a_2 & \text{gravity}
-        & \text{base-metric variation, cutoff scheme}~\text{\cite{Beau2026h}} \\
+        & \text{base-metric variation,} \\
+        & & \text{cutoff scheme}~\text{\cite{Beau2026h}} \\
         a_4 & \text{gauge}
-        & \text{vertical variation of the fibre connection}~\text{\cite{Beau2026q12}} \\
+        & \text{vertical variation of the} \\
+        & & \text{fibre connection}~\text{\cite{Beau2026q12}} \\
         a_6 & \text{mixed invariants}
         & \text{inventory only}~\text{\cite{Beau2026q13}} \\
         a_{\mathrm{spin}} & \text{fermionic structure}
@@ -1726,10 +1738,12 @@ the moment of resolution; this requirement presupposes the additional reading of
       being non-injective (ENI~\cite{Beau2026l}, Corollary~6), are the primary
       open directions of the colour sector.
 
-      More broadly, ENI Corollary~6 establishes that the four axioms force
-      non-injectivity not only at the level of the fundamental projection
-      $\Pi_1$, but at every stratum of a tower of genuinely distinct emergent
-      levels.
+      More broadly, ENI Corollary~6 proves non-injectivity at every stratum of a tower of
+      projections under its own premises on each projection: it is surjective, the observables of
+      its level are defined by it, and that level is not isomorphic to the level below; the
+      projection entropies then add across strata.
+      These premises are not consequences of A1--A4, and their verification for the strata
+      proposed below is open, as it is for the local map of A2 (Remark~\ref{rem:a2-status}).
       The programme proposes two strata: the
       pair level (leptons, $\Pi_1$) and the triplet level (colour sector,
       $\Pi_2$), whose colour identification is open.
@@ -1761,7 +1775,7 @@ the moment of resolution; this requirement presupposes the additional reading of
       The companion paper Q10~\cite{Beau2026q10} does not turn this observation into a
       coefficient.
       The $\mathrm{su}(2)$ Casimir acts on the spin-$1$ module $\mathrm{Sym}^2(V_\rho)$, $V_\rho \cong \mathbb{C}^2$
-      being the spinor carrier of O23 (not the Weil module of Remark~\ref{rem:fn-vrho}), as
+      being the spinor carrier of O23 (not the Weil module $\mathcal{W}$ of Remark~\ref{rem:fn-vrho}), as
       \begin{equation}
         \label{eq:casimir-2}
         C_{\mathrm{su}(2)}\big|_{j=1} \;=\; j(j+1) \;=\; 2,
@@ -1771,12 +1785,15 @@ the moment of resolution; this requirement presupposes the additional reading of
       The route that would connect them reads:
       \begin{equation}
         \label{eq:casimir-chain}
-        \mathrm{A2}
+        \begin{aligned}
+        &\mathrm{A2}
         \;\Rightarrow\; \text{non-trivial fibre}
         \;\Rightarrow\; [\mathrm{U}]
         \;\Rightarrow\; \mathrm{su}(2)\text{-isotropy}
-        \;\Rightarrow\; C_{\mathrm{su}(2)}|_{j=1} = 2
+        \\
+        &\qquad\;\Rightarrow\; C_{\mathrm{su}(2)}|_{j=1} = 2
         \;\Rightarrow\; A_H(q) \to 2,
+        \end{aligned}
       \end{equation}
       where only the first implication is established (Corollary~\ref{cor:projective-incompleteness}).
       The uniformity hypothesis~$[\mathrm{U}]$ is not established: conjugation parity and
@@ -1809,7 +1826,9 @@ the moment of resolution; this requirement presupposes the additional reading of
       Q5 therefore remains open.
       The identification of the effective metric from the principal symbol of a limit
       operator $L_\Pi$ and the Lorentzian signature selection (Q5b~\cite{Beau2026q5b})
-      are conditional on the unestablished spatial limit hypothesis [H-L] of Q5b.
+      are conditional on the unestablished spatial limit hypothesis [H-L] and on the open lifting
+      hypothesis [H-lift] of Q5b, the signature also on the hyperbolicity hypothesis
+      of~\cite{Beau2026c}.
       The temporal coefficient is not fixed: Q11~\cite{Beau2026q11} proves that invariance under a
       spatial $\mathrm{SU}(2)$ action leaves the ratio $A_\tau/A_H$ unconstrained, so $A_\tau = 2$
       is not derived on that route; one datum coupling the temporal and spatial normalisations
@@ -1846,7 +1865,7 @@ the moment of resolution; this requirement presupposes the additional reading of
   \paragraph{Hamilton--Jacobi dynamics.}
     Once the effective metric $g^{\mu\nu}$ has been reconstructed from the principal
     symbol of the admissibility operator (Q5b, Q6b~\cite{Beau2026q5b,Beau2026q6b};
-    conditional on the spatial limit hypothesis [H-L]),
+    conditional on the spatial limit hypothesis [H-L] and the lifting hypothesis [H-lift]),
     the characteristic propagation equation of the effective geometry coincides with the
     Hamilton--Jacobi equation for massless propagation.
     This identification belongs to the already projected geometric regime, downstream of
@@ -1864,7 +1883,8 @@ the moment of resolution; this requirement presupposes the additional reading of
     In the present framework, this phase space is not a primitive: the effective
     configuration space $M$ would emerge from the Carnot--Carath\'eodory geometry of the
     BFS shell stratification (Q5b~\cite{Beau2026q5b}), conditionally on the open spatial limit hypothesis [H-L],
-    and the cotangent structure would be induced by the principal symbol of the admissibility operator.
+    and the cotangent structure would be induced by the principal symbol of the admissibility operator,
+    under the further open lifting hypothesis [H-lift].
     Symplectic geometry is therefore the appropriate language for the effective dynamics
     on $T^*M$, valid after the configuration space has been constructed by the
     admissibility constraints; it does not describe the admissibility structure that
@@ -1891,7 +1911,8 @@ the moment of resolution; this requirement presupposes the additional reading of
     Dirichlet forms (hypothesis [H-L]; Q5a~\cite{Beau2026q5a} shows the
     published normalisation yields the zero form) would play a structurally analogous
     role: the sequence $\{\mathcal{E}_q\}$ would flow, as $q\to\infty$, to a scalar
-    operator $\mathcal{L}_\Pi$ whose principal symbol defines the effective metric.
+    operator $\mathcal{L}_\Pi$ whose principal symbol defines the effective metric under the further
+    open lifting hypothesis [H-lift] of Q5b~\cite{Beau2026q5b}.
     The spectral entropy functional $S_\Pi[g,A]$ of the companion programme would be the
     effective action resulting from this limit; the companion papers evaluate it on a supplied metric and
     supplied gauge data, not on a constructed limit operator~\cite{Beau2026h,Beau2026q12,Beau2026q13}.
@@ -1909,7 +1930,8 @@ the moment of resolution; this requirement presupposes the additional reading of
     \textup{[H-acyc]} — but differs in one structural respect.
     In the Page--Wootters model, the global state is fully recoverable (the projection is
     effectively injective), whereas here the projection $\Pi$ is structurally non-injective
-    (A2, ENI~\cite{Beau2026l}).
+    by Axiom~A2 (the ENI premises~\cite{Beau2026l} are not established for it,
+    Remark~\ref{rem:a2-status}).
     Along the non-injective transitions A2 asserts to be generic, no step of the present framework
     is reversible: what the comparison rests on is the accumulation of projected spectral capacity,
     not the choice of a clock observable.
