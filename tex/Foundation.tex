@@ -494,11 +494,14 @@ O23~\cite{Beau2026a27}, whose selection is open.
       The O-series supplies the Cayley graph
       $\mathrm{Cay}(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z}),S_q)$ and a
       Heisenberg--Schr\"odinger carrier $\mathcal{H}_c$.
-      Its spectral construction then uses the associated symplectic action and
-      Weil module $\mathcal{W}$; for a sector label $c$, $V_c$ denotes the corresponding block of
-      $\mathcal{W}$ (Section~\ref{sec:entanglement}).
-      This notation identifies neither $\mathcal{W}$ nor $V_c$ with $F_n$, with $\mathcal{H}_c$ or with
-      the spinor carrier $V_\rho \cong \mathbb{C}^2$ supplied conditionally by O23~\cite{Beau2026a27}.
+      Its spectral construction then uses the associated symplectic action: the Weil representation of
+      $\mathrm{SL}_2(\mathbb{Z}/q\mathbb{Z})$ on the carrier space, which normalises the Heisenberg action.
+      We write $\mathcal{W}$ for the resulting finite Weil modules, one for each non-trivial central character:
+      the member at $c$ is the Weil block $V_c \simeq \mathbb{C}^q$ of~\cite{Beau2026a31}, the carrier space of
+      $\mathcal{H}_c$ with its Weil action, and $V_{q-c} \simeq \overline{V_c}$.
+      The Weil action on $V_c$ is not the Heisenberg action of $\mathcal{H}_c$, and the notation identifies
+      neither $\mathcal{W}$ nor $V_c$ with $F_n$ or with the spinor carrier $V_\rho \cong \mathbb{C}^2$ supplied
+      conditionally by O23~\cite{Beau2026a27}.
       Identifying the abstract admissible fibre with the supplied Heisenberg
       carrier is a modelling dictionary,
       \begin{equation}
@@ -1455,7 +1458,7 @@ the moment of resolution; this requirement presupposes the additional reading of
     of Lemma~\ref{lem:non-factorisation};
     it holds wherever a shared non-decomposable cell is present, independently of how that cell arose.
     For the conjugate Weil pair $\{c,q-c\}$ that organises the spectral cascade, with $V_c$ and $V_{q-c}$ the
-    corresponding blocks of the Weil module $\mathcal{W}$ of Remark~\ref{rem:fn-vrho}, the binding is explicit and
+    corresponding Weil blocks of $\mathcal{W}$ (Remark~\ref{rem:fn-vrho}), the binding is explicit and
     permanent: the two characters are related by complex conjugation,
     $V_{q-c}\simeq\overline{V_c}$ (the Born--Infeld parity candidate), which holds at every depth $n$.
     The pair is a single closed object throughout the cascade, not two subsystems that were joined at an
@@ -1589,7 +1592,7 @@ the moment of resolution; this requirement presupposes the additional reading of
       Homogeneous dimension $D_{\mathrm{hom}}=4$ of the supplied carrier;
       effective co-metric &
       BFS stratification (Q5b, Q6b, Q8, Q10, Q11)~\cite{Beau2026q5b,Beau2026q6b,BeauQ8,Beau2026q10,Beau2026q11} &
-      Proved ($D_{\mathrm{hom}}=4$, local on $G_q$); co-metric conditional on [H-L], [H-lift], no coefficient
+      Proved ($D_{\mathrm{hom}}=4$, local on $G_q$); rank-3 co-metric cond.\ [H-L], [H-lift]; no coefficient
       value ($\mathrm{diag}(-2,2,2,2)$ not derived) \\
       Einstein tensor as dominant local IR term &
       Entropy variation, supplied metric~\cite{Beau2026h} &
@@ -1607,7 +1610,7 @@ the moment of resolution; this requirement presupposes the additional reading of
       None (Q13)~\cite{Beau2026q13} &
       Not derived (couplings are matching data) \\
       Tower of non-injectivity &
-      ENI Corollary~6~\cite{Beau2026l}; premises open for these strata &
+      ENI Corollary~6~\cite{Beau2026l}; premises open for the programme's strata &
       Proved under its premises (not A1--A4) \\
       $G_{\mathrm{SM}} =
       \mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$ &
@@ -1827,8 +1830,9 @@ the moment of resolution; this requirement presupposes the additional reading of
       The identification of the effective metric from the principal symbol of a limit
       operator $L_\Pi$ and the Lorentzian signature selection (Q5b~\cite{Beau2026q5b})
       are conditional on the unestablished spatial limit hypothesis [H-L] and on the open lifting
-      hypothesis [H-lift] of Q5b, the signature also on the hyperbolicity hypothesis
-      of~\cite{Beau2026c}.
+      hypothesis [H-lift] of Q5b; the signature result also rests on the hyperbolicity hypothesis
+      of~\cite{Beau2026c} and gives $(-,+,+)$ on the rank-three non-degenerate block only, a Lorentzian
+      $(-,+,+,+)$ signature requiring a full-rank extension that is not constructed.
       The temporal coefficient is not fixed: Q11~\cite{Beau2026q11} proves that invariance under a
       spatial $\mathrm{SU}(2)$ action leaves the ratio $A_\tau/A_H$ unconstrained, so $A_\tau = 2$
       is not derived on that route; one datum coupling the temporal and spatial normalisations
