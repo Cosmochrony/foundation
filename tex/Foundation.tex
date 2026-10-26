@@ -276,8 +276,8 @@ as the Primitive of Physical Description}
 
     The multiplicity of admissible configurations in the fibre $F_n = \Pi_n^{-1}(O_n)$ is
     not eliminated by projection locking: distinct configurations $f, f' \in F_n$ with
-    $\Pi_n(f) = \Pi_n(f') = O_n$ remain structurally present after locking, but become
-    observationally inaccessible.
+    $\Pi_n(f) = \Pi_n(f') = O_n$ remain structurally present after locking, on the interpretive reading of
+    Section~\ref{subsec:proto-state}, but become observationally inaccessible.
     Where $\Pi_n$ is non-injective, that non-injectivity therefore persists through resolution:
     locking withdraws observational access, it does not remove the configurations.
 
@@ -320,10 +320,13 @@ as the Primitive of Physical Description}
     That identification is an additional principle adopted here: $\Pi_n$ is taken to be the only structure
     that relates the configurational level to the observable level, so that any quantity invisible to
     $\Pi_n$ is treated as invisible to physics.
-    What the projection erases --- intra-fibre distinctions --- is unphysical;
+    Under this principle, what the projection erases --- intra-fibre distinctions --- is unphysical;
     what it preserves --- the invariants of the fibre structure --- constitutes the
     physical content of the theory.
-    In particular, the symmetry group of a fibre $\Pi_n^{-1}(O_n)$ is physical precisely
+    The principle classifies observables; the interpretive reading of Section~\ref{subsec:proto-state}, on
+    which the unresolved proto-state is physically real, concerns the configuration and is a separate adopted
+    reading.
+    In particular, under this principle, the symmetry group of a fibre $\Pi_n^{-1}(O_n)$ is physical precisely
     because it acts within the fibre while leaving $O_n$ unchanged: this is the structural
     origin of gauge symmetry, developed in the companion paper~\cite{Beau2026q6a}, which defines gauge charges as
     fibre invariants and does not determine the gauge group.
@@ -1134,16 +1137,18 @@ provides the effective Lagrangian description.
 
     \begin{remark}[The structural tension between A2 and A4]
       \label{rem:a2-a4-tension}
-      The non-factorisability established in this section can be understood as the minimal
-      consistent resolution of a structural tension between A2 and A4.
+      The conditional non-factorisability of this section can be read as one resolution of a structural
+      tension between A2 and A4.
 
       A2 asserts that $\Pi_n$ is generically non-injective: distinct configurations lead to the same
       observable.
       On the interpretive reading of Section~\ref{subsec:proto-state}, this indistinguishability is
       structural, not epistemic.
       A4 asserts that the observable outcome is unique at locking.
-      Together, they impose an irresolvable constraint: the multiplicity cannot disappear
-      (A2 would be violated), yet it cannot remain directly observable (A4 would be violated).
+      Together, they constrain the multiplicity: it cannot disappear (A2 would be violated), yet it cannot
+      remain directly observable (A4 would be violated).
+      A4 alone meets the second requirement by withdrawing observational access
+      (Remark~\ref{rem:a4-selects}).
 
       A3 --- admissibility as non-premature selection --- is the operative axiom that
       determines how this tension resolves.
@@ -1160,7 +1165,7 @@ provides the effective Lagrangian description.
     \begin{lemma}[Admissible non-factorisability]
       \label{lem:non-factorisation}
       Assume A1, A3, the following \emph{sector reading} of A3, which is not derived here, and a
-      representation-theoretic dictionary for $F_n$.
+      representation-theoretic dictionary for $F_n$ in which the admissible generators act unitarily.
       The sector reading states that a decomposition of $F_n$ stable under the admissible generators
       counts as a premature selection; it is the representation-theoretic reading of A3 stated
       in~\cite{Beau2026HeisenbergStructure}.
@@ -1181,10 +1186,11 @@ provides the effective Lagrangian description.
       Such a decomposition selects no single direction: every direction remains open.
       It separates the fibre into sectors prior to any Born--Infeld saturation event, and the
       sector reading counts this separation as a premature selection, which A3 forbids.
-      Irreducibility follows: any proper stable sub-representation would yield such a forbidden
-      decomposition.
+      Irreducibility follows: a proper invariant subspace and its orthogonal complement, which is invariant
+      because the action is unitary, would yield such a forbidden decomposition.
       Without the sector reading, A3 does not exclude a reducible action: for $F_n=\mathbb{C}^2$ with
-      diagonal generators, no direction is selected and A1--A4 as stated are not violated.
+      diagonal generators, no direction is selected, so A3 as stated is not violated, and nothing in A1, A2
+      or A4 as stated excludes such an action.
     \end{proof}
 
     \begin{theorem}[Obstruction to Heisenberg carrier selection]
@@ -1426,14 +1432,17 @@ the moment of resolution; this requirement presupposes the additional reading of
     The resolution depth would then be the first element of
     $\mathcal{L}_{\mathrm{BI}} \cap \mathbb{N}_q$, the first depth where
     Born--Infeld saturation coincides with an available shell.
-    Since $\mathcal{L}_{\mathrm{BI}}$ is generically a finite set of real numbers with no reason to meet
-    $\mathbb{N}_q$~\cite{Beau2026a26}, that intersection may be empty.
+    O22 argues that $\mathcal{L}_{\mathrm{BI}}$ is generically a finite set of real numbers with no reason to
+    coincide with $\mathbb{N}_q$ unless an additional constraint enforces it~\cite{Beau2026a26}.
+    On that argument the intersection is generically empty, and no constraint making a saturation point
+    integral is shown.
 
     \begin{theorem}[Status of discreteness, after O22]
       \label{thm:discrete-locking}
       \begin{enumerate}[(i)]
         \item Under A4, resolution is discrete: it occurs only on the discrete support of the observable
-        image of $\Pi_n$. This is postulated, not derived.
+        image of $\Pi_n$.
+        This is postulated, not derived.
         \item On the supplied Heisenberg shell realisation, every realised saturation depth lies in
         $\mathbb{N}_q$~\cite{Beau2026a26}.
       \end{enumerate}
@@ -1446,9 +1455,9 @@ the moment of resolution; this requirement presupposes the additional reading of
       Item (ii) is the Projection Locking theorem of O22: by its definition of realisability, a depth is
       realised only if $\Pi$ encodes an effective state in the observable component at that depth, and on
       the supplied realisation such components exist only at depths in $\mathbb{N}_q$.
-      For the last statement, O22 shows that $\mathcal{L}_{\mathrm{BI}}$ is generically finite and not
-      constrained to $\mathbb{N}_q$ by the Born--Infeld dynamics, and neither O22 nor the present paper shows
-      that it meets $\mathbb{N}_q$.
+      For the last statement, O22 argues that $\mathcal{L}_{\mathrm{BI}}$ is generically finite and has no
+      reason to coincide with $\mathbb{N}_q$ unless an additional constraint enforces it, and neither O22 nor
+      the present paper supplies such a constraint.
       A3 is not used.
     \end{proof}
 

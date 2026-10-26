@@ -198,8 +198,9 @@ action with the distinct Weil action on \(\mathcal W\).
   observable image
 - On the supplied Heisenberg shell realisation, O22's projection-locking theorem makes every realised Born–Infeld
   saturation depth an integer shell depth
-- The existence of such a depth is **not established**: the Born–Infeld saturation locus is generically a finite
-  set of real numbers with no reason to meet the shell depths
+- The existence of such a depth is **not established**: on O22's argument the Born–Infeld saturation locus is
+  generically a finite set of real numbers with no reason to coincide with the shell depths unless a further
+  constraint enforces it, and no such constraint is shown
 
 ### 6. Entanglement and Bell
 
