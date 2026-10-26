@@ -2,7 +2,7 @@
   "bib_key": "Beau2026m",
   "web_url": "https://cosmochrony.org/science/non-injective/foundation/",
   "main_tex": "tex/Foundation.tex",
-  "notes": "Version 2.5.1 states, in the subsection on entanglement as a shared infra-projectable cell, that the matched-block result S_ent(n) = log r_pair(n) of ENT-E1 holds under a supplied purity of the joint state, which ENT-E1 does not derive, and that the general-block case is conditional on that purity and on a residual indiscernibility hypothesis. The ENT-E1 and ENT-E2 bibliography notes carry the same condition. No Foundation theorem is changed.",
+  "notes": "Version 2.5.1 states, in the introduction and in the subsection on entanglement as a shared infra-projectable cell, that the matched-block result S_ent(n) = log r_pair(n) of ENT-E1 holds under a supplied purity of the joint state, which ENT-E1 does not derive, and that the general-block case is conditional on that purity, on a residual indiscernibility hypothesis and on the transfer of an equal-dimension result from a toy model to the pipeline. The ENT-E1 and ENT-E2 bibliography notes carry the same conditions. No Foundation theorem is changed.",
   "zenodo_id": 19616329,
   "doi": "10.5281/zenodo.19616329"
 }
