@@ -2,7 +2,7 @@
   "bib_key": "Beau2026m",
   "web_url": "https://cosmochrony.org/science/non-injective/foundation/",
   "main_tex": "tex/Foundation.tex",
-  "notes": "Version 2.7.1 rewords one open direction of the colour-sector paragraph in line with ENI version 2.9. The open direction is the construction of a colour stratum satisfying the premises of ENI Corollary 6, not a derivation of colour confinement from the non-injectivity of the colour projection: where such a stratum exists, the colour projection onto colour-neutral objects is non-injective, a constraint that takes colour neutrality as a premise and does not derive the non-observability of free colour. No other statement is changed.",
+  "notes": "Version 2.7.3. The bibliography entry for O22 carries its version-1.19 title, 'Projection Locking of the Saturation Depth: A Discrete Admissibility Theorem under Born-Infeld Saturation' (formerly 'Shell-Alignment from Projection Locking'). No other change.",
   "zenodo_id": 19616329,
   "doi": "10.5281/zenodo.19616329"
 }
